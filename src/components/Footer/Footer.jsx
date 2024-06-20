@@ -84,10 +84,10 @@ export default function Footer() {
                     custom="top"
                     variants={variants}
                 >
-                    <h3 className="text-black font-bold text-lg mb-4 roboto-light">COMPANYy</h3>
+                    <h3 className="text-black font-bold text-lg mb-4 roboto-light">COMPANY</h3>
                     <ul>
                         <motion.li className="mb-2" whileHover={{ scale: 1.1 }}>
-                            <a href="#" className="text-accent roboto-medium hover:text-[#8D8B87]">Home</a>
+                            <a href="#" className="text-accent roboto-medium hover:text-[#8D8B87]">Homeeeeeeeeee</a>
                         </motion.li>
                         <motion.li className="mb-2" whileHover={{ scale: 1.1 }}>
                             <a href="#" className="text-accent roboto-medium hover:text-[#8D8B87]">About Us</a>
