@@ -48,7 +48,7 @@ const Navbar = () => {
             whileHover={{ borderTopColor: "#33BBE3" }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
           >
-            <Link href="/service" legacyBehavior>
+            <Link href="/Services" legacyBehavior>
               <a className="hover:text-accent cursor-pointer block py-2">Services</a>
             </Link>
           </motion.li>
@@ -88,7 +88,7 @@ const Navbar = () => {
             whileHover={{ borderTopColor: "#33BBE3" }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
           >
-            <Link href="/careers" legacyBehavior>
+            <Link href="/career" legacyBehavior>
               <a className="hover:text-accent cursor-pointer block py-2">Careers</a>
             </Link>
           </motion.li>
