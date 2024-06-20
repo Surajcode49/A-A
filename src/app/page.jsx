@@ -1,6 +1,6 @@
 "use client"
 import Navbar from "../components/Header/navbar"
-import Footer from "../Components/Footer/Footer"
+import Footer from "../components/Footer/Footer"
 import Home from "../pages/Home"
 import "../app/globals.css";
 
