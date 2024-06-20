@@ -63,7 +63,7 @@ export default function Industry() {
                 <p className="text-black text-md font-semibold xllll:text-xl xlllll:text-[2rem] roboto-light">OUR INDUSTRY</p>
 
                 <h2 className="lg:text-[1.5rem] text-xl font-bold mb-8 xllll:text-3xl xlllll:text-[2.5rem] xlllll:mt-5 roboto-black">
-                    <span className="text-main3 px-0">The</span>
+                    <span className="text-main3 px-0">Thhe</span>
                     <span className="text-main3 pl-1">In</span>
                     <span className="text-main2 px-0">dustries</span>
                     <span className="text-main1 px-1">we</span>
