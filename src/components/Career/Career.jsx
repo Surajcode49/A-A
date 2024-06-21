@@ -33,10 +33,10 @@ export default function Clients() {
     };
 
     return (
-        <div className="lg:mt-[5vh] xlllll:mt-[35vh] xl:mt-[10vh] md:mt-[-7vh] sssm:mt-[-7vh] justify-between items-center relative lg:mx-20 sssm:mx-10">
+        <div className="lg:mt-[5vh] xlllll:mt-[10vh] xl:mt-[10vh] md:mt-[-7vh] sssm:mt-[-7vh] justify-between items-center relative lg:mx-20 sssm:mx-10">
             <div className="flex flex-col lg:flex-row md:mx-10 mx-1">
                 {/* Heading for the clients section */}
-                <div className="w-full lg:w-1/3 mt-[10vh]">
+                <div className="w-full lg:w-1/3 mt-[10vh] xlllll:mt-2">
                     <p className="text-black text-md font-semibold xllll:text-xl xlllll:text-[2rem] roboto-light text-nowrap">CAREERS</p>
                     <h2 className="lg:text-[1.5rem] text-xl xllll:text-3xl xlllll:text-[2.5rem] xlllll:mt-5 font-bold roboto-black">
                         <span className="text-main3 px-0">Build</span>

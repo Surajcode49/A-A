@@ -6,27 +6,27 @@ const industries = [
     {
         heading: "PHARMA",
         text: "Digitalization of Validation Procedures and Batch Records",
-        image: "/Images/Industry/pharma image.jpg",
+        image: "/Images/Industry/pharma.jpg",
     },
     {
         heading: "LOGISTICS",
         text: "Transform and Streamline Your Logistics Operations",
-        image: "/Images/Industry/logistics image.webp",
+        image: "/Images/Industry/logistics.webp",
     },
     {
         heading: "UTILITIES",
         text: "Streamline Your Utilities Operations",
-        image: "/Images/Industry/uitlities image.webp",
+        image: "/Images/Industry/uitlities.webp",
     },
     {
         heading: "MANUFACTURING",
         text: "Streamline Your Manufacturing Operations",
-        image: "/Images/Industry/manufactuting image.webp",
+        image: "/Images/Industry/manufactuting.webp",
     },
     {
         heading: "AGRIBUSINESS",
         text: "Transform Your Agribusiness Operations",
-        image: "/Images/Industry/agribusiness image.webp",
+        image: "/Images/Industry/agribusiness.webp",
     },
 ];
 

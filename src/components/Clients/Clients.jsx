@@ -76,14 +76,14 @@ export default function Clients(){
 
                 </div>
 
-                <div>
+                <div className="xlllll:-mt-[20vh]">
                     {/* Mapping the logos and applying the variants for pop-up animation effect */}
                     {[0, 1, 2, 3].map(row => (
-                        <div key={row} className="flex mt-0  xlllll:scale-80 xl:scale-50  md:scale-50 sssm:scale-75 sssm:ml-[-15vw] mmd:ml-[-15vw] mdm:ml-[-24vw]  md:ml-[-28vw]  lg:ml-0">
+                        <div key={row} className="flex mt-0 xlllll:-mt-10 xlllll:scale-80 xl:scale-50  md:scale-50 sssm:scale-75 sssm:ml-[-15vw] mmd:ml-[-15vw] mdm:ml-[-24vw]  md:ml-[-28vw]  lg:ml-0">
                             {logos.slice(row * 4, row * 4 + 4).map((logo, index) => (
                                 <motion.div
                                     key={index}
-                                    className="clients bg-gradient-to-r from-main3 to-accent sssm:mx-2 md:mx-4  xl:-mt-20 lgg:-mt-20 md:-mt-16 sssm:-mt-2 rounded-full px-[4px] py-[4px] flex justify-center items-center"
+                                    className="clients bg-gradient-to-r from-main3 to-accent xlllll:mt-2 sssm:mx-2 md:mx-4  xl:-mt-20 lgg:-mt-20 md:-mt-16 sssm:-mt-2 rounded-full px-[4px] py-[4px] flex justify-center items-center"
                                     initial="hidden"
                                     animate="visible"
                                     custom={row * 4 + index}
