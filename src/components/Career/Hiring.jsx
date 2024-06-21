@@ -5,7 +5,7 @@ export default function HiringProcess({ step, heading1, heading2, list = [] }) {
                 <div className="w-[50px] h-[50px] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-main3 from-10% to-main1 to-100% rounded-full">
                     <h1 className="text-white text-xl p-3 text-center">{step}</h1>
                 </div>
-                <hr className="w-1 h-[30vh] border-2 border-dashed border-black mx-5 mt-1" />
+                <hr className="w-1 h-[30vh] xlllll:h-[20vh] border-2 border-dashed border-black mx-5 mt-1" />
             </div>
 
             <div>
