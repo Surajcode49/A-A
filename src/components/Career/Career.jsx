@@ -4,7 +4,7 @@ import { useState } from "react";
 import { delay, motion } from "framer-motion";
 
 export default function Clients() {
-    const [selectedPostion, setSelectedPosition] = useState({});
+    const [selectedPosition, setSelectedPosition] = useState(null);
 
     const positions = [
         { value: 'Software Engineer', label: 'Software Engineer' },
@@ -27,7 +27,8 @@ export default function Clients() {
         }),
         placeholder: (provided) => ({
             ...provided,
-            color: '#A0AEC0', // placeholder-gray-400
+            color: '#000000',
+            opacity: 1 
         })
     };
 
@@ -92,10 +93,12 @@ export default function Clients() {
                             options={positions}
                           
                             styles={customStyles}
-                            value={selectedPostion}
+                            value={selectedPosition}
                             onChange={(selectedOption) => setSelectedPosition(selectedOption)}
                             className="border-b border-gray-600 hover:border-main3 w-full md:mt-1 mt-5 outline-none placeholder-gray-400"
-                            placeholder="Position Applied For" id="position" name="position"
+                            placeholder="choose a role" 
+                            id="position"
+                            name="position"
                         />
                         <div className="border-b border-gray-600 hover:border-main3 w-full md:mt-1 mt-5 outline-none placeholder-gray-400">
                             <div className="flex justify-between">
@@ -105,7 +108,6 @@ export default function Clients() {
 
                             <input className="hidden " type="file" placeholder="CV/Resume *" id="resume" name="resume"/>
                         </div>
-                        
                     </div>
 
                     <button className="bg-main3 mt-[5vh] rounded-tr-xl rounded-tl-xl rounded-bl-xl flex md:w-1/4 w-1/2 hover:border-main3 border-2 border-white ml-[0vw] mb-4 h-10 p-2 mx-20 text-white justify-center text-center font-semibold hover:bg-white hover:text-main3 hover:scale-105">
@@ -116,7 +118,6 @@ export default function Clients() {
                     </button>
 
                 </form>
-
             </div>
         </div>
     );

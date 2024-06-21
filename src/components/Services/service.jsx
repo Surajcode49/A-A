@@ -105,7 +105,7 @@ export default function Service(){
             <div className="w-2/3 flex items-center min-w-[350px] xl:mt-[20vh lgg:mt-[10vh] xll:mt-[10vh] xxl:mt-[10vh] justify-center lg:mr-[7vw] relative lg:scale-140 sssm:scale-75 lg:my-8 sssm:my-[-3vw] service">
 
                 <div className="bg-[#e8faff] w-[350px] h-[350px] p-4 xxxxxxl:p-12 rounded-lg relative xlllll:w-[450px] xlllll:h-[450px] xxxxxxl:w-[600px] xxxxxxl:h-[600px]">
-                    <Image src={slides[currentIndex].img} width={500} height={500}  />
+                    <Image src={slides[currentIndex].img} alt="Description of image" width={500} height={500}  />
                     
                     <p className="text-black text-sm xlllll:text-xl underline font-semibold">{slides[currentIndex].title}</p>
                     <p className="text-gray-700 text-sm xlllll:text-lg">{slides[currentIndex].description}</p>

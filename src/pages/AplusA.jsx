@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Navbar from "../components/Header/navbar"
-import Footer from "../Components/Footer/Footer"
+import Footer from "../components/Footer/Footer"
 import Section from "../components/HomeSections";
 import { motion } from "framer-motion";
-import GetStarted from "../Components/About/form"
+import GetStarted from "../components/About/form"
 import "../app/globals.css";
 
 export default function About(){

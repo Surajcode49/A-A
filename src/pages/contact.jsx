@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import Navbar from "../components/Header/navbar"
-import Footer from "../Components/Footer/Footer"
+import Footer from "../components/Footer/Footer"
 import Select from "react-select";
 import Section from "../components/HomeSections";
 import { Tilt } from 'react-next-tilt';
