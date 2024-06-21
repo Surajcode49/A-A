@@ -28,7 +28,7 @@ export default function Clients() {
         placeholder: (provided) => ({
             ...provided,
             color: '#000000',
-            opacity: 1 
+            
         })
     };
 
