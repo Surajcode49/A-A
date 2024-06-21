@@ -1,13 +1,18 @@
-// pages/partners/index.jsx
-import React from 'react';
+"use client"
+import Navbar from "../components/Header/navbar"
+import Footer from "../components/Footer/Footer"
+import "../app/globals.css";
+import Image from "next/image";
 
-const Partners = () => {
+export default function Partners() {
   return (
-    <div>
-      <h1>Partners Page add some content here please </h1>
-      {/* Page content */}
-    </div>
+    <main className="overflow-hidden">
+      <Navbar />
+      <div className="flex justify-center items-center">
+        <Image src="/Images/Underconstruction.jpg" alt="underconstruction" width={500} height={500}/>
+      </div>
+      <Footer />
+      
+    </main>
   );
-};
-
-export default Partners;
+}

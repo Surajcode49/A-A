@@ -27,7 +27,7 @@ export default function Clients() {
         }),
         placeholder: (provided) => ({
             ...provided,
-            color: '#000000',
+            color: '#9CA3B7',
             
         })
     };
@@ -96,7 +96,7 @@ export default function Clients() {
                             value={selectedPosition}
                             onChange={(selectedOption) => setSelectedPosition(selectedOption)}
                             className="border-b border-gray-600 hover:border-main3 w-full md:mt-1 mt-5 outline-none placeholder-gray-400"
-                            placeholder="choose a role" 
+                            placeholder="Postion Applied For" 
                             id="position"
                             name="position"
                         />

@@ -10,7 +10,7 @@ import "../app/globals.css";
 export default function Contact() {
     const [countries, setCountries] = useState([]);
     const [selectedCountry, setSelectedCountry] = useState({});
-    const [selectedService, setSelectedService] = useState({});
+    const [selectedService, setSelectedService] = useState(null);
 
     const services = [
         { value: 'sap', label: 'SAP' },
@@ -44,8 +44,10 @@ export default function Contact() {
         }),
         placeholder: (provided) => ({
             ...provided,
-            color: '#A0AEC0', // placeholder-gray-400
+            color: '#9CA3B7',
+            
         })
+
     };
 
     return (
@@ -53,7 +55,7 @@ export default function Contact() {
             <Navbar />
        
         <div className="relative w-full ">
-            <Image src="/Images/Connect/contact.png" width={500} height={500} alt="contact" className="w-full mt-10"/>
+            <Image src="/Images/Connect/contact_bg.png" width={500} height={500} alt="contact" className="w-full mt-10"/>
             <div className="bg-main3 w-1/2 right-0 h-2 absolute sssm:top-[-1.5vw] md:top-[-1vw] lgg:top-[-0.5vw] llg:top-[-0.5vw] xl:top-[-0.5vw] xlllll:top-[-0.3vw]"></div>
             
             <Section>
@@ -90,8 +92,10 @@ export default function Contact() {
                             styles={customStyles}
                             value={selectedCountry}
                             onChange={(selectedOption) => setSelectedCountry(selectedOption)}
-                            className="border-b border-gray-600 hover:border-main3 w-full md:mt-1 mt-5  outline-none placeholder-gray-400"
-                            placeholder="Country" id="country" name="country"
+                            className="border-b border-gray-600 hover:border-main3 w-full md:mt-1 mt-5 outline-none placeholder-gray-400"
+                            placeholder="Country" 
+                            id="country"
+                            name="country"
                         />
                     </div>
 

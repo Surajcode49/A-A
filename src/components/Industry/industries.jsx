@@ -6,27 +6,27 @@ const industries = [
     {
         heading: "PHARMA",
         text: "Digitalization of Validation Procedures and Batch Records",
-        image: "/Images/Industry/medical.png",
+        image: "/Images/Industry/pharma image.jpg",
     },
     {
         heading: "LOGISTICS",
         text: "Transform and Streamline Your Logistics Operations",
-        image: "/Images/Industry/quality-control.avif",
+        image: "/Images/Industry/logistics image.webp",
     },
     {
         heading: "UTILITIES",
         text: "Streamline Your Utilities Operations",
-        image: "/Images/Industry/wind-energy.avif",
+        image: "/Images/Industry/uitlities image.webp",
     },
     {
         heading: "MANUFACTURING",
         text: "Streamline Your Manufacturing Operations",
-        image: "/Images/Industry/automobile.avif",
+        image: "/Images/Industry/manufactuting image.webp",
     },
     {
         heading: "AGRIBUSINESS",
         text: "Transform Your Agribusiness Operations",
-        image: "/Images/Industry/agriculture.jpg",
+        image: "/Images/Industry/agribusiness image.webp",
     },
 ];
 
@@ -79,10 +79,10 @@ export default function Industry() {
 
                 {displayIndustriesLarge.map((industry, index) => (
                     <div key={index} className={`flex ${index === 0 ? 'justify-start' : 'justify-end'} relative`}>
-                        <h1 className={`lgg:text-[2.5rem] xl:text-[4rem] lxl:text-[5rem] xlllll:text-[7rem] text-[#3dbce2] z-30 absolute ${index === 0 ? 'lgg:left-[6vw] lxl:left-[4vw] xlllll:left-[8vw] xxl:left-20 xll:-top-[15vh] xl:-top-[20vh] left-12' : 'lgg:right-[26vw] lxl:right-[21vw] xlllll:right-[17vw] xxl:right-[24vw] xll:-top-[15vh] xl:-top-[20vh] xl:right-[21vw] xll:right-[24vw]' } roboto-black`}>
+                        <h1 className={`lgg:text-[2.5rem] xl:text-[4rem] lxl:text-[5rem] xlllll:text-[5rem] text-[#3dbce2] z-30 absolute ${index === 0 ? 'lgg:left-[6vw] lxl:left-[4vw] xlllll:left-[-5vw] xxl:left-20 xll:-top-[15vh] xl:-top-[20vh] left-12' : 'lgg:right-[26vw] lxl:right-[21vw] xlllll:right-[13vw] xxl:right-[24vw] xll:-top-[15vh] xl:-top-[20vh] xl:right-[21vw] xll:right-[24vw]' } roboto-black`}>
                             {industry.heading}
                         </h1>
-                        <h1 className={`lgg:text-[2.5rem] xl:text-[4rem] lxl:text-[5rem] xlllll:text-[7rem] text-[#DBDBDB] z-10 absolute ${index === 0 ? 'lgg:left-[6.2vw] lxl:left-[4.3vw] xlllll:left-[8.3vw] xxl:left-[6.1vw] xll:-top-[14.7vh] xll:left-[6vw] xl:-top-[19.6vh] left-[4vw]' : 'lgg:right-[25.8vw] lxl:right-[20.8vw] xlllll:right-[16.7vw] xxl:right-[23.8vw] xll:-top-[14.5vh] xll:right-[23.8vw] xl:-top-[19.5vh] xl:right-[20.8vw]'} roboto-black`}>
+                        <h1 className={`lgg:text-[2.5rem] xl:text-[4rem] lxl:text-[5rem] xlllll:text-[5rem] text-[#DBDBDB] z-10 absolute ${index === 0 ? 'lgg:left-[6.2vw] lxl:left-[4.3vw] xlllll:left-[-4.7vw] xxl:left-[6.1vw] xll:-top-[14.7vh] xll:left-[6vw] xl:-top-[19.6vh] left-[4vw]' : 'lgg:right-[25.8vw] lxl:right-[20.8vw] xlllll:right-[12.7vw] xxl:right-[23.8vw] xll:-top-[14.5vh] xll:right-[23.8vw] xl:-top-[19.5vh] xl:right-[20.8vw]'} roboto-black`}>
                             {industry.heading}
                         </h1>
 
