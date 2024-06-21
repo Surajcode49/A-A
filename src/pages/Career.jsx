@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Navbar from "../components/Header/navbar"
-import Footer from "../Components/Footer/Footer"
+import Footer from "../components/Footer/Footer"
 import Section from "../components/HomeSections";
 import HiringProcess from "../components/Career/Hiring";
 import Requirements from "../components/Career/Requirements";
