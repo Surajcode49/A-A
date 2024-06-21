@@ -85,7 +85,7 @@ export default function Form() {
                     </div>
 
                     <input className="border-b border-gray-600 hover:border-main3 w-full mt-1 outline-none placeholder-gray-400 bg-gray-100" type="text" placeholder="How can we help you? *" id="help" name="help"/>
-                    <button type="submit" className="bg-main3 mt-[5vh] rounded-tr-xl rounded-tl-xl rounded-bl-xl flex md:w-1/3 w-1/2 hover:border-main3 border-2 border-gray-100 ml-[0vw] mb-4 h-10 p-2 mx-20 text-white justify-center text-center font-semibold hover:bg-white hover:text-main3 hover:scale-105">
+                    <button type="submit" className="bg-main3 mt-[5vh] rounded-tr-xl rounded-tl-xl rounded-bl-xl flex md:w-1/4 w-1/2 hover:border-main3 border-2 border-gray-100 ml-[0vw] mb-4 h-10 p-2 mx-20 text-white justify-center text-center font-semibold hover:bg-white hover:text-main3 hover:scale-105">
                         Submit
                         <div className="scale-75 my-0 ml-3 cursor-pointer md:scale-105 md:mt-1 xlllll:scale-100 xlllll:mt-0.5 xl:scale-90 xl:mt-0.5">
                             <Image src="/Images/Services/read-arrow.png" width={20} height={20} alt="read arrow" />

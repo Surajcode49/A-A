@@ -91,6 +91,7 @@ export default function Clients() {
                     <div className="md:flex block md:space-x-10 space-x-0 my-8">
                         <Select
                             options={positions}
+                          
                             styles={customStyles}
                             value={selectedPosition}
                             onChange={(selectedOption) => setSelectedPosition(selectedOption)}

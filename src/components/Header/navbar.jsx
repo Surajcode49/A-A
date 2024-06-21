@@ -88,7 +88,7 @@ const Navbar = () => {
             whileHover={{ borderTopColor: "#33BBE3" }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
           >
-            <Link href="/career" legacyBehavior>
+            <Link href="/Career" legacyBehavior>
               <a className="hover:text-accent cursor-pointer block py-2">Careers</a>
             </Link>
           </motion.li>
