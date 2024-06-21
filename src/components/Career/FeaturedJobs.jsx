@@ -151,24 +151,24 @@ export default function FeaturedJobs() {
                         <div className="w-full h-[180px] bg-gray-50 border-2 border-accent rounded-sm">
                             <div className="mx-auto w-5/6 my-2">
                                 <div className="flex justify-between">
-                                    <h1 className="text-accent underline mt-4">ANDROID DEVELOPER</h1>
+                                    <h1 className="text-accent underline mt-4">JAVASCRIPT MOBILE</h1>
                                     <Image src="/Images/Career/featured job icons/coding.webp" width={50} height={50} alt="coding"/>
                                 </div>
                                 <br />
-                                <p className="text-black">Android Developer (2-8 Years)</p>
-                                <p className="text-black">Tech Lead - Developer (5-10 Years)</p>
+                                <p className="text-black">React Native Developer (2-8 Years)</p>
+                                <p className="text-black">Tech Lead - JavaScript Mobile (5-10 Years)</p>
                             </div>
                         </div>
 
                         <div className="w-full h-[180px] bg-gray-50 border-2 border-accent rounded-sm mx-5">
                             <div className="mx-auto w-5/6 my-2">
                                 <div className="flex justify-between">
-                                    <h1 className="text-accent underline mt-4">ANDROID DEVELOPER</h1>
-                                    <Image src="/Images/Career/featured job icons/coding.webp" width={50} height={50} alt="coding"/>
+                                    <h1 className="text-accent underline mt-4">BLOCKCHAIN</h1>
+                                    <Image src="/Images/Career/featured job icons/blockchain.webp" width={50} height={50} alt="coding"/>
                                 </div>
                                 <br />
-                                <p className="text-black">Android Developer (2-8 Years)</p>
-                                <p className="text-black">Tech Lead - Developer (5-10 Years)</p>
+                                <p className="text-black">Blockchain Developer (2-8 Years)</p>
+                                <p className="text-black">Tech Lead - Blockchain (5-10 Years)</p>
                             </div>
                         </div>
 
@@ -178,23 +178,23 @@ export default function FeaturedJobs() {
                         <div className="w-full h-[180px] bg-gray-50 border-2 border-accent rounded-sm">
                             <div className="mx-auto w-5/6 my-2">
                                 <div className="flex justify-between">
-                                    <h1 className="text-accent underline mt-4">ANDROID DEVELOPER</h1>
-                                    <Image src="/Images/Career/featured job icons/coding.webp" width={50} height={50} alt="coding"/>
+                                    <h1 className="text-accent underline mt-4">FLUTTER</h1>
+                                    <Image src="/Images/Career/featured job icons/Flutter-01.webp" width={50} height={50} alt="coding"/>
                                 </div>
                                 <br />
-                                <p className="text-black">Android Developer (2-8 Years)</p>
-                                <p className="text-black">Tech Lead - Developer (5-10 Years)</p>
+                                <p className="text-black">Flutter Developer (2-8 Years)</p>
+                                <p className="text-black">Tech Lead - Flutter (5-10 Years)</p>
                             </div>
                         </div>
 
                         <div className="w-full h-[180px] bg-gray-50 border-2 border-accent rounded-sm mx-5">
                             <div className="mx-auto w-5/6 my-2">
                                 <div className="flex justify-between">
-                                    <h1 className="text-accent underline mt-4">ANDROID DEVELOPER</h1>
+                                    <h1 className="text-accent underline mt-4">UX/UI DEVELOPER</h1>
                                     <Image src="/Images/Career/featured job icons/coding.webp" width={50} height={50} alt="coding"/>
                                 </div>
                                 <br />
-                                <p className="text-black">Android Developer (2-8 Years)</p>
+                                <p className="text-black">Frontend Designer (HTML/CC.) (2-8 Years)</p>
                                 <p className="text-black">Tech Lead - Developer (5-10 Years)</p>
                             </div>
                         </div>

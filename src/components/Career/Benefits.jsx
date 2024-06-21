@@ -9,19 +9,19 @@ export default function Benefits(){
                 </div>
 
                 <div className=" absolute -top-1/2 left-2/4">
-                    <Image src="/Images/Career/emplyee benefits icons/advancement.webp" width={200} height={200} alt="advancement" className="xlllll:scale-140"/>
+                    <Image src="/Images/Career/emplyee benefits icons/diversity.webp" width={200} height={200} alt="advancement" className="xlllll:scale-140"/>
                 </div>
 
                 <div className=" absolute -top-1/2 left-3/4">
-                    <Image src="/Images/Career/emplyee benefits icons/advancement.webp" width={200} height={200} alt="advancement" className="xlllll:scale-140"/>
+                    <Image src="/Images/Career/emplyee benefits icons/recognition.webp" width={200} height={200} alt="advancement" className="xlllll:scale-140"/>
                 </div>
 
                 <div className=" absolute -bottom-1/2 left-1/3">
-                    <Image src="/Images/Career/emplyee benefits icons/advancement.webp" width={200} height={200} alt="advancement" className="xlllll:scale-140"/>
+                    <Image src="/Images/Career/emplyee benefits icons/salary.webp" width={200} height={200} alt="advancement" className="xlllll:scale-140"/>
                 </div>
 
                 <div className=" absolute -bottom-1/2 left-2/3">
-                    <Image src="/Images/Career/emplyee benefits icons/advancement.webp" width={200} height={200} alt="advancement" className="xlllll:scale-140"/>
+                    <Image src="/Images/Career/emplyee benefits icons/worklife.webp" width={200} height={200} alt="advancement" className="xlllll:scale-140"/>
                 </div>
 
             </div>
@@ -29,10 +29,10 @@ export default function Benefits(){
             <div className="sssm:block lgg:hidden ">
                 <div className="flex space-x-4 mx-4">
                     <Image src="/Images/Career/emplyee benefits icons/advancement.webp" width={50} height={50} alt="advancement" className=""/>
-                    <Image src="/Images/Career/emplyee benefits icons/advancement.webp" width={50} height={50} alt="advancement" className=""/>
-                    <Image src="/Images/Career/emplyee benefits icons/advancement.webp" width={50} height={50} alt="advancement" className=""/>
-                    <Image src="/Images/Career/emplyee benefits icons/advancement.webp" width={50} height={50} alt="advancement" className=""/>
-                    <Image src="/Images/Career/emplyee benefits icons/advancement.webp" width={50} height={50} alt="advancement" className=""/>
+                    <Image src="/Images/Career/emplyee benefits icons/diversity.webp" width={50} height={50} alt="advancement" className=""/>
+                    <Image src="/Images/Career/emplyee benefits icons/recognition.webp" width={50} height={50} alt="advancement" className=""/>
+                    <Image src="/Images/Career/emplyee benefits icons/salary.webp" width={50} height={50} alt="advancement" className=""/>
+                    <Image src="/Images/Career/emplyee benefits icons/worklife.webp" width={50} height={50} alt="advancement" className=""/>
                 </div>
             </div>
         
