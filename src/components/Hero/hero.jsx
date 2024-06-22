@@ -7,7 +7,7 @@ export default function HeroSection(){
             <div className="relative w-full">
                 {/*Background video*/}
                 <video
-                    className="w-full"
+                    className="w-full mt-1.5"
                     autoPlay
                     muted
                     loop
@@ -16,6 +16,7 @@ export default function HeroSection(){
                     <source src="/Images/Hero/aplusa-hero.mp4" type="video/mp4" alt="hero"/>
                     Your browser does not support the video tag.
                 </video>
+                <div className="bg-main3 w-1/2 right-0 h-2 absolute sssm:top-[-1.5vw] md:top-[-1vw] lgg:top-[-0.5vw] llg:top-[-0.5vw] xl:top-[-0.5vw] xlllll:top-[-0.3vw]"></div>
             </div>
 
             {/*SAP and Arrow*/}
