@@ -154,7 +154,7 @@ export default function About(){
                                         borderRadius: ["0%", "0%", "10%", "10%", "0%"]
                                       }}
                                       transition={{
-                                        duration: 0.5,
+                                        duration: 1,
                                         ease: "easeInOut",
                                         
                                       }}
@@ -175,7 +175,7 @@ export default function About(){
                                         borderRadius: ["0%", "0%", "10%", "10%", "0%"]
                                       }}
                                       transition={{
-                                        duration: 2,
+                                        duration: 1,
                                         ease: "easeInOut",
                                         
                                       }}
@@ -195,7 +195,7 @@ export default function About(){
                                         borderRadius: ["0%", "0%", "10%", "10%", "0%"]
                                       }}
                                       transition={{
-                                        duration: 0.5,
+                                        duration: 1,
                                         ease: "easeInOut",
                                        
                                       }}

@@ -22,25 +22,25 @@ export default function Benefits(){
 
     return(
         <div className="bg-gray-100 w-full xxl:h-[30vh] xll:h-[25vh] xlllll:h-[25vh] sssm:mt-[7vh] sssm:p-3 lgg:p-0 sssm:h-[10vh] xlllll:mt-[25vh] xl:h-[40vh] xll:mt-[15vh] xxl:mt-[20vh] xl:mt-[25vh] relative">            
-            <div className="sssm:hidden lgg:block">
+            <div className="sssm:hidden lgg:block ">
 
-                <div className=" absolute -top-1/2 left-1/4">
+                <div className=" absolute -top-1/2 left-[10vw]">
                     <Image src="/Images/Career/emplyee benefits icons/advancement.webp" width={200} height={200} alt="advancement" className="xlllll:scale-140"/>
                 </div>
 
-                <div className=" absolute -top-1/2 left-2/4">
+                <div className=" absolute -top-1/2 left-[40vw] xlllll:left-[45vw]">
                     <Image src="/Images/Career/emplyee benefits icons/diversity.webp" width={200} height={200} alt="advancement" className="xlllll:scale-140"/>
                 </div>
 
-                <div className=" absolute -top-1/2 left-3/4">
+                <div className=" absolute -top-1/2 right-[10vw]">
                     <Image src="/Images/Career/emplyee benefits icons/recognition.webp" width={200} height={200} alt="advancement" className="xlllll:scale-140"/>
                 </div>
 
-                <div className=" absolute -bottom-1/2 left-1/3">
+                <div className=" absolute -bottom-1/2 left-1/4">
                     <Image src="/Images/Career/emplyee benefits icons/salary.webp" width={200} height={200} alt="advancement" className="xlllll:scale-140"/>
                 </div>
 
-                <div className=" absolute -bottom-1/2 left-2/3">
+                <div className=" absolute -bottom-1/2 right-[25vw]">
                     <Image src="/Images/Career/emplyee benefits icons/worklife.webp" width={200} height={200} alt="advancement" className="xlllll:scale-140"/>
                 </div>
 

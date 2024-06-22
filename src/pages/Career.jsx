@@ -24,6 +24,7 @@ export default function Career(){
             'Role Feasibility Check',
             'Invitation for F2F',
           ],
+          image: '/Images/Career/dashedline.png',
         },
         {
           step: '02',
@@ -34,18 +35,21 @@ export default function Career(){
             'Programming & Logic (if applicable)',
             'Domain Specific (if any)',
           ],
+          image: '/Images/Career/dashedline2.png',
         },
         {
           step: '03',
           heading1: 'TECHNICAL',
           heading2: 'EVALUATION',
           list: ['Level 1 - Basic', 'Level 2 - Advanced', 'Level 3 - Expert (if applicable)'],
+          image: '/Images/Career/dashedline.png',
         },
         {
           step: '04',
           heading1: 'HR',
           heading2: 'ROUND',
           list: ['Remuneration', 'Company Policies', 'Queries'],
+          image: '/Images/Career/dashedline2.png',
         },
       ];
     

@@ -1,12 +1,12 @@
 import Image from "next/image";
-export default function HiringProcess({ step, heading1, heading2, list = [] }) {
+export default function HiringProcess({ step, heading1, heading2, list = [] , image}) {
     return (
         <div className="flex items-center justify-center">
             <div>
                 <div className="w-[50px] h-[50px] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-main3 from-10% to-main1 to-100% rounded-full">
                     <h1 className="text-white text-xl p-3 text-center">{step}</h1>
                 </div>
-               <Image src="/Images/Career/dashedline.png" width={3} height={10} alt="dashed-line" className="mx-5 mt-1"/>
+               <Image src={image} width={3} height={10} alt="dashed-line" className="mx-5 mt-1"/>
             </div>
 
             <div>

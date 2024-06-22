@@ -65,7 +65,7 @@ export default function About(){
                                         borderRadius: ["0%", "0%", "10%", "10%", "0%"]
                                       }}
                                       transition={{
-                                        duration: 0.5,
+                                        duration: 1,
                                         ease: "easeInOut",
                                         times: [0, 0.2, 0.5, 0.8, 1],
                                       }}
@@ -86,7 +86,7 @@ export default function About(){
                                         borderRadius: ["0%", "0%", "10%", "10%", "0%"]
                                       }}
                                       transition={{
-                                        duration: 0.5,
+                                        duration: 1,
                                         ease: "easeInOut",
                                         times: [0, 0.2, 0.5, 0.8, 1],
                                       }}
@@ -107,7 +107,7 @@ export default function About(){
                                         borderRadius: ["0%", "0%", "10%", "10%", "0%"]
                                     }}
                                     transition={{
-                                        duration: 0.5,
+                                        duration: 1,
                                         ease: "easeInOut",
                                         times: [0, 0.2, 0.5, 0.8, 1],
                                     }}
@@ -125,7 +125,7 @@ export default function About(){
                                         borderRadius: ["0%", "0%", "10%", "10%", "0%"]
                                       }}
                                       transition={{
-                                        duration: 0.5,
+                                        duration: 1,
                                         ease: "easeInOut",
                                         times: [0, 0.2, 0.5, 0.8, 1],
                                       }}
