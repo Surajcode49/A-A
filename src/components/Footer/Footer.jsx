@@ -19,7 +19,7 @@ export default function Footer() {
             opacity: 1,
             x: 0,
             y: 0,
-            transition: { duration: 2, ease: 'easeInOut' }
+            transition: { duration: 0.5, ease: 'easeInOut' }
         }
     };
 
@@ -46,7 +46,7 @@ export default function Footer() {
                             href="#"
                             className="p-2 bg-gradient-to-r from-main3 to-accent hover:bg-black text-white rounded-full"
                             whileHover={{ rotate: 360 }}
-                            transition={{ duration: 0.6 }}
+                            transition={{ duration: 0.5 }}
                         >
                             <FaFacebookF size={24} />
                         </motion.a>

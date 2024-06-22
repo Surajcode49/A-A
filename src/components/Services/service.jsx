@@ -7,35 +7,35 @@ const slides = [
     {
         title: "SAP Integration Services",
         description: "Synchronize your business with SAP",
-        img: "/Images/Services/sap_integration_services.png",
+        img: "/Images/Services/SAP Integration Services.webp",
         bulletText: "SAP Integration Services",
     },
 
     {
         title: "Rise wih SAP",
         description: "Elevate your enterprise with SAP",
-        img: "/Images/Services/risewithsap.png",
+        img: "/Images/Services/Rise with SAP.webp",
         bulletText: "Rise with SAP",
     },
 
     {
         title: "SAP Consulting Services",
         description: "Expert SAP Consulting",
-        img: "/Images/Services/sap_consulting.jpg",
+        img: "/Images/Services/SAP Consulting Services.webp",
         bulletText: "SAP Consulting Services",
     },
 
     {
         title: "SAP Analytics Cloud",
         description: "Advanced analytics with SAP",
-        img: "/Images/Services/analytics.avif",
+        img: "/Images/Services/SAP Analytics Cloud.webp",
         bulletText: "SAP Analytics Cloud",
     },
 
     {
         title: "Cloud Migrations",
         description: "Seamless cloud transitions",
-        img: "/Images/Services/cloud_migration.jpg",
+        img: "/Images/Services/Cloud Migrations.webp",
         bulletText: "Cloud Migrations",
     },
 ]
@@ -95,7 +95,7 @@ export default function Service(){
 
                             <h2 className="service absolute roboto-black xlllll:top-[60.5vh]  xlllll:left-[2.3vw] xxl:top-[60vh] xll:top-[55vh] lgg:top-[75vh] lg:top-[75vh] xl:top-[76vh] xl:left-[3.4vw] sssm:left-[63vw] sssm:top-[15vh] md:top-[10vh] font-bold lg:left-10 sssm:right-10 text-main3 lg:text-[10rem] sssm:text-[4rem] md:text-[7rem] xlllll:text-[14rem]">{currentIndex + 1}</h2>
                             <h2 className="service absolute roboto-black xlllll:top-[60vh]  xlx:left-[3vw] xxl:top-[59vh] xll:top-[54vh] lgg:top-[74vh] lgg:left-[3.5vw] lg:top-[75vh] sssm:top-[14.7vh] sssm:left-[62.2vw] md:top-[10vh] font-bold xllll:left-[2vw] lg:left-[3vw] sssm:right-[11.5vw] ssmm:right-[10.4vw] ssm:right-[10vw] md:right-[5.5vw] md:text-[7rem] text-gray-200 lg:text-[10rem] sssm:text-[4rem] xlllll:text-[14rem] -z-1">{currentIndex + 1}</h2>
-                            <hr className="absolute xlllll:top-[75vh]  xxl:top-[73vh] xll:top-[65vh] lxl:left-[3vw] xl:top-[92vh] lgg:top-[90vh] lg:top-[95vh] sssm:top-[18vh] sssm:left-[65vw] ssmm:top-[22vh] smmm:top-[21vh] md:top-[25vh] lgg:left-[5vw] lg:left-[4vw] sssm:right-9 lg:border-2 sssm:border-1 border-gray-300 w-[7vw] xlllll:w-[12vw] xlllll:left-[1vw]"/>
+                            <hr className="absolute xlllll:top-[75vh]  xxl:top-[73vh] xll:top-[65vh] lxl:left-[3vw] xl:top-[92vh] lgg:top-[90vh] lg:top-[95vh] sssm:top-[18vh] sssm:left-[65vw] ssmm:top-[22vh] smmm:top-[21vh] md:top-[25vh] lgg:left-[5vw] lg:left-[4vw] sssm:right-9 lg:border-2 sssm:border-1 border-gray-300 w-[7vw] xlllll:w-[6vw] xlllll:left-[3vw]"/>
                         </div>
                     ))}
                 </ul>

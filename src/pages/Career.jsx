@@ -184,7 +184,7 @@ export default function Career(){
                     <Benefits />
                 </Section>
 
-                <div className="xl:mt-[30vh] xll:mt-[20vh] xxl:mt-[20vh]"></div>
+                <div className="xl:mt-[30vh] xll:mt-[20vh] xxl:mt-[20vh] sssm:mt-[20vh]"></div>
 
 
                 <br />

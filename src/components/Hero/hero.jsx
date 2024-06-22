@@ -24,7 +24,7 @@ export default function HeroSection(){
 
                 <div className="flex">
                     <h1 className="service text-white roboto-black absolute xxxxxxl:top-[50vh] xll:top-[45vh] xlx:top-[53vh]  xxl:top-[55vh] xl:top-[65vh] lgg:top-[50vh] mdd:top-[29vh] mdm:top-[26vh] md:top-[30vh] sssm:top-[27vh] ssm:top-[25vh] sssm:left-7 xl:left-10 sssm:text-[4rem] md:text-[7rem] lgg:text-[12rem] xl:text-[14rem] lxl:text-[20rem] xlllll:text-[22rem] xxxxxxl:text-[25rem] z-30">SAP</h1>
-                    <h2 className="service text-accent roboto-black absolute xxxxxxl:top-[50vh] xll:top-[45vh] xlx:top-[53vh]  xxl:top-[55vh] xl:top-[65vh] lgg:top-[50vh] mdd:top-[29vh] mdm:top-[26vh] md:top-[30vh] sssm:top-[27vh] ssm:top-[25vh] sssm:left-6 md:left-5 llg:left-4 lgg:left-5 xl:left-7 sssm:text-[4rem] md:text-[7rem] lgg:text-[12rem] xl:text-[14rem] lxl:text-[20rem] xlllll:text-[22rem]  xxxxxxl:text-[25rem]  z-10">SAP</h2>
+                    <h2 className="service text-accent roboto-black absolute xxxxxxl:top-[50vh] xll:top-[45vh] xlx:top-[53vh] xlllll:top-[46vh] xxl:top-[55vh] xl:top-[66vh] lgg:top-[50vh] mdd:top-[29vh] mdm:top-[26vh] md:top-[30vh] sssm:top-[27vh] ssm:top-[25vh] sssm:left-6 md:left-5 llg:left-4 lgg:left-5 xl:left-7 xlllll:left-[2.4vw] sssm:text-[4rem] md:text-[7rem] lgg:text-[12rem] xl:text-[14rem] lxl:text-[20rem] xlllll:text-[22rem]  xxxxxxl:text-[25rem]  z-10">SAP</h2>
                 </div>
             </div>
 
@@ -36,12 +36,12 @@ export default function HeroSection(){
             </div>
 
             {/*SAP icons*/}
-            <div className="bg-gray-100 flex justify-evenly sssm:p-1 md:p-2 lxl:p-4">
-                <Image src="/Images/Hero/Medical.png" width={50} height={50} alt="medical" className="lg:scale-100 lg:hover:scale-115 sssm:scale-60 sssm:hover:scale-70 md:scale-90 md:hover:scale-100 xll:scale-125 xll:hover:scale-140 cursor-pointer"/>
-                <Image src="/Images/Hero/manufacturing.png" width={50} height={50} alt="manufacturing" className="lg:scale-100 lg:hover:scale-115 sssm:scale-60 sssm:hover:scale-70 md:scale-90 md:hover:scale-100 xll:scale-125 xll:hover:scale-140 cursor-pointer"/>
-                <Image src="/Images/Hero/Shield.png" width={50} height={50} alt="shield" className="lg:scale-100 lg:hover:scale-115 sssm:scale-60 sssm:hover:scale-70 md:scale-90 md:hover:scale-100 xll:scale-125 xll:hover:scale-140 cursor-pointer"/>
-                <Image src="/Images/Hero/settings.png" width={50} height={50} alt="settings" className="lg:scale-100 lg:hover:scale-115 sssm:scale-60 sssm:hover:scale-70 md:scale-90 md:hover:scale-100 xll:scale-125 xll:hover:scale-140 cursor-pointer"/>
-                <Image src="/Images/Hero/plants.png" width={50} height={50} alt="plants" className="lg:scale-100 lg:hover:scale-115 sssm:scale-60 sssm:hover:scale-70 md:scale-90 md:hover:scale-100 xll:scale-125 xll:hover:scale-140 cursor-pointer"/>
+            <div className="bg-black flex justify-evenly xlllll:px-[20vw] sssm:p-1 md:p-2 lxl:p-4">
+                <Image src="/Images/Hero/Pharma_icon.webp" width={50} height={50} alt="medical" className="lg:scale-100 lg:hover:scale-115 sssm:scale-60 sssm:hover:scale-70 md:scale-90 md:hover:scale-100 xll:scale-125 xll:hover:scale-140 cursor-pointer"/>
+                <Image src="/Images/Hero/Manufacturing_icon.webp" width={50} height={50} alt="manufacturing" className="lg:scale-100 lg:hover:scale-115 sssm:scale-60 sssm:hover:scale-70 md:scale-90 md:hover:scale-100 xll:scale-125 xll:hover:scale-140 cursor-pointer"/>
+                <Image src="/Images/Hero/Utilities_icon.webp" width={50} height={50} alt="shield" className="lg:scale-100 lg:hover:scale-115 sssm:scale-60 sssm:hover:scale-70 md:scale-90 md:hover:scale-100 xll:scale-125 xll:hover:scale-140 cursor-pointer"/>
+                <Image src="/Images/Hero/Logistics_icon.webp" width={50} height={50} alt="settings" className="lg:scale-100 lg:hover:scale-115 sssm:scale-60 sssm:hover:scale-70 md:scale-90 md:hover:scale-100 xll:scale-125 xll:hover:scale-140 cursor-pointer"/>
+                <Image src="/Images/Hero/Agribusiness_icon.webp" width={50} height={50} alt="plants" className="lg:scale-100 lg:hover:scale-115 sssm:scale-60 sssm:hover:scale-70 md:scale-90 md:hover:scale-100 xll:scale-125 xll:hover:scale-140 cursor-pointer"/>
             </div>
 
         </div>

@@ -36,10 +36,10 @@ export default function Clients(){
     ];
 
     return (
-        <div className="lg:mt-[5vh] xlllll:mt-[35vh] xl:mt-[10vh] sssm:mt-[2vh] justify-between items-center relative lg:mx-20 sssm:mx-10">
+        <div className="lg:mt-[5vh] xlllll:mt-[35vh] xl:mt-[10vh] sssm:mt-[2vh] justify-between items-center relative xl:mx-5 lg:mx-20 sssm:mx-0">
 
             <div className="md:flex sssm:block xl:mx-20 mx-10 sssm:mx-0">
-                <div>
+                <div className="sssm:mx-5">
                     {/*Heading for the clients section*/}
                     <div className="w-1/3 lg:mt-[20vh] md:mt-[10vh] xxl:mt-[15vh] xlllll:mt-[0vh]">
                         <p className="text-black text-md font-semibold xllll:text-xl xlllll:text-[2rem] roboto-light text-nowrap">OUR HAPPY CLIENTS</p>
@@ -67,7 +67,7 @@ export default function Clients(){
 
                     </div>
 
-                    <button className="bg-main1 rounded-tr-xl ml-[0vw] md:my-16 sssm:my-4 rounded-tl-xl rounded-bl-xl w-5/6 flex mb-4 h-10 p-2 mx-20 text-white justify-center text-center font-semibold hover:bg-white hover:text-main3 hover:border-main3 border-2 border-white hover:scale-105">
+                    <button className="bg-main1 rounded-tr-xl ml-[0vw] md:my-16 sssm:my-4 rounded-tl-xl rounded-bl-xl w-5/6 flex mb-4 h-10  p-2 mx-20 text-white justify-center text-center font-semibold hover:bg-white hover:text-main3 hover:border-main3 border-2 border-white hover:scale-105">
                         View All
                         <div className="scale-75 my-0 ml-3 cursor-pointer xlllll:scale-100 xlllll:mt-0.5 xl:scale-90 xl:mt-0.5">
                             <Image src="/Images/Services/read-arrow.png" width={20} height={20} alt="read arrow" />
@@ -76,14 +76,14 @@ export default function Clients(){
 
                 </div>
 
-                <div className="xlllll:-mt-[20vh]">
+                <div className="sssm:scale-90 ssm:scale-100 md:scale-50 mdd:scale-60 xl:scale-60 xll:scale-80 xlllll:scale-100 ssm:mx-3 md:-mt-[25vh] md:-ml-[25vw] mdd:-mt-[17vh] mdd:-ml-[19vw] mdm:-mt-[20vh] llg:-mt-[30vh] llg:-ml-[10vw] xl:ml-0 xll:-mt-[15vh] lxl:ml-20 xlllll:-mt-[30vh] xlllll:ml-[20vw]">
                     {/* Mapping the logos and applying the variants for pop-up animation effect */}
                     {[0, 1, 2, 3].map(row => (
-                        <div key={row} className="flex mt-0 xlllll:-mt-10 xlllll:scale-80 xl:scale-50  md:scale-50 sssm:scale-75 sssm:ml-[-15vw] mmd:ml-[-15vw] mdm:ml-[-24vw]  md:ml-[-28vw]  lg:ml-0">
+                        <div key={row} className="flex">
                             {logos.slice(row * 4, row * 4 + 4).map((logo, index) => (
                                 <motion.div
                                     key={index}
-                                    className="clients bg-gradient-to-r from-main3 to-accent xlllll:mt-2 sssm:mx-2 md:mx-4  xl:-mt-20 lgg:-mt-20 md:-mt-16 sssm:-mt-2 rounded-full px-[4px] py-[4px] flex justify-center items-center"
+                                    className="clients ssmm:w-[80px] md:w-[200px] bg-gradient-to-r from-main3 to-accent sssm:m-1 md:m-3 lgg:m-2 rounded-full px-[4px] py-[4px] flex justify-center items-center"
                                     initial="hidden"
                                     animate="visible"
                                     custom={row * 4 + index}

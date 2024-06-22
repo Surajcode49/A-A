@@ -6,7 +6,7 @@ export default function Partners(){
         <div className="relative sssm:mt-[-10vh] smmm:mt-[-5vh] ssmm:mt-[-3vh] llg:mt-[7vh] mmd:mt-[8vh]">
 
             <div className="w-full mt-20">
-                <Image src="/Images/Partners/partners_bg.jpg" width={500} height={500} alt="bg" className="w-full h-full mdm:py-7 mmd:py-0 mdd:py-0 sssm:py-6 lg:py-5 xl:py-0 rotate-180"/>
+                <Image src="/Images/Partners/new-partners.jpg" width={500} height={500} alt="bg" className="w-full h-full mdm:py-7 mmd:py-0 mdd:py-0 sssm:py-6 lg:py-5 xl:py-0"/>
 
                 <motion.div className="partners-logo bg-white xlllll:h-[10vh] xll:h-[8vh] xlx:h-[10vh] lgg:h-[8vh] lg:w-[20vw] lg:h-[10vh] md:p-4 sssm:w-[20vw] sssm:h-[3vh] md:h-[4vh] p-2 rounded-md absolute top-10 left-10 flex items-center justify-center hover:scale-115 cursor-pointer"
                             drag

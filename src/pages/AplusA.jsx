@@ -154,9 +154,9 @@ export default function About(){
                                         borderRadius: ["0%", "0%", "10%", "10%", "0%"]
                                       }}
                                       transition={{
-                                        duration: 2,
+                                        duration: 0.5,
                                         ease: "easeInOut",
-                                        times: [0, 0.2, 0.5, 0.8, 1],
+                                        
                                       }}
                         >
                             <div className="bg-white lg:w-[12vw] md:w-[20vw] sssm:w-[40vw] items-center justify-center p-3 border-2 border-gray-200  relative cursor-pointer">
@@ -177,7 +177,7 @@ export default function About(){
                                       transition={{
                                         duration: 2,
                                         ease: "easeInOut",
-                                        times: [0, 0.2, 0.5, 0.8, 1],
+                                        
                                       }}
                         >
                             <div className="bg-white lg:w-[12vw] md:w-[20vw] sssm:w-[40vw] items-center justify-center p-3 border-2 border-gray-200  relative cursor-pointer">
@@ -195,9 +195,9 @@ export default function About(){
                                         borderRadius: ["0%", "0%", "10%", "10%", "0%"]
                                       }}
                                       transition={{
-                                        duration: 2,
+                                        duration: 0.5,
                                         ease: "easeInOut",
-                                        times: [0, 0.2, 0.5, 0.8, 1],
+                                       
                                       }}
                         >
                             <div className="bg-white lg:w-[12vw] md:w-[20vw] sssm:w-[40vw] items-center justify-center p-3 border-2 border-gray-200  relative cursor-pointer">
@@ -215,9 +215,8 @@ export default function About(){
                                         borderRadius: ["0%", "0%", "10%", "10%", "0%"]
                                       }}
                                       transition={{
-                                        duration: 2,
+                                        duration: 1,
                                         ease: "easeInOut",
-                                        times: [0, 0.2, 0.5, 0.8, 1],
                                       }}
                         >
                             <div className="bg-white lg:w-[12vw] md:w-[20vw] sssm:w-[40vw] items-center justify-center p-3 border-2 border-gray-200  relative cursor-pointer">
