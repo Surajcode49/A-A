@@ -30,7 +30,7 @@ export default function About(){
             <div className="relative w-full">
                 {/*Page header with background image and text*/}
                 <PageHeader  
-                    image="/Images/About/abt.png" 
+                    image="/Images/About/About-US-01.webp" 
                     text="As the world moves towards cloud, we were prepared for this transition a long time 
                         back. With a industry-updated centre of excellence we have been offering multiple 
                         SAP partner qualified solutions helping business owners unlock tremendous potential 

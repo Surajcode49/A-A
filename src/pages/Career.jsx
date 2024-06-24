@@ -85,14 +85,14 @@ export default function Career(){
             <div className="relative w-full">
                 {/*Page header with background image and text*/}
                 <PageHeader  
-                    image="/Images/Career/bg-main.png" 
+                    image="/Images/Career/Career-01-01.webp" 
                     text="Employee First, Employee Always! Let’s Make Work Meaningful Together.
                          We Are Building For Billions And hunting for the curious, the dedicated, and enterprising."
                 />
 
                 {/*Heading for the career page*/}
                 <Section>
-                    <div className="flex justify-center items-center text-center -mt-10 xl:-mt-[25vh]">
+                    <div className="flex justify-center items-center text-center mt-10">
                         <SectionHeading Title="CAREERS" headings={headings} />
                     </div>
                 </Section>
