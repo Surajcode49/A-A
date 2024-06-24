@@ -29,17 +29,17 @@ export default function Contact() {
 
     //Selecting countries from list of options
     const [countries, setCountries] = useState([]);
-    const [selectedCountry, setSelectedCountry] = useState({});
+    const [selectedCountry, setSelectedCountry] = useState(null);
 
     //Fetching country list
     useEffect(() => {
         fetch(
-        "https://valid.layercode.workers.dev/list/countries?format=select&flags=true&value=code"
+            "https://valid.layercode.workers.dev/list/countries?format=select&flags=true&value=code"
         )
         .then((response) => response.json())
         .then((data) => {
-            setCountries(data.countries);
-            setSelectedCountry(data.userSelectValue);
+            setCountries(data.countries || []);
+            setSelectedCountry(data.userSelectValue || null);
         });
     }, []);
 
