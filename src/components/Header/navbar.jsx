@@ -50,7 +50,7 @@ const Navbar = () => {
           <NavMenu Menu="Partners" Route="/Partners" />
           <NavMenu Menu="AplusA" Route="/AplusA" />
           <NavMenu Menu="Career" Route="/Career" />
-          <NavMenu Menu="Contact" Route="/Contact" />
+          <NavMenu Menu="Contact" Route="/contact" />
         </ul>
 
       </nav>
