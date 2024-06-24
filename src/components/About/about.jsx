@@ -109,7 +109,7 @@ export default function About(){
                 >
                     <div className="photo_bg bg-main3 w-full xxxxxxl:h-[10vh] xlllll:h-[13vh]  lxl:h-[16vh] lgg:h-[22vh] xlx:h-[24vh] xll:h-[15.5vh] xxl:h-[18vh] xl:h-[24vh] mdm:h-[11.3vh] lg:h-[21vh] md:h-[15vh] smmm:h-[17.5vh] sssm:h-[18vh] mdd:h-[13vh] ssmm:h-[18.5vh] ssm:h-[16vh] p-4 lg:ml-[0.5vw] sssm:ml-[1.5vw] relative overflow-visible rounded-t-xl rounded-bl-xl about"></div>
                     
-                    <Image src="/Images/About/team.jpg" width={200} height={200} alt="about" className="absolute top-0 rounded-t-xl rounded-bl-xl"/>
+                    <Image src="/Images/About/business.jpg" width={200} height={200} alt="about" className="absolute top-0 rounded-t-xl rounded-bl-xl"/>
                 </motion.div>
             </div>
         </div>
