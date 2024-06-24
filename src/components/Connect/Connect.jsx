@@ -1,8 +1,11 @@
+/*Importing requried libraries and media*/
 import Image from "next/image";
+import Button from "../Button";
+import Link from "next/link";
 
 export default function Connect() {
     return (
-        <div className="mx-[7vw] xl:my-[10vh] mmd:my-[2vh] sssm:my-[5vh]  relative">
+        <div className="mx-[7vw] xl:-mt-20 xlllll:mt-20 mmd:my-[2vh] sssm:my-[5vh]  relative">
 
             <div className="relative">
                 <Image src="/Images/Connect/connect.jpg" width={800} height={500} alt="Connect" className="rounded-br-none rounded-tl-[2vw] rounded-bl-[5vw] rounded-tr-[5vw] w-[90vw] relative z-0" />
@@ -19,13 +22,16 @@ export default function Connect() {
                     READY TO CONNECT WITH OUR EXPERTS AND UNDERSTAND THE BENEFITS SAP WILL BRING TO YOUR BUSINESS?
                 </h1>
 
-                <button className="xlllll:scale-180 connect-btn bg-main3 xl:mt-[40vh] sssm:mt-[11vh] lg:mt-[35vh] mmd:mt-[18vh] mdm:mt-[15vh] md:mt-[18vh] rounded-tr-xl rounded-tl-xl rounded-bl-xl  flex mb-4 h-10 sssm:scale-50 md:scale-100 p-2 sssm:px-[-5px] md:px-10 mx-20 text-white justify-center text-center font-semibold hover:bg-white hover:text-main3 md:hover:scale-105 sssm:hover:scale-65">
-                    Read More
-                    <div className="scale-75 my-0 ml-3 cursor-pointer xlllll:scale-100 xlllll:mt-0.5 xl:scale-90 xl:mt-0.5">
-                        <Image src="/Images/Services/read-arrow.png" width={20} height={20} alt="read arrow" />
-                    </div>
-                    
-                </button>
+                <div className="xl:mt-[45vh] xl:ml-10 xlllll:mt-[35vh] xlllll:scale-160">
+                    <Link href="/Contact" legacyBehavior>
+                        <a>  
+                            <Button
+                                buttonText="Read More"
+                                bgColor="bg-main3"
+                            />
+                        </a>
+                    </Link>
+                </div>
 
             </div>
 

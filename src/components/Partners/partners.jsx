@@ -1,7 +1,8 @@
+/*Importing requried libraries and media*/
 import Image from "next/image";
 import {motion} from "framer-motion"
+
 export default function Partners(){
-    
     return(
         <div className="relative sssm:mt-[-10vh] smmm:mt-[-5vh] ssmm:mt-[-3vh] llg:mt-[7vh] mmd:mt-[8vh]">
 

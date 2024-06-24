@@ -2,16 +2,29 @@ import Image from "next/image";
 import Navbar from "../components/Header/navbar"
 import Footer from "../components/Footer/Footer"
 import Section from "../components/HomeSections";
+import PageHeader from "../components/PageHeader";
 import HiringProcess from "../components/Career/Hiring";
 import Requirements from "../components/Career/Requirements";
 import FeaturedJobs from "../components/Career/FeaturedJobs";
 import Benefits from "../components/Career/Benefits";
-import { motion } from "framer-motion";
+import SectionHeading from "../components/SectionHeading";
 import React, { useState } from 'react'
 import "../app/globals.css";
 
 
 export default function Career(){
+    const headings = [
+        {
+            spans: [
+                { text: 'Building experiences', color: 'main3', px: 0 },
+                { text: 'that are', color: 'main2', px: 1 },
+                { text: 'happier, engaging,', color: 'accent', px: 1 },
+                { text: 'and meaningful', color: 'main1', px: 1 },
+            ],
+        },
+    ];
+
+    //Hiring process round details
     const content = [
         {
           step: '01',
@@ -53,6 +66,7 @@ export default function Career(){
         },
       ];
     
+      //Handling next and previous buttons
       const [currentIndex, setCurrentIndex] = useState(0);
     
       const handleNext = () => {
@@ -66,48 +80,24 @@ export default function Career(){
 
     return(
         <div className="overflow-hidden">
-            <Navbar />
+            <Navbar />{/*Navbar*/}
        
             <div className="relative w-full">
-                <Image src="/Images/Career/bg-main.png" width={500} height={500} alt="career" className="w-full mt-5"/>
-                <div className="bg-main3 w-1/2 right-0 h-2 absolute sssm:top-[-1.5vw] md:top-[-1vw] lgg:top-[-0.5vw] llg:top-[-0.5vw] xl:top-[-0.5vw] xlllll:top-[-0.3vw]"></div>
+                {/*Page header with background image and text*/}
+                <PageHeader  
+                    image="/Images/Career/bg-main.png" 
+                    text="Employee First, Employee Always! Let’s Make Work Meaningful Together.
+                         We Are Building For Billions And hunting for the curious, the dedicated, and enterprising."
+                />
 
+                {/*Heading for the career page*/}
                 <Section>
-                    <div className="flex justify-center items-center absolute xl:top-[30vh] lgg:top-[20vh] md:top-[13vh] md:mx-20 lgg:mx-30 xlllll:mx-50 xl:mx-40 sssm:top-[7vh] sssm:mx-5">
-                        <h1 className="text-white roboto-medium xxxxxxl:text-[3.5rem] xlllll:text-[2.5rem] lxl:text-[2rem] xxl:text-[1.7rem] xl:text-[1.5rem] llg:text-[1.5rem] lgg:text-[1.4rem] mdd:text-[1.1rem] md:text-[1rem] sssm:text-[0.5rem] smmm:text-[0.57rem] ssm:text-[0.6rem]">
-                            Employee First, Employee Always! Let’s Make Work Meaningful Together. <br /> We Are Building For Billions And hunting for the curious, the dedicated, and enterprising.
-                        </h1>
+                    <div className="flex justify-center items-center text-center -mt-10 xl:-mt-[25vh]">
+                        <SectionHeading Title="CAREERS" headings={headings} />
                     </div>
                 </Section>
 
-                <Section>
-                    
-                    <p className="flex justify-center items-center sssm:-mt-10 text-black text-md font-semibold xllll:text-xl xlllll:text-[2rem] xl:mt-[-25vh] xll:mt-[-20vh] xxl:mt-[-20vh]  roboto-light text-nowrap">
-                        CAREERS
-                    </p>
-                    
-                    <h2 className="flex justify-center mx-60 items-center sssm:hidden lgg:block lg:text-[1.5rem] text-xl xllll:text-3xl xlllll:text-[2.5rem] xlllll:mt-5 xxl:mt-2 font-bold roboto-black">
-                        <span className="text-main3 px-0">Building experiences</span>
-                        <span className="text-main2 px-1">that are</span>
-                        <span className="text-accent px-1">happier, engaging,</span>
-                        <span className="text-main1">and meaningful</span>
-                    </h2>
-
-                    <h2 className="flex ml-[20vw] justify-center items-center sssm:block lgg:hidden sssm:text-sm font-bold roboto-black">
-                        <div>
-                            <span className="text-main3 px-0">Building experiences</span>
-                            <span className="text-main1 px-1">that are</span>
-                        </div>
-
-                        <div>
-                            <span className="text-main3 px-1">happier, engaging,</span>
-                            <span className="text-main1">and meaningful</span>
-                        </div>
-
-                    </h2>
-                  
-                </Section>
-
+                {/*Culture section*/}
                 <Section>
                     <h1 className="text-main3 roboto-light text-center justify-center items-center sssm:text-xl xl:text-[1.8rem] sssm:mt-10 xlllll:text-[2.2rem]">OUR CULTURE</h1>
                     <div className="sssm:block lgg:flex w-full sssm:mt-5 lgg:mt-0">
@@ -123,6 +113,7 @@ export default function Career(){
                     </div>
                 </Section>
 
+                {/*Principles section*/}
                 <Section>
                     <h1 className="text-main3 roboto-light text-center justify-center sssm:text-xl items-center xl:text-[1.8rem] xlllll:text-[2.2rem] sssm:mt-10">OUR PRINCIPLES</h1>
                     <div className="sssm:block lgg:flex w-full sssm:mt-5 lgg:mt-0">
@@ -146,10 +137,11 @@ export default function Career(){
                     </div>
                 </Section>
 
+                {/*Requirement/skills section*/}
                 <Section> <Requirements /> </Section>
 
+                {/*Hiring process section*/}
                 <Section>
-
                     <div className="text-black text-center lgg:mx-20 sssm:mx-10 my-10">
                         <h1 className="roboto-light text-[1.3rem] flex justify-center items-center xlllll:text-[2rem]">OUR HIRING PROCESS</h1>
 
@@ -160,16 +152,19 @@ export default function Career(){
                     </div>
 
                     <div className="w-full mt-20 mx-10">
+                        {/*Slider for small screens*/}
                         <div className="block lgg:hidden">
                             <div className="text-left">
-                            <HiringProcess {...content[currentIndex]} />
+                                <HiringProcess {...content[currentIndex]} />
                             </div>
+
                             <div className="flex justify-center space-x-4 mt-4">
-                            <Image src="/Images/Services/previous-arrow.png" width={20} height={20} alt="previous arrow" onClick={handlePrev} className="cursor-pointer" />
-                            <Image src="/Images/Services/next-arrow.png" width={20} height={20} alt="next arrow" onClick={handleNext} className="cursor-pointer" />
+                                <Image src="/Images/Services/previous-arrow.png" width={20} height={20} alt="previous arrow" onClick={handlePrev} className="cursor-pointer" />
+                                <Image src="/Images/Services/next-arrow.png" width={20} height={20} alt="next arrow" onClick={handleNext} className="cursor-pointer" />
                             </div>
                         </div>
 
+                        {/*Display all rounds in flex*/}
                         <div className="hidden lgg:flex justify-between mx-[10vw]">
                             {content.map((item, index) => (
                             <div key={index} className={`mt-${index % 2 === 0 ? 10 : 0}`}>
@@ -182,19 +177,20 @@ export default function Career(){
 
                 </Section>
 
+                {/*Featured jobs section*/}
                 <Section> <FeaturedJobs /> </Section>
 
+                {/*Employee benefits section*/}
                 <Section>
                     <h1 className="flex justify-center items-center text-gray-500 text-[1.5rem] xlllll:text-[2.5rem] my-4 xll:mt-[5vh] xl:mt-[15vh] xxl:mt-[5vh] xlllll:mt-[7vh]">EMPLOYEE BENEFITS</h1>
                     <Benefits />
                 </Section>
 
+                {/*Creating space between employee benefits and footer section*/}
                 <div className="xl:mt-[30vh] xll:mt-[20vh] xxl:mt-[20vh] sssm:mt-[20vh]"></div>
-
-
                 <br />
 
-                <Footer />
+                <Footer />{/*Footer*/}
 
             </div>
 

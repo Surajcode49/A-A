@@ -1,7 +1,38 @@
+/*Importing requried libraries and media*/
 import Image from "next/image";
+import SectionHeading from "../SectionHeading";
 import { delay, motion } from "framer-motion";
+import Button from "../Button";
 
 export default function Clients(){
+    const headings = [
+        {
+            spans: [
+                { text: 'They', color: 'main3', px: 0 },
+                { text: 'Trust', color: 'main2', px: 1 },
+                { text: 'Us', color: 'main1', px: 0 },
+                { text: 'And', color: 'accent', px: 1 },
+            ],
+        },
+        {
+            spans: [
+                { text: 'We', color: 'main3', px: 0 },
+                { text: 'Keep', color: 'main2', px: 1 },
+                { text: 'Giving', color: 'main1', px: 0 },
+                { text: 'Them', color: 'accent', px: 1 },
+            ],
+        },
+        {
+            spans: [
+                { text: 'Rea', color: 'main3', px: 0 },
+                { text: 'so', color: 'main2', px: 0 },
+                { text: 'ns', color: 'main1', px: 0 },
+                { text: 'Too', color: 'accent', px: 1 },
+            ],
+        },
+    ];
+
+
     /*Creating pop-up animation for each logo container*/
     const logoVariants = {
         hidden: { opacity: 0, y: 20 },
@@ -40,39 +71,19 @@ export default function Clients(){
 
             <div className="md:flex sssm:block xl:mx-20 mx-10 sssm:mx-0">
                 <div className="sssm:mx-5">
-                    {/*Heading for the clients section*/}
+                    
                     <div className="w-1/3 lg:mt-[20vh] md:mt-[10vh] xxl:mt-[15vh] xlllll:mt-[0vh]">
-                        <p className="text-black text-md font-semibold xllll:text-xl xlllll:text-[2rem] roboto-light text-nowrap">OUR HAPPY CLIENTS</p>
-
-                        <h2 className="lg:text-[1.5rem] text-xl xllll:text-3xl xlllll:text-[2.5rem] xlllll:mt-5 font-bold roboto-black">
-                            <span className="text-main3 pr-1">They</span>
-                            <span className="text-main2 pr-1">Trust</span>
-                            <span className="text-main1 pr-1">Us</span>
-                            <span className="text-accent">And</span>
-                        </h2>
-
-                        <h2 className="lg:text-[1.5rem] text-xl xllll:text-3xl xlllll:text-[2.5rem] xlllll:mt-5 font-bold roboto-black">
-                            <span className="text-main3 pr-1">We</span>
-                            <span className="text-main2 pr-1">Keep</span>
-                            <span className="text-main1 pr-1">Giving</span>
-                            <span className="text-accent">Them</span>
-                        </h2>
-
-                        <h2 className="lg:text-[1.5rem] text-xl xllll:text-3xl xlllll:text-[2.5rem] xlllll:mt-5 font-bold roboto-black">
-                            <span className="text-main3 px-0">Rea</span>
-                            <span className="text-main2 px-0">so</span>
-                            <span className="text-main1 px-0">ns</span>
-                            <span className="text-accent px-1">Too</span>
-                        </h2>
-
+                        {/*Heading for the about section*/}
+                        <SectionHeading Title="OUR HAPPY CLIENTS" headings={headings} />
                     </div>
 
-                    <button className="bg-main1 rounded-tr-xl ml-[0vw] md:my-16 sssm:my-4 rounded-tl-xl rounded-bl-xl w-5/6 flex mb-4 h-10  p-2 mx-20 text-white justify-center text-center font-semibold hover:bg-white hover:text-main3 hover:border-main3 border-2 border-white hover:scale-105">
-                        View All
-                        <div className="scale-75 my-0 ml-3 cursor-pointer xlllll:scale-100 xlllll:mt-0.5 xl:scale-90 xl:mt-0.5">
-                            <Image src="/Images/Services/read-arrow.png" width={20} height={20} alt="read arrow" />
-                        </div>
-                    </button>
+                    <div className="mt-20">
+                        <Button
+                            buttonText="View All"
+                            bgColor="bg-main1"
+                            className="hover:border-main1 border-2 border-white"
+                        />
+                    </div>
 
                 </div>
 

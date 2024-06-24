@@ -1,15 +1,16 @@
-import { useState } from "react";
+/*Importing requried libraries and media*/
 import Image from "next/image";
+import Link from "next/link";
+import FooterMenus from "./FooterMenus";
 import { motion } from 'framer-motion';
 import Location from "../../../public/Images/Footer/Location.webp";
 import Email from "../../../public/Images/Footer/Mail.webp";
 import logo from "../../../public/Images/Header/logo.png";
-import { FaFacebookF, FaTwitter, FaLinkedin, FaInstagram, FaLocationArrow, FaMailBulk, FaCopyright } from "react-icons/fa";
+import MediaIcons from "./MediaIcons";
+import { FaFacebookF, FaTwitter, FaLinkedin, FaInstagram, FaCopyright } from "react-icons/fa";
 
 export default function Footer() {
-    const [isHovered, setIsHovered] = useState(false);
-
-    const variants = {
+    const variants = { //Animation effect for footer columns
         hidden: direction => ({
             opacity: 0,
             x: direction === 'left' ? -100 : direction === 'right' ? 100 : 0,
@@ -26,6 +27,8 @@ export default function Footer() {
     return (
         <footer className="footer relative mt-[10vh] md:mt-[0vh] bg-[url('/Images/Footer/footer_bg.png')] bg-auto bg-no-repeat bg-center">
             <div className="container mx-auto flex text-center flex-wrap md:flex-nowrap justify-center items-center pt-10 pb-10">
+                
+                {/*Slide in effect for 1st column from left side*/}
                 <motion.div 
                     className="w-full md:w-1/4 mb-6 md:mb-0"
                     initial="hidden"
@@ -33,50 +36,24 @@ export default function Footer() {
                     custom="left"
                     variants={variants}
                 >
-                    <div 
-                        className="mb-4 transform transition-transform duration-500 ease-in-out cursor-pointer"
-                        style={{ transform: isHovered ? 'rotateY(20deg)' : 'rotateY(0deg)' }} 
-                        onMouseEnter={() => setIsHovered(true)}
-                        onMouseLeave={() => setIsHovered(false)}
-                    >
-                        <Image src={logo} width={250} height={150} alt="logo" />
-                    </div>
+                    {/*Clickable logo to navigate to home page*/}
+                    <motion.div whileHover={{ scale: 1.2 }} className="cursor-pointer">
+                        <Link href="/" legacyBehavior>
+                            <a> <Image src={logo} width={250} height={150} className="mx-2" alt="Logo" /> </a>
+                        </Link>
+                    </motion.div>
+                    
+                     {/*Social media icons*/}
                     <div className="flex justify-center space-x-3 mx-9 mt-10">
-                        <motion.a
-                            href="#"
-                            className="p-2 bg-gradient-to-r from-main3 to-accent hover:bg-black text-white rounded-full"
-                            whileHover={{ rotate: 360 }}
-                            transition={{ duration: 0.5 }}
-                        >
-                            <FaFacebookF size={24} />
-                        </motion.a>
-                        <motion.a
-                            href="#"
-                            className="p-2 bg-gradient-to-r from-main3 to-accent hover:bg-black text-white rounded-full"
-                            whileHover={{ rotate: 360 }}
-                            transition={{ duration: 0.5 }}
-                        >
-                            <FaTwitter size={24} />
-                        </motion.a>
-                        <motion.a
-                            href="#"
-                            className="p-2 bg-gradient-to-r from-main3 to-accent hover:bg-black text-white rounded-full"
-                            whileHover={{ rotate: 360 }}
-                            transition={{ duration: 0.5 }}
-                        >
-                            <FaLinkedin size={24} />
-                        </motion.a>
-                        <motion.a
-                            href="#"
-                            className="p-2 bg-gradient-to-r from-main3 to-accent hover:bg-black text-white rounded-full"
-                            whileHover={{ rotate: 360 }}
-                            transition={{ duration: 0.5 }}
-                        >
-                            <FaInstagram size={24} />
-                        </motion.a>
+                        <MediaIcons IconComponent={FaFacebookF} href="https://www.facebook.com"/>
+                        <MediaIcons IconComponent={FaTwitter} href="https://www.twitter.com"/>
+                        <MediaIcons IconComponent={FaInstagram} href="https://www.instagram.com"/>
+                        <MediaIcons IconComponent={FaLinkedin} href="https://www.linkedin.com"/>
                     </div>
+
                 </motion.div>
 
+                {/*Slide in effect for 2nd column from top*/}
                 <motion.div 
                     className="w-full md:w-1/4 mb-6 md:mb-0"
                     initial="hidden"
@@ -85,25 +62,18 @@ export default function Footer() {
                     variants={variants}
                 >
                     <h3 className="text-black font-bold text-lg mb-4 roboto-light">COMPANY</h3>
+                    
                     <ul>
-                        <motion.li className="mb-2" whileHover={{ scale: 1.1 }}>
-                            <a href="#" className="text-accent roboto-medium hover:text-[#8D8B87]">Home</a>
-                        </motion.li>
-                        <motion.li className="mb-2" whileHover={{ scale: 1.1 }}>
-                            <a href="#" className="text-accent roboto-medium hover:text-[#8D8B87]">About Us</a>
-                        </motion.li>
-                        <motion.li className="mb-2" whileHover={{ scale: 1.1 }}>
-                            <a href="#" className="text-accent roboto-medium hover:text-[#8D8B87]">Services</a>
-                        </motion.li>
-                        <motion.li className="mb-2" whileHover={{ scale: 1.1 }}>
-                            <a href="#" className="text-accent roboto-medium hover:text-[#8D8B87]">Careers</a>
-                        </motion.li>
-                        <motion.li className="mb-2" whileHover={{ scale: 1.1 }}>
-                            <a href="#" className="text-accent roboto-medium hover:text-[#8D8B87]">Contact Us</a>
-                        </motion.li>
+                        <FooterMenus Menu="Home" Route="/"/>
+                        <FooterMenus Menu="About Us" Route="/AplusA"/>
+                        <FooterMenus Menu="Services" Route="/Services"/>
+                        <FooterMenus Menu="Careers" Route="/Career"/>
+                        <FooterMenus Menu="Contact Us" Route="/Contact"/>
                     </ul>
+
                 </motion.div>
 
+                {/*Fade in effect for 3rd column*/}
                 <motion.div 
                     className="w-full md:w-1/4 mb-6 md:mb-0"
                     initial={{ opacity: 0 }}
@@ -111,25 +81,18 @@ export default function Footer() {
                     transition={{ duration: 0.5, ease: 'easeInOut' }}
                 >
                     <h3 className="text-black font-bold text-lg mb-4 roboto-light">SERVICES</h3>
+                    
                     <ul>
-                        <motion.li className="mb-2" whileHover={{ scale: 1.1 }}>
-                            <a href="#" className="text-accent roboto-medium hover:text-[#8D8B87]">SAP</a>
-                        </motion.li>
-                        <motion.li className="mb-2" whileHover={{ scale: 1.1 }}>
-                            <a href="#" className="text-accent roboto-medium hover:text-[#8D8B87]">Rise with SAP</a>
-                        </motion.li>
-                        <motion.li className="mb-2" whileHover={{ scale: 1.1 }}>
-                            <a href="#" className="text-accent roboto-medium hover:text-[#8D8B87]">Analytics</a>
-                        </motion.li>
-                        <motion.li className="mb-2" whileHover={{ scale: 1.1 }}>
-                            <a href="#" className="text-accent roboto-medium hover:text-[#8D8B87]">Cloud Migration</a>
-                        </motion.li>
-                        <motion.li className="mb-2" whileHover={{ scale: 1.1 }}>
-                            <a href="#" className="text-accent roboto-medium hover:text-[#8D8B87]">Integration</a>
-                        </motion.li>
+                        <FooterMenus Menu="SAP" Route="/Services"/>
+                        <FooterMenus Menu="Rise with SAP" Route="/Services"/>
+                        <FooterMenus Menu="Analytics" Route="/Services"/>
+                        <FooterMenus Menu="Cloud Migration" Route="/Services"/>
+                        <FooterMenus Menu="Integration" Route="/Services"/>
                     </ul>
+
                 </motion.div>
 
+                {/*Slide in effect for 4th column from bottom*/}
                 <motion.div 
                     className="w-full md:w-1/4 mb-6 md:mb-0"
                     initial="hidden"
@@ -138,25 +101,18 @@ export default function Footer() {
                     variants={variants}
                 >
                     <h3 className="text-black font-bold text-lg mb-4 roboto-light">INDUSTRIES</h3>
+                    
                     <ul>
-                        <motion.li className="mb-2" whileHover={{ scale: 1.1 }}>
-                            <a href="#" className="text-accent roboto-medium hover:text-[#8D8B87]">Agribusiness</a>
-                        </motion.li>
-                        <motion.li className="mb-2" whileHover={{ scale: 1.1 }}>
-                            <a href="#" className="text-accent roboto-medium hover:text-[#8D8B87]">Pharma</a>
-                        </motion.li>
-                        <motion.li className="mb-2" whileHover={{ scale: 1.1 }}>
-                            <a href="#" className="text-accent roboto-medium hover:text-[#8D8B87]">Logistics</a>
-                        </motion.li>
-                        <motion.li className="mb-2" whileHover={{ scale: 1.1 }}>
-                            <a href="#" className="text-accent roboto-medium hover:text-[#8D8B87]">Utilities</a>
-                        </motion.li>
-                        <motion.li className="mb-2" whileHover={{ scale: 1.1 }}>
-                            <a href="#" className="text-accent roboto-medium hover:text-[#8D8B87]">Manufacturing</a>
-                        </motion.li>
+                        <FooterMenus Menu="Agribusiness" Route="/Industries"/>
+                        <FooterMenus Menu="Pharma" Route="/Industries"/>
+                        <FooterMenus Menu="Logistics" Route="/Industries"/>
+                        <FooterMenus Menu="Utilities" Route="/Industries"/>
+                        <FooterMenus Menu="Manufacturing" Route="/Industries"/>
                     </ul>
+
                 </motion.div>
 
+                {/*Slide in effect for 5th column from right*/}
                 <motion.div 
                     className="w-full md:w-1/4 mb-6 md:mb-0"
                     initial="hidden"
@@ -165,6 +121,7 @@ export default function Footer() {
                     variants={variants}
                 >
                     <h3 className="text-black roboto-light text-lg mb-4">CONTACT US</h3>
+
                     <Image src={Location} width={20} height={20} alt="Location" className="mx-40"/>
                     <motion.p className="text-accent mb-4 text-sm roboto-medium hover:text-[#8D8B87] cursor-pointer" whileHover={{ scale: 1.1 }}>
                         11th Floor, Dallas Center, Knowledge City, Survey No 83/1, Plot No A1, Hitech City Main Road, Hyderabad - 500032, Telangana, India.
@@ -174,9 +131,12 @@ export default function Footer() {
                     <motion.p className="text-accent mb-4 text-sm roboto-medium hover:text-[#8D8B87]" whileHover={{ scale: 1.1 }}>
                         <a href="mailto:getintouch@aplusatech.com">getintouch@aplusatech.com</a>
                     </motion.p>
+
                 </motion.div>
+
             </div>
 
+            {/*Copyright*/}
             <hr className="border-[1.3px] border-black w-full"/>
             <p className="text-center my-8 flex justify-center items-center text-nowrap text-xs md:text-lg">
                 <FaCopyright size={20} className="px-1"/>
@@ -184,6 +144,7 @@ export default function Footer() {
                 <span className="text-accent roboto-medium px-1">AplusA Technologies Pvt. Ltd.</span>
                 All Rights Reserved
             </p>
+
         </footer>
     );
 }

@@ -1,25 +1,37 @@
+/*Imorting requried components for contact page*/
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import Navbar from "../components/Header/navbar"
-import Footer from "../components/Footer/Footer"
+import Navbar from "../components/Header/navbar";
+import SectionHeading from "../components/SectionHeading";
+import Footer from "../components/Footer/Footer";
+import PageHeader from "../components/PageHeader";
 import Select from "react-select";
 import Section from "../components/HomeSections";
 import { Tilt } from 'react-next-tilt';
+import Button from "../components/Button";
 import "../app/globals.css";
 
 export default function Contact() {
+    const headings = [
+        {
+            spans: [
+                { text: 'We', color: 'main3', px: 0 },
+                { text: 'are', color: 'main3', px: 1 },
+                { text: 'happy', color: 'main2', px: 1 },
+                { text: 'to', color: 'main2', px: 1 },
+                { text: 'hear', color: 'accent', px: 1 },
+                { text: 'from', color: 'accent', px: 1 },
+                { text: 'you!', color: 'accent', px: 0 },
+            ],
+        },
+        
+    ];
+
+    //Selecting countries from list of options
     const [countries, setCountries] = useState([]);
     const [selectedCountry, setSelectedCountry] = useState({});
-    const [selectedService, setSelectedService] = useState(null);
 
-    const services = [
-        { value: 'sap', label: 'SAP' },
-        { value: 'rise_with_sap', label: 'Rise with SAP' },
-        { value: 'cloud_migration', label: 'Cloud Migration' },
-        { value: 'analytics', label: 'Analytics' },
-        { value: 'integration', label: 'Integration' },
-    ];
-    
+    //Fetching country list
     useEffect(() => {
         fetch(
         "https://valid.layercode.workers.dev/list/countries?format=select&flags=true&value=code"
@@ -31,6 +43,18 @@ export default function Contact() {
         });
     }, []);
 
+    //Selecting service type from service drop-down menu
+    const [selectedService, setSelectedService] = useState(null);
+
+    const services = [
+        { value: 'sap', label: 'SAP' },
+        { value: 'rise_with_sap', label: 'Rise with SAP' },
+        { value: 'cloud_migration', label: 'Cloud Migration' },
+        { value: 'analytics', label: 'Analytics' },
+        { value: 'integration', label: 'Integration' },
+    ];
+
+    //Custom form styles
     const customStyles = {
         control: (provided, state) => ({
             ...provided,
@@ -52,87 +76,76 @@ export default function Contact() {
 
     return (
         <div>
-            <Navbar />
+            <Navbar /> {/*Navbar*/}
        
-        <div className="relative w-full ">
-            <Image src="/Images/Connect/contact_bg.png" width={500} height={500} alt="contact" className="w-full mt-10"/>
-            <div className="bg-main3 w-1/2 right-0 h-2 absolute sssm:top-[-1.5vw] md:top-[-1vw] lgg:top-[-0.5vw] llg:top-[-0.5vw] xl:top-[-0.5vw] xlllll:top-[-0.3vw]"></div>
-            
-            <Section>
-                <div className="flex justify-center items-center absolute xl:top-[30vh] lgg:top-[20vh] md:top-[13vh] md:mx-20 lgg:mx-30 xlllll:mx-50 xl:mx-40 sssm:top-[7vh] sssm:mx-5">
-                    <h1 className="text-white roboto-medium xxxxxxl:text-[3.5rem] xlllll:text-[2.5rem] lxl:text-[2rem] xxl:text-[1.7rem] xl:text-[1.5rem] llg:text-[1.5rem] lgg:text-[1.4rem] mdd:text-[1.1rem] md:text-[1rem] sssm:text-[0.5rem] smmm:text-[0.57rem] ssm:text-[0.6rem]">
-                        We are happy you have taken the first step. Let&apos;s get started and discuss how we can 
-                        drive digital outcomes for your business. <br />
-                        We are processing your message and our consultants shall reach out to you in 48 working hours.
-                    </h1>
-                </div>
-            </Section>
+            <div className="relative w-full ">
+                {/*Page header with background image and text*/}
+                <PageHeader  
+                    image="/Images/Connect/contact_bg.png" 
+                    text="We are happy you have taken the first step. Let&apos;s get started and discuss how we can 
+                        drive digital outcomes for your business.
+                        We are processing your message and our consultants shall reach out to you in 48 working hours."
+                />
 
-            <Section>
-                <p className="flex justify-center items-center sssm:mt-5 text-black text-md font-semibold xllll:text-xl xlllll:text-[2rem] xl:mt-10 roboto-light text-nowrap">
-                    CONTACT US
-                </p>
+                <Section>
+                    {/*Heading for the contact page*/}
+                    <div className="flex justify-center items-center text-center mt-10">
+                        <SectionHeading Title="CONTACT US" headings={headings} />
+                    </div>
                 
-                <h2 className="flex justify-center items-center lg:text-[1.5rem] text-xl xllll:text-3xl xlllll:text-[2.5rem] xlllll:mt-5 font-bold roboto-black">
-                    <span className="text-main3 px-0">We</span>
-                    <span className="text-main3 px-1">are</span>
-                    <span className="text-main2 px-1">happy</span>
-                    <span className="text-main2 px-1">to</span>
-                    <span className="text-accent px-1">hear</span>
-                    <span className="text-accent px-1">from</span>
-                    <span className="text-accent px-1">you!</span>
-                </h2>
+                    {/*Contact form input*/}
+                    <form className="w-3/4 mx-auto ">
 
-                <form className="w-3/4 mx-auto ">
+                        <div className="md:flex block md:space-x-10 space-x-0 my-8">
+                            <input className="border-b border-gray-600 hover:border-main3 w-full mt-1 outline-none placeholder-gray-400" type="text" placeholder="Full Name *" id="full-name" name="full-name"/>
+                            <Select
+                                options={countries}
+                                styles={customStyles}
+                                value={selectedCountry}
+                                onChange={(selectedOption) => setSelectedCountry(selectedOption)}
+                                className="border-b border-gray-600 hover:border-main3 w-full md:mt-1 mt-5 outline-none placeholder-gray-400"
+                                placeholder="Country" 
+                                id="country"
+                                name="country"
+                            />
+                        </div>
 
-                    <div className="md:flex block md:space-x-10 space-x-0 my-8">
-                        <input className="border-b border-gray-600 hover:border-main3 w-full mt-1 outline-none placeholder-gray-400" type="text" placeholder="Full Name *" id="full-name" name="full-name"/>
-                        <Select
-                            options={countries}
-                            styles={customStyles}
-                            value={selectedCountry}
-                            onChange={(selectedOption) => setSelectedCountry(selectedOption)}
-                            className="border-b border-gray-600 hover:border-main3 w-full md:mt-1 mt-5 outline-none placeholder-gray-400"
-                            placeholder="Country" 
-                            id="country"
-                            name="country"
-                        />
-                    </div>
+                        <div className="md:flex block md:space-x-10 space-x-0 my-8">
+                            <input className="border-b border-gray-600 hover:border-main3 w-full mt-1 outline-none placeholder-gray-400" type="email" placeholder="Email Id *" id="email" name="email"/>
+                            <Select
+                                options={services}
+                                styles={customStyles}
+                                value={selectedService}
+                                onChange={(selectedOption) => setSelectedService(selectedOption)}
+                                className="border-b border-gray-600 hover:border-main3 w-full md:mt-1 mt-5 outline-none placeholder-gray-400"
+                                placeholder="Services" id="country" name="country"
+                            />
+                        </div>
 
-                    <div className="md:flex block md:space-x-10 space-x-0 my-8">
-                        <input className="border-b border-gray-600 hover:border-main3 w-full mt-1 outline-none placeholder-gray-400" type="email" placeholder="Email Id *" id="email" name="email"/>
-                        <Select
-                            options={services}
-                            styles={customStyles}
-                            value={selectedService}
-                            onChange={(selectedOption) => setSelectedService(selectedOption)}
-                            className="border-b border-gray-600 hover:border-main3 w-full md:mt-1 mt-5 outline-none placeholder-gray-400"
-                            placeholder="Services" id="country" name="country"
-                        />
-                    </div>
+                        <div className="md:flex block md:space-x-10 space-x-0 my-8">
+                            <input className="border-b border-gray-600 hover:border-main3 w-full mt-1 outline-none placeholder-gray-400" type="text" placeholder="Contact Number" id="contact-no" name="contact-no"/>
+                            <input className="border-b border-gray-600 hover:border-main3 w-full md:mt-1 mt-8 outline-none placeholder-gray-400" type="text" placeholder="Organization/Institute *" id="organization" name="organization"/>
+                        </div>
 
-                    <div className="md:flex block md:space-x-10 space-x-0 my-8">
-                        <input className="border-b border-gray-600 hover:border-main3 w-full mt-1 outline-none placeholder-gray-400" type="text" placeholder="Contact Number" id="contact-no" name="contact-no"/>
-                        <input className="border-b border-gray-600 hover:border-main3 w-full md:mt-1 mt-8 outline-none placeholder-gray-400" type="text" placeholder="Organization/Institute *" id="organization" name="organization"/>
-                    </div>
+                        <input className="border-b border-gray-600 hover:border-main3 w-full mt-1 outline-none placeholder-gray-400" type="text" placeholder="How can we help you? *" id="help" name="help"/>
 
-                    <input className="border-b border-gray-600 hover:border-main3 w-full mt-1 outline-none placeholder-gray-400" type="text" placeholder="How can we help you? *" id="help" name="help"/>
-
-                    
-                    <div className="flex justify-center items-center">
-                        <button type="submit" className="bg-main1 mt-[5vh] rounded-tr-xl rounded-tl-xl rounded-bl-xl flex md:w-1/5 w-1/2 hover:border-main3 border-2 border-white ml-[0vw] mb-4 h-10 p-2 mx-20 text-white justify-center text-center font-semibold hover:bg-white hover:text-main3 hover:scale-105">
-                            Submit
-                            <div className="scale-75 my-0 ml-3 cursor-pointer xlllll:scale-100 xlllll:mt-0.5 xl:scale-90 xl:mt-0.5">
-                                <Image src="/Images/Services/read-arrow.png" width={20} height={20} alt="read arrow" />
+                        <div className="flex justify-center items-center">
+                            <div className="mt-5 -ml-3">
+                                <Button
+                                    buttonText="Submit"
+                                    bgColor="bg-main3"
+                                    className="hover:border-main3 border-2 border-white"
+                                />
                             </div>
-                        </button>
-                    </div>
+                        </div>
 
                     </form>
                 </Section>
 
+                {/*Gradient line 1*/}
                 <div className="bg-gradient-to-r from-main3 to-accent mb-8 rounded-l-none rounded-lg w-1/3  h-3"></div>
 
+                {/*Animated contact section*/}
                 <Section>
                     <div className="w-full sssm:h-20 lgg:h-40 cursor-pointer xl:h-40 xxxxxxl:h-60  flex justify-between xl:px-60 md:px-10 lg:px-40 sssm:px-2 items-center bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-main3 from-10% to-main1 to-100%">
                         <Tilt> <Image src="/Images/Footer/Mail.webp" width={200} height={200} alt="email" className="z-10 xxxxxxl:scale-150 xl:scale-100 lgg:scale-90 lg:scale-70 md:scale-50 sssm:scale-35"/> </Tilt>
@@ -145,12 +158,13 @@ export default function Contact() {
                         11th Floor, Dallas Center, Knowledge City, Survey No 83/1, Plot No A1, Hitech City Main Road, Hyderabad - 500032, Telangana, India.</p>
                     </div>
                 </Section>
-                
+
+                {/*Gradient line 2*/}
                 <div className="bg-gradient-to-r from-main3 to-accent  mb-8 rounded-l-none rounded-lg w-1/3 mt-8 float-right rotate-180 h-3"></div>
 
-        </div>
-        <Footer />
-        <br />
+            </div>
+            <Footer /> {/*Footer*/}
+            <br />
         </div>
     );
 }

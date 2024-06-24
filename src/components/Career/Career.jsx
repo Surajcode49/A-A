@@ -1,9 +1,48 @@
+/*Importing requried libraries and media*/
 import Image from "next/image";
 import Select from "react-select";
+import SectionHeading from "../SectionHeading";
 import { useState } from "react";
-import { delay, motion } from "framer-motion";
+import Button from "../Button";
+import Link from "next/link";
 
-export default function Clients() {
+export default function Career() {
+    const headings = [
+        {
+            spans: [
+                { text: 'Build', color: 'main3', px: 0 },
+                { text: 'ing', color: 'main2', pr: 1 },
+                { text: 'exper', color: 'main1', px: 0 },
+                { text: 'iences', color: 'accent', px: 0 },
+            ],
+        },
+        {
+            spans: [
+                { text: 'that', color: 'main3', px: 0 },
+                { text: 'are', color: 'main2', px: 1 },
+                { text: 'happ', color: 'main1', px: 0 },
+                { text: 'ier', color: 'accent', px: 0 },
+            ],
+        },
+        {
+            spans: [
+                { text: 'engag', color: 'main3', px: 0 },
+                { text: 'ing,', color: 'main2', pr: 1 },
+                { text: 'an', color: 'main1', px: 0},
+                { text: 'd', color: 'accent', px: 0 },
+            ],
+        },
+        {
+            spans: [
+                { text: 'mean', color: 'main3', px: 0 },
+                { text: 'ing,', color: 'main2', pr: 1},
+                { text: 'fu', color: 'main1', px: 0 },
+                { text: 'l', color: 'accent', px: 0 },
+            ],
+        },
+    ];
+
+    /*For selecting different job positions in career input form */
     const [selectedPosition, setSelectedPosition] = useState(null);
 
     const positions = [
@@ -14,6 +53,7 @@ export default function Clients() {
         { value: 'Big Data Engineer', label: 'Big Data Engineer' },
     ];
 
+    /*Custom styles for the form */
     const customStyles = {
         control: (provided, state) => ({
             ...provided,
@@ -35,42 +75,24 @@ export default function Clients() {
     return (
         <div className="lg:mt-[5vh] xlllll:mt-[10vh] xl:mt-[10vh] md:mt-[-7vh] sssm:mt-[-7vh] justify-between items-center relative lg:mx-20 sssm:mx-10">
             <div className="flex flex-col lg:flex-row md:mx-10 mx-1">
-                {/* Heading for the clients section */}
                 <div className="w-full lg:w-1/3 mt-[10vh] xlllll:mt-2">
-                    <p className="text-black text-md font-semibold xllll:text-xl xlllll:text-[2rem] roboto-light text-nowrap">CAREERS</p>
-                    <h2 className="lg:text-[1.5rem] text-xl xllll:text-3xl xlllll:text-[2.5rem] xlllll:mt-5 font-bold roboto-black">
-                        <span className="text-main3 px-0">Build</span>
-                        <span className="text-main2 pr-1">ing</span>
-                        <span className="text-main1 px-0">exper</span>
-                        <span className="text-accent">iences</span>
-                    </h2>
-                    <h2 className="lg:text-[1.5rem] text-xl xllll:text-3xl xlllll:text-[2.5rem] xlllll:mt-5 font-bold roboto-black">
-                        <span className="text-main3 pr-1">that</span>
-                        <span className="text-main2 px-1">are</span>
-                        <span className="text-main1 px-0">happ</span>
-                        <span className="text-accent">ier</span>
-                    </h2>
-                    <h2 className="lg:text-[1.5rem] text-xl xllll:text-3xl xlllll:text-[2.5rem] xlllll:mt-5 font-bold roboto-black">
-                        <span className="text-main3 px-0">engag</span>
-                        <span className="text-main2 pr-1">ing,</span>
-                        <span className="text-main1 px-0">an</span>
-                        <span className="text-accent px-0">d</span>
-                    </h2>
-                    <h2 className="lg:text-[1.5rem] text-xl xllll:text-3xl xlllll:text-[2.5rem] xlllll:mt-5 font-bold roboto-black">
-                        <span className="text-main3 px-0">mean</span>
-                        <span className="text-main2 px-0">ing</span>
-                        <span className="text-main1 px-0">fu</span>
-                        <span className="text-accent px-0">l</span>
-                    </h2>
+                    {/*Heading for the career section*/}
+                    <SectionHeading Title="CAREERS" headings={headings} />
 
-                    <button className="bg-main1 rounded-tr-xl ml-[0vw] my-4 xlllll:max-w-[10vw] rounded-tl-xl rounded-bl-xl lg:w-[15vw] md:w-[30vw] sssm:w-[50vw] flex mb-4 h-10 p-2 mx-20 text-white justify-center text-center font-semibold hover:bg-white hover:text-main3 hover:border-main3 border-2 border-white hover:scale-105">
-                        View All
-                        <div className="scale-75 my-0 ml-3 cursor-pointer xlllll:scale-100 xlllll:mt-0.5 xl:scale-90 xl:mt-0.5">
-                            <Image src="/Images/Services/read-arrow.png" width={20} height={20} alt="read arrow" />
-                        </div>
-                    </button>
+                    <div className="mt-5 -ml-5">
+                        <Link href="/Career" legacyBehavior>
+                            <a>  
+                                <Button
+                                   buttonText="View All"
+                                   bgColor="bg-main1"
+                                   className="hover:border-main1 border-2 border-white"
+                                />
+                            </a>
+                        </Link>
+                    </div>
                 </div>
 
+                {/*Career input form*/}
                 <form className="w-full">
 
                     <div className="md:flex block md:space-x-10 space-x-0 my-8">
@@ -110,13 +132,13 @@ export default function Clients() {
                         </div>
                     </div>
 
-                    <button className="bg-main3 mt-[5vh] rounded-tr-xl rounded-tl-xl rounded-bl-xl flex md:w-1/4 w-1/2 hover:border-main3 border-2 border-white ml-[0vw] mb-4 h-10 p-2 mx-20 text-white justify-center text-center font-semibold hover:bg-white hover:text-main3 hover:scale-105">
-                        Submit
-                        <div className="scale-75 my-0 ml-3 cursor-pointer xlllll:scale-100 xlllll:mt-0.5 xl:scale-90 xl:mt-0.5">
-                            <Image src="/Images/Services/read-arrow.png" width={20} height={20} alt="read arrow" />
-                        </div>
-                    </button>
-
+                    <div className="mt-5 -ml-3">
+                        <Button
+                            buttonText="Submit"
+                            bgColor="bg-main3"
+                            className="hover:border-main3 border-2 border-white"
+                        />
+                    </div>
                 </form>
             </div>
         </div>
