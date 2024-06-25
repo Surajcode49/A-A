@@ -1,7 +1,7 @@
 /*Importing requried libraries and media*/
 import Select from "react-select";
 import SectionHeading from "../SectionHeading";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Button from "../Button";
 import Link from "next/link";
 
@@ -43,6 +43,12 @@ export default function Career() {
 
     /*For selecting different job positions in career input form */
     const [selectedPosition, setSelectedPosition] = useState(null);
+
+    const [menuPortalTarget, setMenuPortalTarget] = useState(null);
+
+    useEffect(() => {
+        setMenuPortalTarget(document.body);
+    }, []);
 
     const positions = [
         { value: 'Software Engineer', label: 'Software Engineer' },
@@ -124,7 +130,7 @@ export default function Career() {
                             placeholder="Postion Applied For" 
                             id="position"
                             name="position"
-                            menuPortalTarget={document.body}
+                            menuPortalTarget={menuPortalTarget}
                         />
                         <div className="border-b border-gray-600 hover:border-main3 w-full md:mt-1 mt-5 outline-none placeholder-gray-400">
                             <div className="flex justify-between">
