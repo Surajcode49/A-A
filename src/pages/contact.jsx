@@ -81,7 +81,7 @@ export default function Contact() {
             <div className="relative w-full ">
                 {/*Page header with background image and text*/}
                 <PageHeader  
-                    image="/Images/Connect/Contact-US-01.webp" 
+                    image="/Images/Connect/Contact_US.webp" 
                     text="We are happy you have taken the first step. Let&apos;s get started and discuss how we can 
                         drive digital outcomes for your business.
                         We are processing your message and our consultants shall reach out to you in 48 working hours."

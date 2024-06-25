@@ -4,6 +4,7 @@ import Image from "next/image";
 import JobCard from './JobCard';
 import Button from '../Button';
 import ApplyJob from './ApplyJob';
+import { Tilt } from 'react-next-tilt';
 
 export default function FeaturedJobs() {
     //Job card details
@@ -85,7 +86,7 @@ export default function FeaturedJobs() {
 
                 {/*Featured job slider for small screens*/}
                 <div className="w-full mt-5 mx-0 sssm:block lgg:hidden">
-                    
+                    <Tilt>
                     <div className="text-center bg-gradient-to-r from-main3 to-main1 h-[400px] sssm:max-w-[400px] lxl:h-[500px] xlllll:h-[530px]">
                         <Image src={jobs[currentIndex].imgSrc} width={200} height={200} alt="jobs" className="mx-auto w-5/6 pt-8 pb-2 rounded-md" />
                         
@@ -98,7 +99,8 @@ export default function FeaturedJobs() {
                             <p className="text-white underline ml-20">View All Positions</p>
                         </div>
                     </div>
-
+                    </Tilt>
+                    
                     <div className="flex justify-center space-x-4 mt-4">
                         <Image src="/Images/Services/previous-arrow.png" width={20} height={20} alt="previous arrow" onClick={handlePrev} className="cursor-pointer" />
                         <Image src="/Images/Services/next-arrow.png" width={20} height={20} alt="next arrow" onClick={handleNext} className="cursor-pointer" />

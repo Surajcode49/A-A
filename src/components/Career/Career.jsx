@@ -1,5 +1,4 @@
 /*Importing requried libraries and media*/
-import Image from "next/image";
 import Select from "react-select";
 import SectionHeading from "../SectionHeading";
 import { useState } from "react";
@@ -35,7 +34,7 @@ export default function Career() {
         {
             spans: [
                 { text: 'mean', color: 'main3', px: 0 },
-                { text: 'ing,', color: 'main2', pr: 1},
+                { text: 'ing', color: 'main2', pr: 1},
                 { text: 'fu', color: 'main1', px: 0 },
                 { text: 'l', color: 'accent', px: 0 },
             ],
@@ -64,6 +63,11 @@ export default function Career() {
             ...provided,
             border: 'none',
             boxShadow: 'none',
+            zIndex: 9999,
+        }),
+        menuPortal: (base) => ({
+            ...base,
+            zIndex: 9999,
         }),
         placeholder: (provided) => ({
             ...provided,
@@ -113,7 +117,6 @@ export default function Career() {
                     <div className="md:flex block md:space-x-10 space-x-0 my-8">
                         <Select
                             options={positions}
-                          
                             styles={customStyles}
                             value={selectedPosition}
                             onChange={(selectedOption) => setSelectedPosition(selectedOption)}
@@ -121,6 +124,7 @@ export default function Career() {
                             placeholder="Postion Applied For" 
                             id="position"
                             name="position"
+                            menuPortalTarget={document.body}
                         />
                         <div className="border-b border-gray-600 hover:border-main3 w-full md:mt-1 mt-5 outline-none placeholder-gray-400">
                             <div className="flex justify-between">

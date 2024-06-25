@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function PageHeader({image, text}){
     return(
         <div>
-            <Image src={image} width={500} height={500} alt="contact" className="w-full mt-2"/>
+            <Image src={image} width={1000} height={1000} quality={100} alt="contact" className="w-full mt-2"/>
             <div className="bg-main3 w-1/2 right-0 h-2 absolute sssm:top-[-1.5vw] md:top-[-1vw] lgg:top-[-0.5vw] llg:top-[-0.5vw] xl:top-[-0.5vw] xlllll:top-[-0.3vw]"></div>
        
             <Section>

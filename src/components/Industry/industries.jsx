@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import SectionHeading from "../SectionHeading";
 import ReadButton from "../ReadButton";
+import { Tilt } from 'react-next-tilt';
 
 /*Details for each industry card*/
 const industries = [
@@ -38,7 +39,7 @@ export default function Industry() {
         {
             spans: [
                 { text: 'The', color: 'main3', pr: 1 },
-                { text: 'In', color: 'main3', px: 0 },
+                { text: 'In', color: 'main3', pl: 0 },
                 { text: 'dustries', color: 'main2', px: 0 },
                 { text: 'we', color: 'main1', px: 1 },
                 { text: 'se', color: 'main1', px: 0 },
@@ -103,7 +104,7 @@ export default function Industry() {
 
                         <div className={`lgg:scale-90 xl:scale-100 xll:scale-110 xxl:scale-105 lxl:scale-125 xlllll:scale-140 xlllll:mt-10 flex xxl:-mt-10 xll:mt-0 lxl:mt-10 lgg:mt-[10vh] xl:-mt-5 ${index === 1 ? 'lxl:ml-[3.5vw]' : ''}`}>
                             <div className={`${index === 1 ? 'xlllll:ml-10' : ''}`}>
-                                <Image src={industry.image} width={350} height={350} alt={industry.heading} className="rounded-[2vw] rounded-br-none relative"/>
+                                <Tilt> <Image src={industry.image} width={350} height={350} alt={industry.heading} className="rounded-[2vw] rounded-br-none relative"/> </Tilt> 
                             </div>
 
                             <div className="mt-6 rounded-tr-[2vw] bg-[radial-gradient(circle_at_left,_var(--tw-gradient-stops))] from-[#E1F6FB] via-[#bce3f3] from-1% to-[#E1F6FB] to-100% xl:w-[200px] xl:h-[200px] lgg:w-[200px] lgg:h-[170px]">
