@@ -10,7 +10,7 @@ export default function SectionHeading({ Title, headings }) {
                     {heading.spans.map((span, spanIndex) => (
                         <span
                             key={spanIndex}
-                            className={`text-${span.color} px-${span.px} pl-${span.pl} pr-${span.pr}`}
+                            className={`text-${span.color} px-${span.px ?? 0} pl-${span.pl ?? 0} pr-${span.pr ?? 0} ${headingIndex === 1 && spanIndex === 2 ? 'pl-1' : ''}`}
                         >
                             {span.text}
                         </span>

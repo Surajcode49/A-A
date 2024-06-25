@@ -22,7 +22,7 @@ export default function Form() {
         {
             spans: [
                 { text: 'connect', color: 'main3', px: 0 },
-                { text: 'with,', color: 'main2', pr: 1 },
+                { text: 'with,', color: 'main2', px: 1 },
                 { text: 'you', color: 'main1', px: 0},
                 { text: 'to', color: 'accent', px: 1 },
             ],
@@ -30,8 +30,8 @@ export default function Form() {
         {
             spans: [
                 { text: 'discuss', color: 'main3', px: 0 },
-                { text: 'your,', color: 'main2', pr: 1},
-                { text: 'digi', color: 'main1', px: 0 },
+                { text: 'your,', color: 'main2', pl: 1},
+                { text: 'digi', color: 'main1', pl: 1 },
                 { text: 'tal', color: 'accent', px: 0 },
             ],
         },
@@ -46,7 +46,7 @@ export default function Form() {
         <div className="lg:mt-[5vh] xlllll:mt-[35vh]  xl:mt-[10vh] md:mt-[-7vh] sssm:mt-[-7vh] justify-between items-center relative lg:mx-20 sssm:mx-10">
             <div className="flex flex-col md:flex-row md:mx-10 mx-1">
                 {/* Heading for the contacting section in about page */}
-                <div className="w-full lg:w-1/3 mt-[10vh] xxxxxxl:pb-8">
+                <div className="w-full lg:w-1/3 mt-[10vh] xlllll:mt-5 xxxxxxl:pb-8">
                     <SectionHeading Title="LET'S GET STARTED" headings={headings} />
                 </div>
 

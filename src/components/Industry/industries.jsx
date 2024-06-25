@@ -39,7 +39,7 @@ export default function Industry() {
         {
             spans: [
                 { text: 'The', color: 'main3', pr: 1 },
-                { text: 'In', color: 'main3', pl: 0 },
+                { text: 'In', color: 'main3', pl: 1 },
                 { text: 'dustries', color: 'main2', px: 0 },
                 { text: 'we', color: 'main1', px: 1 },
                 { text: 'se', color: 'main1', px: 0 },
@@ -82,7 +82,7 @@ export default function Industry() {
 
     return (
         <div>
-            <div className="w-2/3 mx-20 sssm:mt-[55vh] lgg:mt-[50vh] xl:mt-[50vh] xll:mt-[30vh] xxl:mt-[40vh] xlllll:mt-[40vh] xlll:mt-[40vh]">
+            <div className="w-2/3 mx-20 sssm:mt-[45vh] lgg:mt-[50vh] xl:mt-[50vh] xll:mt-[30vh] xxl:mt-[40vh] xlllll:mt-[40vh] xlll:mt-[40vh]">
                  {/*Heading for the industry section*/}
                  <SectionHeading Title="OUR INDUSTRY" headings={headings} />
             </div>
@@ -130,7 +130,7 @@ export default function Industry() {
 
                 {displayIndustriesSmall.map((industry, index) => (
                     <div key={index} className="flex flex-col items-center">
-                        <h1 className="text-3xl text-[#3dbce2] z-30 mb-4 roboto-black">
+                        <h1 className="text-3xl text-[#3dbce2] z-30 mb-4 -mt-5 roboto-black">
                             {industry.heading}
                         </h1>
 
@@ -139,7 +139,7 @@ export default function Industry() {
                                 <Image src={industry.image} width={250} height={250} alt={industry.heading} className="rounded-lg"/>
                             </div>
 
-                            <div className="-mt-5 -ml-7 scale-70 rounded-tr-lg bg-[radial-gradient(circle_at_left,_var(--tw-gradient-stops))] from-[#E1F6FB] via-[#bce3f3] from-1% to-[#E1F6FB] to-100% w-[250px] h-[150px]">
+                            <div className="-mt-5 sssm:-ml-8  ssmm:-ml-9 scale-60 rounded-tr-lg bg-[radial-gradient(circle_at_left,_var(--tw-gradient-stops))] from-[#E1F6FB] via-[#bce3f3] from-1% to-[#E1F6FB] to-100% w-[250px] h-[150px]">
                                 <p className="text-gray-400 font-medium p-4">{industry.text}</p>
                                 <div className="scale-125 -mt-4 ml-10">
                                     <ReadButton />

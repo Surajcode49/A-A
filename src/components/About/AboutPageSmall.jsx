@@ -23,8 +23,8 @@ export default function AboutPageSmall(){
         <div>
             {/*Gradinet background and white lines*/}
             <div className="bg-gradient-to-r from-accent to-main3 h-20 w-full mb-[10vh] mt-10"></div>
-            <div className="bg-white absolute mmd:top-[55vh] mdm:top-[44vh] mdd:top-[50vh] md:top-[55vh] md:left-[13.5vw] ssmm:top-[47vh] sssm:top-[45vh] ssm:top-[41vh] left-3 rounded-r-none rounded-lg w-2/12 h-3"></div>
-            <div className="bg-white absolute mmd:top-[73vh] mdm:top-[57vh] mdm:right-[23vw] mdd:top-[64.5vh] md:top-[71vh] md:right-[21vw] ssmm:top-[64vh] sssm:top-[62vh] ssmm:right-10 sssm:right-8 ssm:top-[57vh] ssm:right-10 smmm:top-[60vh] smmm:right-[13.5vw] rounded-l-none rounded-lg w-1/12 h-1"></div>
+            <div className="bg-white absolute mmd:top-[55vh] mdm:top-[44vh] mdd:top-[50vh] md:top-[55vh] md:left-[13.5vw] ssmm:top-[48vh] sssm:top-[47vh] ssm:top-[41vh] left-3 rounded-r-none rounded-lg w-2/12 h-3"></div>
+            <div className="bg-white absolute mmd:top-[73vh] mdm:top-[57vh] mdm:right-[23vw] mdd:top-[64.5vh] md:top-[71vh] md:right-[21vw] ssmm:top-[64vh] sssm:top-[64vh] ssmm:right-10 sssm:right-8 ssm:top-[57vh] ssm:right-10 smmm:top-[60vh] smmm:right-[13.5vw] rounded-l-none rounded-lg w-1/12 h-1"></div>
             
             <div className="bg-gradient-to-b from-main1 to-accent h-full w-8/9 mx-3 p-6 mdd:p-8  rounded-tl-xl rounded-br-xl rounded-tr-none rounded-bl-none">
                 {/*About image*/}

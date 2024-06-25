@@ -11,7 +11,7 @@ export default function Career() {
             spans: [
                 { text: 'Build', color: 'main3', px: 0 },
                 { text: 'ing', color: 'main2', pr: 1 },
-                { text: 'exper', color: 'main1', px: 0 },
+                { text: 'exper', color: 'main1', pl: 1 },
                 { text: 'iences', color: 'accent', px: 0 },
             ],
         },
@@ -27,7 +27,7 @@ export default function Career() {
             spans: [
                 { text: 'engag', color: 'main3', px: 0 },
                 { text: 'ing,', color: 'main2', pr: 1 },
-                { text: 'an', color: 'main1', px: 0},
+                { text: 'an', color: 'main1', pl: 1},
                 { text: 'd', color: 'accent', px: 0 },
             ],
         },

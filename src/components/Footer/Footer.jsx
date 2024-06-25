@@ -39,7 +39,7 @@ export default function Footer() {
                     {/*Clickable logo to navigate to home page*/}
                     <motion.div whileHover={{ scale: 1.2 }} className="cursor-pointer">
                         <Link href="/" legacyBehavior>
-                            <a> <Image src={logo} width={250} height={150} className="mx-2" alt="Logo" /> </a>
+                            <a> <Image src={logo} width={250} height={150} className="mx-2 xlllll:scale-125 xlllll:ml-10" alt="Logo" /> </a>
                         </Link>
                     </motion.div>
                     

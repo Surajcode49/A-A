@@ -39,7 +39,7 @@ export default function About(){
                 
                 {/*Heading for the about page*/}
                 <Section>
-                    <div className="flex justify-center items-center text-center mt-10">
+                    <div className="flex justify-center items-center text-center mt-10 xlllll:mt-20">
                         <SectionHeading Title="ABOUT US" headings={headings} />
                     </div>
                 </Section>
@@ -83,7 +83,7 @@ export default function About(){
 
                 {/*Contact form*/}
                 <Section> 
-                    <div className="bg-gray-100 W-full lgg:mt-0 sssm:mt-20">
+                    <div className="bg-gray-100 w-full lgg:mt-0 sssm:mt-20 xlllll:-mt-[25vh] xlllll:h-[35vh]">
                         <GetStarted />
                     </div>
                 </Section>

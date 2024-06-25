@@ -89,12 +89,12 @@ export default function Contact() {
 
                 <Section>
                     {/*Heading for the contact page*/}
-                    <div className="flex justify-center items-center text-center mt-10">
+                    <div className="flex justify-center items-center text-center mt-10 xlllll:mt-20">
                         <SectionHeading Title="CONTACT US" headings={headings} />
                     </div>
                 
                     {/*Contact form input*/}
-                    <form className="w-3/4 mx-auto ">
+                    <form className="w-3/4 mx-auto xlllll:mb-8 sssm:mb-4 lgg:mb-0">
 
                         <div className="md:flex block md:space-x-10 space-x-0 my-8">
                             <input className="border-b border-gray-600 hover:border-main3 w-full mt-1 outline-none placeholder-gray-400" type="text" placeholder="Full Name *" id="full-name" name="full-name"/>

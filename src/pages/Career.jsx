@@ -92,14 +92,14 @@ export default function Career(){
 
                 {/*Heading for the career page*/}
                 <Section>
-                    <div className="flex justify-center items-center text-center mt-10">
+                    <div className="flex justify-center items-center text-center mt-10 xlllll:mt-20">
                         <SectionHeading Title="CAREERS" headings={headings} />
                     </div>
                 </Section>
 
                 {/*Culture section*/}
                 <Section>
-                    <h1 className="text-main3 roboto-light text-center justify-center items-center sssm:text-xl xl:text-[1.8rem] sssm:mt-10 xlllll:text-[2.2rem]">OUR CULTURE</h1>
+                    <h1 className="text-main3 roboto-light text-center justify-center items-center sssm:text-xl xl:text-[1.8rem] sssm:mt-10 xlllll:text-[2.2rem] xlllll:mt-20">OUR CULTURE</h1>
                     <div className="sssm:block lgg:flex w-full sssm:mt-5 lgg:mt-0">
                         <div className="bg-gradient-to-r from-main3 to-main1 w-2/3 sssm:h-[180px] xl:h-[200px] relative sssm:scale-80 lgg:scale-100">
                             <Image src="/Images/Career/our culture.jpg" width={270} height={200} alt="culture" className="rounded-xl absolute top-2 left-1/2 cursor-pointer"/>
@@ -116,7 +116,7 @@ export default function Career(){
                 {/*Principles section*/}
                 <Section>
                     <h1 className="text-main3 roboto-light text-center justify-center sssm:text-xl items-center xl:text-[1.8rem] xlllll:text-[2.2rem] sssm:mt-10">OUR PRINCIPLES</h1>
-                    <div className="sssm:block lgg:flex w-full sssm:mt-5 lgg:mt-0">
+                    <div className="sssm:block lgg:flex w-full sssm:mt-5 lgg:mt-0 xlllll:mt-10">
                 
                         <p className="text-gray-400 mx-[12vw] sssm:hidden lgg:block xlllll:mx-[8vw] flex justify-center items-center xlllll:text-[1.5rem]">
                             AplusA Technologies is an equal employment opportunity employer, offering equal employment opportunities to all individuals regardless of race, religion, sex, age, national origin, disability status, marital status and any other characteristiAc protected by law.

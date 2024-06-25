@@ -8,7 +8,7 @@ export default function RequirementCard({title, text}){
             
             <br />
 
-            <p className="text-black max-w-[15vw] text-sm xlllll:text-xl">
+            <p className="text-black max-w-[15vw] text-sm xlllll:text-xl xlllll:mt-20">
                 {text}
             </p>
             

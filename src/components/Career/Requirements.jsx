@@ -6,7 +6,7 @@ import RequirementCard from "./RequirementCard";
 
 //Vertical separator for requrirement cards
 const Separator = () => (
-  <hr className="sssm:hidden lgg:block bg-gradient-to-r from-main3 to-main1 rounded-lg w-1/2 lxl:w-1/4 xlllll:w-1/3 h-1 rotate-90 mt-20 ml-[-5vw] xlllll:mt-[13vh]" />
+  <hr className="sssm:hidden lgg:block bg-gradient-to-r from-main3 to-main1 rounded-lg w-1/2 lxl:w-1/4 xlllll:w-1/2 h-1 rotate-90 mt-20 ml-[-5vw] xlllll:mt-[13vh]" />
 );
 
 export default function Requirements() {
@@ -111,7 +111,7 @@ export default function Requirements() {
 
         {/* Vertical lines */}
         <hr className="sssm:hidden lgg:block bg-gradient-to-r from-main3 to-main1 rounded-lg w-1/3 lxl:w-1/4 xlllll:w-1/3 h-2 rotate-90 mt-20 ml-[0vw] xlllll:mt-[13vh]" />
-        <hr className="sssm:block lgg:hidden bg-gradient-to-r from-main3 to-main1 rounded-lg w-3/5 h-2 rotate-90 absolute sssm:top-[193vh] ssmm:top-[180vh] left-[-20vw]" />
+        <hr className="sssm:block lgg:hidden bg-gradient-to-r from-main3 to-main1 rounded-lg w-3/5 h-2 rotate-90 absolute sssm:top-[198vh] ssmm:top-[185vh] left-[-20vw]" />
 
         {/* Slider for small screens */}
         <div className="w-full mt-20 mx-10 sssm:block lgg:hidden">

@@ -22,7 +22,7 @@ export default function Connect() {
                     READY TO CONNECT WITH OUR EXPERTS AND UNDERSTAND THE BENEFITS SAP WILL BRING TO YOUR BUSINESS?
                 </h1>
 
-                <div className="xl:mt-[45vh] xl:ml-10 xlllll:mt-[35vh] xlllll:scale-160">
+                <div className="xl:mt-[45vh] xl:ml-10 xlllll:mt-[35vh] xlllll:scale-160 lgg:scale-100 sssm:scale-50 sssm:mt-[10vh]">
                     <Link href="/contact" legacyBehavior>
                         <a>  
                             <Button

@@ -22,7 +22,7 @@ export default function AboutPageLarge(){
     return(
         <div>
             {/*Gradient line 1*/}
-            <div className="bg-gradient-to-r xl:right-[10.5vw] llg:top-[137vh] absolute xl:top-[173vh] xxxxxxl:right-[22vw] xxxxxxl:top-[118vh] lgg:top-[135vh] lxl:top-[127vh] lgg:right-[10vw] xxl:top-[133vh] xll:top-[115vh] xlllll:top-[120vh] from-main3 to-accent mb-8 rounded-r-none rotate-180 rounded-lg w-1/12 h-3"></div>
+            <div className="bg-gradient-to-r xl:right-[10.5vw] llg:top-[137vh] absolute xl:top-[173vh] xxxxxxl:right-[22vw] xxxxxxl:top-[118vh] lgg:top-[135vh] lxl:top-[127vh] lgg:right-[10vw] xxl:top-[133vh] xll:top-[115vh] xlllll:top-[132vh] from-main3 to-accent mb-8 rounded-r-none rotate-180 rounded-lg w-1/12 h-3"></div>
                     
             <div className="flex justify-center items-center lgg:w-5/6 sssm:w-full">
                 {/*About text background*/}

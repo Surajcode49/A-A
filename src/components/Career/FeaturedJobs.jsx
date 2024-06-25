@@ -82,13 +82,13 @@ export default function FeaturedJobs() {
         <div className="bg-gray-100 p-6 w-full xl:h-[95vh] lxl:h-[80vh] xxl:h-[75vh] xll:h-[65vh] mt-10">
             <h1 className="flex justify-center items-center text-gray-500 text-[1.5rem]">FEATURED JOBS</h1>
             
-            <div className="xl:mx-20 sssm:mx-7 mt-5 flex xlllll:mx-40 lxl:mx-40">
+            <div className="xl:mx-20 sssm:mx-7 mt-5 flex xlllll:mx-20 lxl:mx-40">
 
                 {/*Featured job slider for small screens*/}
                 <div className="w-full mt-5 mx-0 sssm:block lgg:hidden">
                     <Tilt>
                     <div className="text-center bg-gradient-to-r from-main3 to-main1 h-[400px] sssm:max-w-[400px] lxl:h-[500px] xlllll:h-[530px]">
-                        <Image src={jobs[currentIndex].imgSrc} width={200} height={200} alt="jobs" className="mx-auto w-5/6 pt-8 pb-2 rounded-md" />
+                        <Image src={jobs[currentIndex].imgSrc} width={180} height={180} alt="jobs" className="mx-auto w-5/6 pt-8 pb-2 rounded-md"/>
                         
                         <div className="mx-auto w-5/6">
                             <h1 className="text-white underline">{jobs[currentIndex].title}</h1>
@@ -113,11 +113,11 @@ export default function FeaturedJobs() {
                     <Image src="/Images/Career/featured job icons/ANDROID DEVELOPER.jpg" width={200} height={200} alt="jobs" className="mx-auto w-5/6 pt-8 pb-2 rounded-md"/>
                     
                     <div className="mx-auto w-5/6">
-                        <h1 className="text-white underline">ANDROID DEVELOPER</h1>
+                        <h1 className="text-white underline xlllll:text-[1.5rem]">ANDROID DEVELOPER</h1>
                         <br />
-                        <p className="text-white">Android Developer (2-8 Years)</p>
-                        <p className="text-white">Tech Lead - Developer (5-10 Years)</p>
-                        <p className="text-white underline ml-20">View All Positions</p>
+                        <p className="text-white xlllll:text-[1.5rem]">Android Developer (2-8 Years)</p>
+                        <p className="text-white xlllll:text-[1.5rem]">Tech Lead - Developer (5-10 Years)</p>
+                        <p className="text-white underline ml-20 xlllll:text-[1.5rem] xlllll:ml-40">View All Positions</p>
                     </div>
 
                 </div>
@@ -154,7 +154,7 @@ export default function FeaturedJobs() {
                     </div>
                     
                     {/*Apply job button that opens the modal*/}
-                    <div className="mt-5 mx-7" onClick={openModal}>
+                    <div className="mt-5 mx-7 xlllll:mt-20 xlllll:mx-[6.5vw] xlllll:scale-140" onClick={openModal}>
                         <Button
                             buttonText="Apply Now"
                             bgColor="bg-main1"
