@@ -1,10 +1,9 @@
-/*Importing requried libraries and media*/
-import React, { useState, useCallback } from 'react';
-import Image from 'next/image';
-import { motion } from 'framer-motion';
+import React, { useState, useCallback } from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
 import NavMenu from "./NavMenu";
-import Link from 'next/link';
-import logo from '../../../public/Images/Header/logo.png';
+import Link from "next/link";
+import logo from "../../../public/Images/Header/logo.png";
 
 const Navbar = () => {
   //For toggling menu button in small screens
@@ -19,7 +18,15 @@ const Navbar = () => {
       {/*Clickable logo to navigate to home page*/}
       <motion.div whileHover={{ scale: 1.2 }} className="cursor-pointer">
         <Link href="/" legacyBehavior>
-          <a> <Image src={logo} width={200} height={150} className="mx-10 my-6" alt="Logo" /> </a>
+          <a>
+            <Image
+              src={logo}
+              width={200}
+              height={150}
+              className="mx-10 my-6"
+              alt="Logo"
+            />
+          </a>
         </Link>
       </motion.div>
 
@@ -33,14 +40,29 @@ const Navbar = () => {
       {/*Navbar*/}
       <nav
         className={`fixed top-0 right-0 h-full w-64 bg-white shadow-lg transition-transform transform ${
-          menuOpen ? 'translate-x-0' : 'translate-x-full'
+          menuOpen ? "translate-x-0" : "translate-x-full"
         } lg:translate-x-0 lg:static lg:shadow-none lg:flex lg:items-center z-30`}
       >
         {/*Close button in small screens to close the side navbar*/}
-        <div className="lg:hidden cursor-pointer ml-10 mt-10" onClick={toggleMenu}>
-          <div className={`transform -translate-x-1/2 -translate-y-1 bg-[#9C9A99] rounded-lg w-7 h-1 mb-1 transition-all ${menuOpen ? 'hidden' : ''}`}></div>
-          <div className={`transform -translate-x-1/2 -translate-y-1 bg-main3 rounded-lg w-7 h-1 mb-1 transition-all ${menuOpen ? 'rotate-45 w-10 translate-y-1' : ''}`}></div>
-          <div className={`transform -translate-x-1/2 -translate-y-1 bg-[#9C9A99] rounded-lg w-7 h-1 mb-1 transition-all ${menuOpen ? '-rotate-45 w-10' : 'rotate-0'}`}></div>
+        <div
+          className="lg:hidden cursor-pointer ml-10 mt-10"
+          onClick={toggleMenu}
+        >
+          <div
+            className={`transform -translate-x-1/2 -translate-y-1 bg-[#9C9A99] rounded-lg w-7 h-1 mb-1 transition-all ${
+              menuOpen ? "hidden" : ""
+            }`}
+          ></div>
+          <div
+            className={`transform -translate-x-1/2 -translate-y-1 bg-main3 rounded-lg w-7 h-1 mb-1 transition-all ${
+              menuOpen ? "rotate-45 w-10 translate-y-1" : ""
+            }`}
+          ></div>
+          <div
+            className={`transform -translate-x-1/2 -translate-y-1 bg-[#9C9A99] rounded-lg w-7 h-1 mb-1 transition-all ${
+              menuOpen ? "-rotate-45 w-10" : "rotate-0"
+            }`}
+          ></div>
         </div>
 
         {/*Displays menu in row flex for larger screens and in column flex for small screens*/}
@@ -52,7 +74,6 @@ const Navbar = () => {
           <NavMenu Menu="Career" Route="/Career" />
           <NavMenu Menu="Contact" Route="/Contact" />
         </ul>
-
       </nav>
 
       {/*Side navbar opened in small screens*/}
@@ -62,7 +83,6 @@ const Navbar = () => {
           onClick={toggleMenu}
         />
       )}
-
     </header>
   );
 };
