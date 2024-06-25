@@ -23,7 +23,7 @@ export default function Connect() {
                 </h1>
 
                 <div className="xl:mt-[45vh] xl:ml-10 xlllll:mt-[35vh] xlllll:scale-160">
-                    <Link href="/Contact" legacyBehavior>
+                    <Link href="/contact" legacyBehavior>
                         <a>  
                             <Button
                                 buttonText="Read More"

@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function Benefits(){
     const logos = [
@@ -24,25 +25,60 @@ export default function Benefits(){
         <div className="bg-gray-100 w-full xxl:h-[30vh] xll:h-[25vh] xlllll:h-[25vh] sssm:mt-[7vh] sssm:p-3 lgg:p-0 sssm:h-[10vh] xlllll:mt-[25vh] xl:h-[40vh] xll:mt-[15vh] xxl:mt-[20vh] xl:mt-[25vh] relative">            
             <div className="sssm:hidden lgg:block ">
 
-                <div className=" absolute -top-1/2 left-[10vw]">
+                <motion.div className="absolute -top-1/2 left-[10vw] cursor-pointer" 
+                            initial={{x: 0, y: 0}} 
+                            whileHover={{x: 20, y: 20}}
+                            transition={{
+                                duration: 0.5,
+                                ease: "easeInOut",
+                            }}
+                >
                     <Image src="/Images/Career/emplyee benefits icons/advancement.webp" width={200} height={200} alt="advancement" className="xlllll:scale-140"/>
-                </div>
+                </motion.div>
 
-                <div className=" absolute -top-1/2 left-[40vw] xlllll:left-[45vw]">
+                <motion.div className=" absolute -top-1/2 left-[40vw] xlllll:left-[45vw] cursor-pointer"
+                            initial={{ y: 0}} 
+                            whileHover={{ y: 20}}
+                            transition={{
+                                duration: 0.5,
+                                ease: "easeInOut",
+                            }}
+                >
                     <Image src="/Images/Career/emplyee benefits icons/diversity.webp" width={200} height={200} alt="advancement" className="xlllll:scale-140"/>
-                </div>
+                </motion.div>
 
-                <div className=" absolute -top-1/2 right-[10vw]">
+                <motion.div className=" absolute -top-1/2 right-[10vw] cursor-pointer"
+                            initial={{ x: 0, y: 0}} 
+                            whileHover={{ x: -20, y: 20}}
+                            transition={{
+                                duration: 0.5,
+                                ease: "easeInOut",
+                            }}
+                >
                     <Image src="/Images/Career/emplyee benefits icons/recognition.webp" width={200} height={200} alt="advancement" className="xlllll:scale-140"/>
-                </div>
+                </motion.div>
 
-                <div className=" absolute -bottom-1/2 left-1/4">
+                <motion.div className=" absolute -bottom-1/2 left-1/4 cursor-pointer"
+                            initial={{x: 0, y: 0}} 
+                            whileHover={{x:20, y: -20}}
+                            transition={{
+                                duration: 0.5,
+                                ease: "easeInOut",
+                            }}
+                >
                     <Image src="/Images/Career/emplyee benefits icons/salary.webp" width={200} height={200} alt="advancement" className="xlllll:scale-140"/>
-                </div>
+                </motion.div>
 
-                <div className=" absolute -bottom-1/2 right-[25vw]">
+                <motion.div className=" absolute -bottom-1/2 right-[25vw] cursor-pointer"
+                            initial={{x: 0, y: 0}} 
+                            whileHover={{x:-20, y: -20}}
+                            transition={{
+                                duration: 0.5,
+                                ease: "easeInOut",
+                            }}
+                >
                     <Image src="/Images/Career/emplyee benefits icons/worklife.webp" width={200} height={200} alt="advancement" className="xlllll:scale-140"/>
-                </div>
+                </motion.div>
 
             </div>
 
