@@ -64,12 +64,12 @@ export default function About(){
                         where individuals can expect a bottom-up approach to ideas generating and sharing.
                     </p>
                     <div className="flex p-1 mx-6 sssm:px-8">
-                        <ValueSectionButton bgImage="/Images/About/communication.png" Text="Honesty"/>
-                        <ValueSectionButton bgImage="/Images/About/critical-thinking.png" Text="Integrity"/>
+                        <ValueSectionButton bgImage="/Images/About/Honesty.png" Text="Transparency"/>
+                        <ValueSectionButton bgImage="/Images/About/Integrity.png" Text="Honesty"/>
                     </div>
                     <div className="flex p-1  mx-6 mb-4 sssm:px-8">
-                        <ValueSectionButton bgImage="/Images/About/transparency.png" Text="Transparency"/>
-                        <ValueSectionButton bgImage="/Images/About/organization-structure.png" Text="Loyalty"/>
+                        <ValueSectionButton bgImage="/Images/About/Transparency.png" Text="Integrity"/>
+                        <ValueSectionButton bgImage="/Images/About/Loyalty.png" Text="Loyalty"/>
                     </div>
                 </div>
             </div>

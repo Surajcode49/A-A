@@ -3,7 +3,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import NavMenu from "./NavMenu";
 import Link from "next/link";
-import logo from "../../../public/Images/Header/logo.png";
+import logo from "../../../public/Images/Header/AplusA-Logo.svg";
 
 const Navbar = () => {
   //For toggling menu button in small screens
@@ -23,7 +23,7 @@ const Navbar = () => {
               src={logo}
               width={200}
               height={150}
-              className="mx-10 my-6"
+              className="mx-10 my-2"
               alt="Logo"
             />
           </a>

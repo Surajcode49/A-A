@@ -116,7 +116,7 @@ export default function Career(){
                 {/*Principles section*/}
                 <Section>
                     <h1 className="text-main3 roboto-light text-center justify-center sssm:text-xl items-center xl:text-[1.8rem] xlllll:text-[2.2rem] sssm:mt-10">OUR PRINCIPLES</h1>
-                    <div className="sssm:block lgg:flex w-full sssm:mt-5 lgg:mt-0 xlllll:mt-10">
+                    <div className="sssm:block lgg:flex w-full sssm:mt-5  xlllll:mt-10">
                 
                         <p className="text-gray-400 mx-[12vw] sssm:hidden lgg:block xlllll:mx-[8vw] flex justify-center items-center xlllll:text-[1.5rem]">
                             AplusA Technologies is an equal employment opportunity employer, offering equal employment opportunities to all individuals regardless of race, religion, sex, age, national origin, disability status, marital status and any other characteristiAc protected by law.

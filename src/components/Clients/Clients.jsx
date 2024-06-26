@@ -77,7 +77,7 @@ export default function Clients(){
                         <SectionHeading Title="OUR HAPPY CLIENTS" headings={headings} />
                     </div>
 
-                    <div className="lgg:mt-20 sssm:mt-5 sssm:ml-[-20vw] xlllll:ml-10 xlllll:scale-140">
+                    <div className="lgg:mt-20 sssm:mt-5 sssm:ml-[-20vw] lgg:-ml-3 xlllll:ml-10 xlllll:scale-140">
                         <Button
                             buttonText="View All"
                             bgColor="bg-main1"
