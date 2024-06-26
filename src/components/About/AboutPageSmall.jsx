@@ -30,7 +30,7 @@ export default function AboutPageSmall(){
                 {/*About image*/}
                 <div className="sssm:scale-80 mdd:scale-125 mdm:mt-[-15vh] ssm:scale-90 md:scale-100 md:mx-[27vw] ssm:mx-4 sssm:mt-[-20vh] mb-4 ">
                     <div className="bg-main3 rounded-[2.5vw] rounded-br-none w-[300px] h-[185px] relative">
-                        <Image src="/Images/About/business.jpg" width={300} height={250} alt="business" className="rounded-xl rounded-br-none absolute -top-5 -left-3"/>
+                        <Image src="/Images/About/business.jpg" width={300} height={250} alt="business" loading="lazy" className="rounded-xl rounded-br-none absolute -top-5 -left-3"/>
                     </div>
                 </div>
         

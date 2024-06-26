@@ -8,7 +8,7 @@ export default function Connect() {
         <div className="mx-[7vw] xl:-mt-20 xlllll:mt-20 mmd:my-[2vh] sssm:my-[5vh]  relative">
 
             <div className="relative">
-                <Image src="/Images/Connect/connect.jpg" width={800} height={500} alt="Connect" className="rounded-br-none rounded-tl-[2vw] rounded-bl-[5vw] rounded-tr-[5vw] w-[90vw] relative z-0" />
+                <Image src="/Images/Connect/connect.jpg" width={800} height={500} alt="Connect" loading="lazy" className="rounded-br-none rounded-tl-[2vw] rounded-bl-[5vw] rounded-tr-[5vw] w-[90vw] relative z-0" />
                 <div className="bg-main1 absolute top-0 left-0 w-full h-full opacity-60 z-10 rounded-br-none rounded-tl-[2vw] rounded-bl-[5vw] rounded-tr-[5vw] "></div>
             </div>
 

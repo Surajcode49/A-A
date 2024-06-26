@@ -41,7 +41,7 @@ export default function AboutPageLarge(){
                         {/*About image*/}
                         <div className="xl:scale-140 lgg:scale-125 xxl:scale-125 sssm:scale-50 llg:mt-[0vh] xxxxxxl:scale-180 xl:mt-[1vh] sssm:mt-[-55vh] xxxxxxl:mt-10 xxl:mt-[-3vh]">
                             <div className="bg-main3 rounded-[2.5vw] rounded-br-none w-[300px] h-[185px] relative">
-                                <Image src="/Images/About/business.jpg" width={300} height={250} alt="business" className="rounded-[1.5vw] rounded-br-none absolute -top-5 -left-3"/>
+                                <Image src="/Images/About/business.jpg" width={300} height={250} alt="business" loading="lazy" className="rounded-[1.5vw] rounded-br-none absolute -top-5 -left-3"/>
                             </div>
                         </div>
             

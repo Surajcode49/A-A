@@ -1,28 +1,57 @@
-/*Importing required components for the home page*/
-import HeroSection from "../components/Hero/hero"
-import Service from "../components/Services/service"
-import About from "../components/About/about"
-import Industry from "../components/Industry/industries"
-import Partners from "../components/Partners/partners"
-import Clients from "../components/Clients/Clients"
-import Connect from "../components/Connect/Connect"
-import Career from "../components/Career/Career"
 
-import Section from "../components/HomeSections"
+import { memo } from "react";
+import HeroSection from "../components/Hero/hero";
+import Service from "../components/Services/service";
+import About from "../components/About/about";
+import Industry from "../components/Industry/industries";
+import Partners from "../components/Partners/partners";
+import Clients from "../components/Clients/Clients";
+import Connect from "../components/Connect/Connect";
+import Career from "../components/Career/Career";
+import Section from "../components/HomeSections";
+
+// Memoized components to prevent unnecessary re-renders
+const MemoizedHeroSection = memo(HeroSection);
+const MemoizedService = memo(Service);
+const MemoizedAbout = memo(About);
+const MemoizedIndustry = memo(Industry);
+const MemoizedPartners = memo(Partners);
+const MemoizedClients = memo(Clients);
+const MemoizedConnect = memo(Connect);
+const MemoizedCareer = memo(Career);
 
 export default function Home() {
   return (
     <main className="overflow-hidden">
-      <HeroSection /> {/*For hero section*/}
-
-      <Section> <Service /> </Section> {/*For service section*/}
-      <Section> <About /> </Section> {/*For about section*/}
-      <Section> <Industry /> </Section> {/*For industry section*/}
-      <Section> <Partners /> </Section> {/*For partners section*/}
-      <Section> <Clients /> </Section> {/*For clients section*/}
-      <Section> <Connect /> </Section> {/*For connect section*/}
-      <Section> <Career /> </Section>  {/*For career section*/}
- 
+      <MemoizedHeroSection /> {/*For hero section*/}
+      <Section>
+        {" "}
+        <MemoizedService />{" "}
+      </Section>
+      <Section>
+        {" "}
+        <MemoizedAbout />{" "}
+      </Section>
+      <Section>
+        {" "}
+        <MemoizedIndustry />{" "}
+      </Section>
+      <Section>
+        {" "}
+        <MemoizedPartners />{" "}
+      </Section>
+      <Section>
+        {" "}
+        <MemoizedClients />{" "}
+      </Section>
+      <Section>
+        {" "}
+        <MemoizedConnect />{" "}
+      </Section>
+      <Section>
+        {" "}
+        <MemoizedCareer />{" "}
+      </Section>
       <br />
     </main>
   );
