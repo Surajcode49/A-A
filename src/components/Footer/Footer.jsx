@@ -5,9 +5,9 @@ import FooterMenus from "./FooterMenus";
 import { motion } from 'framer-motion';
 import Location from "../../../public/Images/Footer/Location.webp";
 import Email from "../../../public/Images/Footer/Mail.webp";
-import logo from "../../../public/Images/Header/logo.png";
+import logo from "../../../public/Images/Header/AplusA-Logo.svg";
 import MediaIcons from "./MediaIcons";
-import { FaFacebookF, FaTwitter, FaLinkedin, FaInstagram, FaCopyright } from "react-icons/fa";
+import { FaCopyright } from "react-icons/fa";
 
 export default function Footer() {
     const variants = { //Animation effect for footer columns
@@ -44,11 +44,11 @@ export default function Footer() {
                     </motion.div>
                     
                      {/*Social media icons*/}
-                    <div className="flex justify-center space-x-3 mx-9 mt-10">
-                        <MediaIcons IconComponent={FaFacebookF} href="https://www.facebook.com"/>
-                        <MediaIcons IconComponent={FaTwitter} href="https://www.twitter.com"/>
-                        <MediaIcons IconComponent={FaInstagram} href="https://www.instagram.com"/>
-                        <MediaIcons IconComponent={FaLinkedin} href="https://www.linkedin.com"/>
+                    <div className="flex justify-center space-x-3 mx-15 ml-10 mt-0">
+                        <MediaIcons icon="/Images/Footer/Linkedin-Icon.webp" href="https://www.linkedin.com"/>
+                        <MediaIcons icon="/Images/Footer/Facebook-Icon.webp" href="https://www.facebook.com"/>
+                        <MediaIcons icon="/Images/Footer/Instagram-Icon.webp" href="https://www.instagram.com"/>
+                        <MediaIcons icon="/Images/Footer/Twitter-Icon.webp" href="https://www.twitter.com"/>
                     </div>
 
                 </motion.div>
