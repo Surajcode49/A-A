@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
 import PropTypes from 'prop-types';
-import Image from "next/image";
+import Image from 'next/image';
 
 const HiringProcess = memo(({ step, heading1, heading2, list = [], image }) => {
     return (
@@ -10,7 +10,9 @@ const HiringProcess = memo(({ step, heading1, heading2, list = [], image }) => {
                 <div className="w-12 h-12 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-main3 to-main1 rounded-full flex items-center justify-center">
                     <h1 className="text-white text-xl">{step}</h1>
                 </div>
-                <Image src={image} width={3} height={10} alt="dashed-line" className="mx-5 mt-1" />
+                <div className="mx-5 mt-1">
+                    <Image src={image} width={3} height={10} alt="dashed-line" />
+                </div>
             </div>
 
             {/* Step details */}
@@ -26,6 +28,8 @@ const HiringProcess = memo(({ step, heading1, heading2, list = [], image }) => {
         </div>
     );
 });
+
+HiringProcess.displayName = 'HiringProcess';
 
 HiringProcess.propTypes = {
     step: PropTypes.string.isRequired,

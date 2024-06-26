@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
 import PropTypes from 'prop-types';
-import Image from "next/image";
+import Image from 'next/image';
 
 const JobCard = memo(({ JobTitle, Position1, Position2, image }) => {
     return (
@@ -18,6 +18,8 @@ const JobCard = memo(({ JobTitle, Position1, Position2, image }) => {
         </div>
     );
 });
+
+JobCard.displayName = 'JobCard';
 
 JobCard.propTypes = {
     JobTitle: PropTypes.string.isRequired,
