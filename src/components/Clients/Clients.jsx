@@ -101,13 +101,13 @@ export default function Clients(){
                                     variants={logoVariants}
                                     whileHover={{ scale: 1.1, y: -15 }}
                                     transition={{
-                                        duration: 0.5,
+                                        duration: 0.3,
                                         ease: "easeInOut",
                                     }}
                                     
                                 >
                                     <div className="w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white from-30% to-main3 to-100% rounded-full flex justify-center items-center">
-                                        <Image src={logo.src} width={200} height={200} alt={logo.alt} className="p-2"/>
+                                        <Image src={logo.src} width={200} height={200} alt={logo.alt} loading="lazy" className="p-2"/>
                                     </div>
                                 </motion.div>
                             ))}

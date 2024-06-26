@@ -1,6 +1,5 @@
-/*Imorting requried components for contact page*/
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback, memo } from "react";
 import Navbar from "../components/Header/navbar";
 import SectionHeading from "../components/SectionHeading";
 import Footer from "../components/Footer/Footer";
@@ -10,6 +9,12 @@ import Section from "../components/HomeSections";
 import { Tilt } from 'react-next-tilt';
 import Button from "../components/Button";
 import "../app/globals.css";
+
+// Memoized components to prevent unnecessary re-renders
+const MemoizedNavbar = memo(Navbar);
+const MemoizedFooter = memo(Footer);
+const MemoizedSectionHeading = memo(SectionHeading);
+const MemoizedPageHeader = memo(PageHeader);
 
 export default function Contact() {
     const headings = [
@@ -24,26 +29,10 @@ export default function Contact() {
                 { text: 'you!', color: 'accent', px: 0 },
             ],
         },
-        
     ];
 
-    //Selecting countries from list of options
     const [countries, setCountries] = useState([]);
     const [selectedCountry, setSelectedCountry] = useState(null);
-
-    //Fetching country list
-    useEffect(() => {
-        fetch(
-            "https://valid.layercode.workers.dev/list/countries?format=select&flags=true&value=code"
-        )
-        .then((response) => response.json())
-        .then((data) => {
-            setCountries(data.countries || []);
-            setSelectedCountry(data.userSelectValue || null);
-        });
-    }, []);
-
-    //Selecting service type from service drop-down menu
     const [selectedService, setSelectedService] = useState(null);
 
     const services = [
@@ -54,9 +43,28 @@ export default function Contact() {
         { value: 'integration', label: 'Integration' },
     ];
 
-    //Custom form styles
+    useEffect(() => {
+        fetch("https://valid.layercode.workers.dev/list/countries?format=select&flags=true&value=code")
+            .then((response) => response.json())
+            .then((data) => {
+                setCountries(data.countries || []);
+                setSelectedCountry(data.userSelectValue || null);
+            })
+            .catch((error) => {
+                console.error("Error fetching countries:", error);
+            });
+    }, []);
+
+    const handleCountryChange = useCallback((selectedOption) => {
+        setSelectedCountry(selectedOption);
+    }, []);
+
+    const handleServiceChange = useCallback((selectedOption) => {
+        setSelectedService(selectedOption);
+    }, []);
+
     const customStyles = {
-        control: (provided, state) => ({
+        control: (provided) => ({
             ...provided,
             border: 'none',
             boxShadow: 'none',
@@ -69,18 +77,16 @@ export default function Contact() {
         placeholder: (provided) => ({
             ...provided,
             color: '#9CA3B7',
-            
         })
-
     };
 
     return (
         <div>
-            <Navbar /> {/*Navbar*/}
+            <MemoizedNavbar /> {/*Navbar*/}
        
             <div className="relative w-full ">
                 {/*Page header with background image and text*/}
-                <PageHeader  
+                <MemoizedPageHeader  
                     image="/Images/Connect/Contact_US.webp" 
                     text="We are happy you have taken the first step. Let&apos;s get started and discuss how we can 
                         drive digital outcomes for your business.
@@ -90,19 +96,18 @@ export default function Contact() {
                 <Section>
                     {/*Heading for the contact page*/}
                     <div className="flex justify-center items-center text-center mt-10 xlllll:mt-20">
-                        <SectionHeading Title="CONTACT US" headings={headings} />
+                        <MemoizedSectionHeading Title="CONTACT US" headings={headings} />
                     </div>
                 
                     {/*Contact form input*/}
                     <form className="w-3/4 mx-auto xlllll:mb-8 sssm:mb-4 lgg:mb-0">
-
                         <div className="md:flex block md:space-x-10 space-x-0 my-8">
                             <input className="border-b border-gray-600 hover:border-main3 w-full mt-1 outline-none placeholder-gray-400" type="text" placeholder="Full Name *" id="full-name" name="full-name"/>
                             <Select
                                 options={countries}
                                 styles={customStyles}
                                 value={selectedCountry}
-                                onChange={(selectedOption) => setSelectedCountry(selectedOption)}
+                                onChange={handleCountryChange}
                                 className="border-b border-gray-600 hover:border-main3 w-full md:mt-1 mt-5 outline-none placeholder-gray-400"
                                 placeholder="Country" 
                                 id="country"
@@ -116,9 +121,11 @@ export default function Contact() {
                                 options={services}
                                 styles={customStyles}
                                 value={selectedService}
-                                onChange={(selectedOption) => setSelectedService(selectedOption)}
+                                onChange={handleServiceChange}
                                 className="border-b border-gray-600 hover:border-main3 w-full md:mt-1 mt-5 outline-none placeholder-gray-400"
-                                placeholder="Services" id="country" name="country"
+                                placeholder="Services" 
+                                id="services"
+                                name="services"
                             />
                         </div>
 
@@ -148,14 +155,20 @@ export default function Contact() {
                 {/*Animated contact section*/}
                 <Section>
                     <div className="w-full sssm:h-20 lgg:h-40 cursor-pointer xl:h-40 xxxxxxl:h-60  flex justify-between xl:px-60 md:px-10 lg:px-40 sssm:px-2 items-center bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-main3 from-10% to-main1 to-100%">
-                        <Tilt> <Image src="/Images/Footer/Mail.webp" width={200} height={200} alt="email" className="z-10 xxxxxxl:scale-150 xl:scale-100 lgg:scale-90 lg:scale-70 md:scale-50 sssm:scale-35"/> </Tilt>
+                        <Tilt> 
+                            <Image src="/Images/Footer/Mail.webp" width={200} height={200} alt="email" className="z-10 xxxxxxl:scale-150 xl:scale-100 lgg:scale-90 lg:scale-70 md:scale-50 sssm:scale-35"/> 
+                        </Tilt>
                         <p className="text-white roboto-light hover:font-semibold text-center sssm:text-[0.5rem] md:text-[0.7rem] lg:text-xl xxxxxxl:text-[2.5rem] z-20 md:ml-[-40vw] lg:ml-[-35vw] sssm:ml-[-45vw] xl:ml-[-30vw] xxxxxxl:ml-[-35vw]">getintouch@aplusatech.com</p>
                         
                         <hr className="border-2 border-gray-300 opacity-35 rounded-lg rotate-180 w-1 h-3/4"/>
                         
-                        <Tilt>  <Image src="/Images/Footer/Location.webp" width={200} height={200} alt="location" className=" xxxxxxl:scale-150 xl:scale-100 lgg:scale-75 lg:scale-60 md:scale-50 sssm:scale-25"/> </Tilt> 
-                        <p className="text-white roboto-light hover:font-semibold text-center sssm:text-[0.5rem]  md:text-[0.7rem] lgg:text-[0.9rem] xl:text-md xxl:text-xl xxxxxxl:text-[1.8rem] xxxxxxl:leading-10 z-20 xl:ml-[-30vw] lgg:ml-[-35vw] lg:ml-[-40vw] xxl:ml-[-35vw] xlllll:ml-[-40vw] sssm:ml-[-50vw] text-wrap lg:max-w-[30vw] sssm:max-w-[45vw]">APLUSA TECHNOLOGIES PVT. LTD. <br />
-                        11th Floor, Dallas Center, Knowledge City, Survey No 83/1, Plot No A1, Hitech City Main Road, Hyderabad - 500032, Telangana, India.</p>
+                        <Tilt>  
+                            <Image src="/Images/Footer/Location.webp" width={200} height={200} alt="location" className="xxxxxxl:scale-150 xl:scale-100 lgg:scale-75 lg:scale-60 md:scale-50 sssm:scale-25"/> 
+                        </Tilt> 
+                        <p className="text-white roboto-light hover:font-semibold text-center sssm:text-[0.5rem]  md:text-[0.7rem] lgg:text-[0.9rem] xl:text-md xxl:text-xl xxxxxxl:text-[1.8rem] xxxxxxl:leading-10 z-20 xl:ml-[-30vw] lgg:ml-[-35vw] lg:ml-[-40vw] xxl:ml-[-35vw] xlllll:ml-[-40vw] sssm:ml-[-50vw] text-wrap lg:max-w-[30vw] sssm:max-w-[45vw]">
+                            APLUSA TECHNOLOGIES PVT. LTD. <br />
+                            11th Floor, Dallas Center, Knowledge City, Survey No 83/1, Plot No A1, Hitech City Main Road, Hyderabad - 500032, Telangana, India.
+                        </p>
                     </div>
                 </Section>
 
@@ -163,7 +176,7 @@ export default function Contact() {
                 <div className="bg-gradient-to-r from-main3 to-accent  mb-8 rounded-l-none rounded-lg w-1/3 mt-8 float-right rotate-180 h-3"></div>
 
             </div>
-            <Footer /> {/*Footer*/}
+            <MemoizedFooter /> {/*Footer*/}
             <br />
         </div>
     );

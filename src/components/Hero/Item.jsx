@@ -13,6 +13,7 @@ export const Item = ({ item }) => {
         width={50}
         height={50}
         alt={item.alt}
+        loading="lazy"
         className="lg:scale-100 lg:hover:scale-115 sssm:scale-60 sssm:hover:scale-70 md:scale-90 md:hover:scale-100 xll:scale-125 xll:hover:scale-140 cursor-pointer"
       />
     </Reorder.Item>

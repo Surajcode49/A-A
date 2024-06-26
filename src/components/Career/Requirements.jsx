@@ -138,8 +138,8 @@ export default function Requirements() {
         {/*Next and previous arrow buttons*/}
         <div className="sssm:float-right">
             <div className="flex space-x-2 xl:mt-[27vh] xxl:mt-[22vh] xll:mt-[18vh] xlllll:mr-[5vw] xlllll:mt-[27vh] xl:scale-100 xlllll:scale-600">
-                <Image src="/Images/Services/previous-arrow.png" width={20} height={20} onClick={handlePrev} alt="previous arrow" className="cursor-pointer" />
-                <Image src="/Images/Services/next-arrow.png" width={20} height={20} onClick={handleNext} alt="next arrow" className="cursor-pointer" />
+                <Image src="/Images/Services/previous-arrow.png" width={20} height={20} onClick={handlePrev} alt="previous arrow" loading="lazy" className="cursor-pointer" />
+                <Image src="/Images/Services/next-arrow.png" width={20} height={20} onClick={handleNext} alt="next arrow" loading="lazy" className="cursor-pointer" />
             </div>
         </div>
 
