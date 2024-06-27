@@ -2,25 +2,40 @@ import { useState, useEffect, useRef, memo } from 'react';
 import Image from "next/image";
 import dynamic from 'next/dynamic';
 import { Tilt } from 'react-next-tilt';
+import { motion } from 'framer-motion';
 
 const JobCard = memo(function JobCard({ JobTitle, Position1, Position2, image }) {
     return (
-        <div className="job-card">
-            <Image src={image} width={200} height={200} alt={JobTitle} className="job-card-image" />
-            <div className="job-card-content">
-                <h1 className="job-card-title">{JobTitle}</h1>
-                <p className="job-card-position">{Position1}</p>
-                <p className="job-card-position">{Position2}</p>
+        <div className="w-full h-[180px] bg-gray-50 border-2 border-accent rounded-sm">
+            <div className="mx-auto w-5/6 my-2">
+                <div className="flex justify-between">
+                    <h1 className="text-accent underline mt-4">{JobTitle}</h1>
+                    <Image src={image} width={50} height={50} alt="coding"/>
+                </div>
+                <br />
+                <p className="text-black">{Position1}</p>
+                <p className="text-black">{Position2}</p>
             </div>
         </div>
     );
 });
 
-const Button = memo(function Button({ buttonText, bgColor, className, onClick }) {
+const Button = memo(function Button({ buttonText, bgColor, className }) {
+    const textColor = bgColor.replace("bg-", "");
+
+    const [hover, setHover] = useState(false);
     return (
-        <button className={`${bgColor} ${className}`} onClick={onClick}>
+        <motion.button
+            onMouseEnter={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
+            whileTap={{ scale: 0.85 }}
+            className={`rounded-tr-xl xxxxxxl:scale-140 xxxxxxl:hover:scale-150 xxxxxxl:ml-[3vw] xlllll:max-w-[10vw] lg:ml-[1vw] md:ml-[2vw] rounded-tl-xl rounded-bl-xl lg:w-[15vw] md:w-[30vw] sssm:w-[50vw] flex mb-4 h-10 p-2 mx-20 justify-center text-center font-semibold ${bgColor} ${hover ? `text-${textColor}` : 'text-white'} hover:bg-white hover:scale-105 ${className}`}
+        >
             {buttonText}
-        </button>
+            <div className="scale-75 my-0 ml-3 cursor-pointer xlllll:scale-100 xlllll:mt-0.5 xl:scale-90 xl:mt-0.5">
+                <Image src="/Images/Services/read-arrow.png" width={20} height={20} alt="read arrow" />
+            </div>
+        </motion.button>
     );
 });
 

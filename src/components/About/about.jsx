@@ -73,6 +73,7 @@ export default function About(){
                     </div>
                 </div>
             </div>
+            
             <div className="lg:ml-[2vw] lgg:ml-[-3vw] xlx:ml-[0vw] ssm:mt-[-5vh] ssm:ml-[-25vw] xlllll:ml-[9vw] md:ml-[-2vw] mdd:ml-[-4vw] mdm:ml-[-3vw] mdd:mt-[15vh] xllll:ml-[12vw] xllll:mt-[24vh] sssm:ml-[-30vw] xxxxxxl:ml-[11vw] xxxxxxl:scale-250 llg:scale-105 llg:ml-[-5vw] lxl:scale-150 xll:scale-125 xllll:scale-160 sssm:scale-140 md:scale-70 lg:scale-80 xl:scale-115 xxl:scale-140 xxl:ml-[0vw] mmd:scale-80 md:mt-[14vh]">
                 <motion.div className="w-2/3 flex items-center max-w-[210px] mdd:scale-90 mmd:scale-80 lg:scale-125 mdm:scale-90 md:scale-75 sssm:scale-90  justify-center lg:mt-[15vh] md:mt-[12vh] ssm:mt-[58vh] ssmm:mt-[65vh] sssm:mt-[62vh] relative"
                             style={{
@@ -88,19 +89,12 @@ export default function About(){
                             dragElastic={0.6}
                             whileTap={{ cursor: "grabbing" }}
                 >
-                    <div className="photo_bg bg-main3 w-full xxxxxxl:h-[10vh] xlllll:h-[13vh]  lxl:h-[16vh] lgg:h-[22vh] xlx:h-[24vh] xll:h-[15.5vh] xxl:h-[18vh] xl:h-[24vh] mdm:h-[11.3vh] lg:h-[21vh] md:h-[15vh] smmm:h-[17.5vh] sssm:h-[18vh] mdd:h-[13vh] ssmm:h-[18.5vh] ssm:h-[16vh] sssm:rounded-full lg:rounded-full"></div>
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                        <Image 
-                            src="/Images/About/business.jpg"
-                            width={200}
-                            height={200}
-                            alt="about"
-                            layout="responsive"
-                            loading="lazy"
-                        />
-                    </div>
+                    <div className="photo_bg bg-main3 w-full xxxxxxl:h-[10vh] xlllll:h-[13vh]  lxl:h-[16vh] lgg:h-[22vh] xlx:h-[24vh] xll:h-[15.5vh] xxl:h-[18vh] xl:h-[24vh] mdm:h-[11.3vh] lg:h-[21vh] md:h-[15vh] smmm:h-[17.5vh] sssm:h-[18vh] mdd:h-[13vh] ssmm:h-[18.5vh] ssm:h-[16vh] p-4 lg:ml-[0.5vw] sssm:ml-[1.5vw] relative overflow-visible rounded-t-xl rounded-bl-xl about"></div>
+                    
+                    <Image src="/Images/About/business.jpg" width={200} height={200} alt="about" loading="lazy" className="absolute top-0 rounded-t-xl rounded-bl-xl"/>
                 </motion.div>
             </div>
+
         </div>
     );
 };

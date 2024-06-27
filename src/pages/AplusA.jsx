@@ -70,10 +70,10 @@ export default function About() {
                             </p>
                     
                             <div className="md:flex sssm:block justify-between mt-5 p-1 mx-6 sssm:px-12">
-                                <ValuePageButton bgImage="/Images/About/communication.png" Text="Honesty" />
-                                <ValuePageButton bgImage="/Images/About/critical-thinking.png" Text="Integrity" />
-                                <ValuePageButton bgImage="/Images/About/transparency.png" Text="Transparency" />
-                                <ValuePageButton bgImage="/Images/About/organization-structure.png" Text="Loyalty" />
+                                <ValuePageButton bgImage="/Images/About/Honesty.png" Text="Transparency"/>
+                                <ValuePageButton bgImage="/Images/About/Integrity.png" Text="Honesty"/>
+                                <ValuePageButton bgImage="/Images/About/Transparency.png" Text="Integrity"/>
+                                <ValuePageButton bgImage="/Images/About/Loyalty.png" Text="Loyalty"/>
                             </div>
                         </div>
                     </div>
