@@ -38,7 +38,6 @@ export default function Clients(){
         hidden: { opacity: 0, y: 20 },
         visible: i => ({
             opacity: 1,
-            y: 0,
             transition: {
                 delay: i * 1,
                 duration: 0.5
@@ -99,7 +98,7 @@ export default function Clients(){
                                     animate="visible"
                                     custom={row * 4 + index}
                                     variants={logoVariants}
-                                    whileHover={{ scale: 1.1, y: -15 }}
+                                    whileHover={{ scale: 1.1 }}
                                     transition={{
                                         duration: 0.3,
                                         ease: "easeInOut",
