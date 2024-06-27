@@ -37,7 +37,7 @@ export default function HeroSection() {
       </div>
 
       <div className="mx-10">
-        <Image src="/Images/Hero/arrow.png" width={500} height={500} alt="arrow" className="arrow absolute xxxxxxl:scale-180 xlllll:scale-160 lxl:scale-125 xl:scale-100 lgg:scale-80 md:scale-50 sssm:scale-35 lgg:left-0 xlllll:left-[10vw] xxxxxxl:top-[55vh] xxxxxxl:left-[10vw] xlllll:top-[50vh] xlx:top-[52vh] lxl:left-[8vw] lxl:top-[52vh] xll:top-[45vh] xxl:top-[53vh] xl:top-[63vh] lgg:top-[45vh] mdd:top-[22vh] mdm:top-[19vh] md:top-[20vh] md:left-[-12vw] sssm:top-[17vh] smmm:top-[16vh] ssm:top-[14vh] sssm:left-[-23vw] xl:left-10" />
+        <Image src="/Images/Hero/arrow.png" width={500} height={500} alt="arrow" className="arrow absolute xxxxxxl:scale-190 xlllll:scale-160 lxl:scale-125 xl:scale-110 lgg:scale-80 md:scale-50 sssm:scale-35 lgg:left-0 xlllll:left-[10vw] xxxxxxl:top-[58vh] xxxxxxl:left-[10vw] xlllll:top-[55vh] xlx:top-[52vh] lxl:left-[8vw] lxl:top-[55vh] xll:top-[47vh] xxl:top-[53vh] xl:top-[75vh] lgg:top-[49vh] mdd:top-[22vh] mdm:top-[19vh] md:top-[20vh] md:left-[-12vw] sssm:top-[17vh] smmm:top-[16vh] ssm:top-[14vh] sssm:left-[-23vw] xl:left-10" />
 
         <div className="flex">
           <h1 className="service text-white roboto-black absolute xxxxxxl:top-[50vh] xll:top-[45vh] xlx:top-[53vh] xxl:top-[55vh] xl:top-[65vh] lgg:top-[50vh] mdd:top-[29vh] mdm:top-[26vh] md:top-[30vh] sssm:top-[27vh] ssm:top-[25vh] sssm:left-7 xl:left-10 sssm:text-[4rem] md:text-[7rem] lgg:text-[12rem] xl:text-[14rem] lxl:text-[20rem] xlllll:text-[22rem] xxxxxxl:text-[25rem] z-30">SAP</h1>
