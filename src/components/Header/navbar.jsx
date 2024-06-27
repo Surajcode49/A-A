@@ -6,7 +6,8 @@ import Link from "next/link";
 import logo from "../../../public/Images/Header/AplusA-Logo.svg";
 
 const Navbar = () => {
-  //For toggling menu button in small screens
+ 
+  
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = useCallback(() => {
@@ -15,7 +16,7 @@ const Navbar = () => {
 
   return (
     <header className="relative flex items-center justify-between w-full p-2 bg-white z-20">
-      {/*Clickable logo to navigate to home page*/}
+    
       <motion.div whileHover={{ scale: 1.2 }} className="cursor-pointer">
         <Link href="/" legacyBehavior>
           <a>
@@ -30,7 +31,7 @@ const Navbar = () => {
         </Link>
       </motion.div>
 
-      {/*Menu button that appears on small screens only*/}
+    
       <div className="lg:hidden cursor-pointer mr-10" onClick={toggleMenu}>
         <div className="bg-main3 w-6 h-1 rounded-lg my-1"></div>
         <div className="bg-main3 w-6 h-1 rounded-lg my-1"></div>
@@ -43,7 +44,7 @@ const Navbar = () => {
           menuOpen ? "translate-x-0" : "translate-x-full"
         } lg:translate-x-0 lg:static lg:shadow-none lg:flex lg:items-center z-30`}
       >
-        {/*Close button in small screens to close the side navbar*/}
+       
         <div
           className="lg:hidden cursor-pointer ml-10 mt-10"
           onClick={toggleMenu}
@@ -65,18 +66,18 @@ const Navbar = () => {
           ></div>
         </div>
 
-        {/*Displays menu in row flex for larger screens and in column flex for small screens*/}
+       
         <ul className="text-black text-lg flex flex-col lg:flex-row list-none space-y-4 lg:space-y-0 lg:space-x-8 p-6 lg:p-0 lg:ml-[-35vw]">
           <NavMenu Menu="Services" Route="/Services" />
-          <NavMenu Menu="Industries" Route="/Industries" />
-          <NavMenu Menu="Partners" Route="/Partners" />
+          <NavMenu Menu="Industries" Route="/industries" />
+          <NavMenu Menu="Partners" Route="/partners" />
           <NavMenu Menu="AplusA" Route="/AplusA" />
           <NavMenu Menu="Career" Route="/Career" />
           <NavMenu Menu="Contact" Route="/contact" />
         </ul>
       </nav>
 
-      {/*Side navbar opened in small screens*/}
+     
       {menuOpen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-50 z-20"
