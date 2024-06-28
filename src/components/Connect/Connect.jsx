@@ -9,7 +9,7 @@ export default function Connect() {
 
             <div className="relative">
                 <Image src="/Images/Connect/connect.jpg" width={800} height={500} alt="Connect" loading="lazy" className="rounded-br-none rounded-tl-[2vw] rounded-bl-[5vw] rounded-tr-[5vw] w-[90vw] relative z-0" />
-                <div className="bg-main1 absolute top-0 left-0 w-full h-full opacity-60 z-10 rounded-br-none rounded-tl-[2vw] rounded-bl-[5vw] rounded-tr-[5vw] "></div>
+                <div className="bg-[#072B3B] absolute top-0 left-0 w-full h-full opacity-60 z-10 rounded-br-none rounded-tl-[2vw] rounded-bl-[5vw] rounded-tr-[5vw] "></div>
             </div>
 
             <div className=" absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-center z-20">
