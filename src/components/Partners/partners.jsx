@@ -71,8 +71,8 @@ export default function Partners(){
 
             </div>
 
-            <h1 className="text-accent font-bold xxxxxxl:text-[11rem] xxxxxxl:top-[10.5vh] xxxxxxl:right-7 xlllll:text-[8rem] xlllll:right-[1.7vw] xlx:top-[10.5vh] xlx:text-[5.5rem] xllll:text-[6rem] xxl:text-[6rem] xxl:top-[10.5vh] xxl:right-15 lg:text-[4rem] md:text-[2.5rem] sssm:text-[1rem] absolute lg:top-[10vh] sssm:top-[5vh] lg:right-9 sssm:right-[10.5vw] md:right-[4.7vw]">OUR</h1>
-            <h1 className="text-white font-bold xxxxxxl:text-[11rem] xlllll:text-[8rem] xlx:text-[5.5rem] xllll:text-[6rem] lg:text-[4rem] md:text-[2.5rem] xxl:text-[6rem]  sssm:text-[1rem] absolute lg:top-[10vh] sssm:top-[5vh] right-10">OUR</h1>
+            <h1 className="text-accent font-bold xxxxxxl:text-[11rem] xxxxxxl:top-[10.5vh] xxxxxxl:right-7 xlllll:text-[8rem] xlllll:right-[1.7vw] xlx:top-[10.5vh] xlx:text-[5.5rem] xllll:text-[6rem] xxl:text-[6rem] xxl:top-[10.5vh] xxl:right-15 lg:text-[4rem] md:text-[2.5rem] sssm:text-[1rem] absolute lg:top-[10vh] sssm:top-[7vh] lg:right-9 sssm:right-[10.5vw] md:right-[4.7vw]">OUR</h1>
+            <h1 className="text-white font-bold xxxxxxl:text-[11rem] xlllll:text-[8rem] xlx:text-[5.5rem] xllll:text-[6rem] lg:text-[4rem] md:text-[2.5rem] xxl:text-[6rem]  sssm:text-[1rem] absolute lg:top-[10vh] sssm:top-[7vh] right-10">OUR</h1>
             <h1 className="text-accent font-bold xxxxxxl:text-[11rem] xxxxxxl:top-[30.5vh] xxxxxxl:right-7 xlllll:text-[8rem] xlx:text-[5.5rem] xlx:top-[25.5vh] xlllll:right-[1.7vw] xllll:text-[6rem] xxl:text-[6rem] xxl:top-[25.5vh] xxl:right-15  lg:text-[4rem] md:text-[2.5rem] sssm:text-[1em] absolute lg:top-[25vh] xllll:top-[30vh] sssm:top-[10vh] lg:right-9 sssm:right-[10.5vw] md:right-[4.7vw]">PARTNERS</h1>
             <h1 className="text-white font-bold xxxxxxl:text-[11rem] xlllll:text-[8rem] xlx:text-[5.5rem] xllll:text-[6rem] xxl:text-[6rem]  lg:text-[4rem] md:text-[2.5rem] sssm:text-[1rem] absolute lg:top-[25vh] xllll:top-[30vh] sssm:top-[10vh] right-10">PARTNERS</h1>
          

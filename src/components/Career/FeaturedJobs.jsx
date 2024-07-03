@@ -113,7 +113,7 @@ export default function FeaturedJobs() {
             <div className="xl:mx-20 sssm:mx-7 mt-5 flex xlllll:mx-20 lxl:mx-40">
                 <div className="w-full mt-5 mx-0 sssm:block lgg:hidden">
                     <Tilt>
-                        <div className="text-center bg-gradient-to-r from-main3 to-main1 h-[400px] sssm:max-w-[400px] lxl:h-[500px] xlllll:h-[530px]">
+                        <div className="text-center -ml-5 ssmm:ml-0 bg-gradient-to-r from-main3 to-main1 h-[400px] sssm:w-[300px] lxl:h-[500px] xlllll:h-[530px]">
                             <Image src={jobs[currentIndex].imgSrc} width={180} height={180} alt="jobs" className="mx-auto w-5/6 pt-8 pb-2 rounded-md" loading="lazy" />
                             
                             <div className="mx-auto w-5/6">

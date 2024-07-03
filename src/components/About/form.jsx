@@ -53,18 +53,18 @@ export default function Form() {
                 {/*Form input*/}
                 <form className="lgg:w-3/4 sssm:w-3/4 md:w-full mx-auto ">
                     
-                    <div className="md:flex block md:space-x-10 space-x-0 my-8">
-                        <input className="border-b border-gray-600 hover:border-main3 w-full mt-1 outline-none placeholder-gray-400 bg-gray-100" type="text" placeholder="Full Name *" id="full-name" name="full-name"/>
-                        <input className="border-b border-gray-600 hover:border-main3 w-full mt-1 outline-none placeholder-gray-400 bg-gray-100" type="text" placeholder="Full Name *" id="full-name" name="full-name"/>
+                    <div className="md:flex block md:space-x-10 space-x-0 lgg:my-8 my-2 lgg:space-y-0 space-y-4">
+                        <input className="border-b border-gray-600 hover:border-main3 w-full mt-1 outline-none placeholder-gray-400 bg-gray-100" type="text" placeholder="First Name *" id="firs-name" name="first-name"/>
+                        <input className="border-b border-gray-600 hover:border-main3 w-full mt-1 outline-none placeholder-gray-400 bg-gray-100" type="text" placeholder="Last Name *" id="last-name" name="last-name"/>
                     </div>
 
-                    <div className="md:flex block md:space-x-10 space-x-0 my-8">
+                    <div className="md:flex block md:space-x-10 space-x-0 lgg:my-8 my-2 lgg:space-y-0 space-y-4">
                         <input className="border-b border-gray-600 hover:border-main3 w-full mt-1 outline-none placeholder-gray-400 bg-gray-100" type="email" placeholder="Email Id *" id="email" name="email"/>
                         <input className="border-b border-gray-600 hover:border-main3 w-full mt-1 outline-none placeholder-gray-400 bg-gray-100" type="text" placeholder="Contact Number" id="contact-no" name="contact-no"/>
                     </div>
 
-                    <div className="md:flex block md:space-x-10 space-x-0 my-8">
-                        <input className="border-b border-gray-600 hover:border-main3 w-full md:mt-1 mt-8 outline-none placeholder-gray-400 bg-gray-100" type="text" placeholder="Organization/Institute " id="organization" name="organization"/>
+                    <div className="md:flex block md:space-x-10 space-x-0 lgg:my-8 my-2 lgg:space-y-0 space-y-4">
+                        <input className="border-b border-gray-600 hover:border-main3 w-full md:mt-1 mt-2 outline-none placeholder-gray-400 bg-gray-100" type="text" placeholder="Organization/Institute " id="organization" name="organization"/>
                         <input className="border-b border-gray-600 hover:border-main3 w-full mt-1 outline-none placeholder-gray-400 bg-gray-100" type="text" placeholder="Job Title " id="job" name="job-title"/>
                     </div>
 

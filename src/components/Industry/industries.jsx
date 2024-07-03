@@ -82,7 +82,7 @@ export default function Industry() {
 
     return (
         <div>
-            <div className="w-2/3 mx-20 sssm:mt-[45vh] lgg:mt-[50vh] xl:mt-[50vh] xll:mt-[30vh] xxl:mt-[40vh] xlllll:mt-[40vh] xlll:mt-[40vh]">
+            <div className="w-2/3 lgg:mx-20 mx-10 sssm:mt-[45vh] lgg:mt-[50vh] xl:mt-[50vh] xll:mt-[30vh] xxl:mt-[40vh] xlllll:mt-[40vh] xlll:mt-[40vh]">
                  {/*Heading for the industry section*/}
                  <SectionHeading Title="OUR INDUSTRY" headings={headings} />
             </div>

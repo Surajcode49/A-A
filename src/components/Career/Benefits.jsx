@@ -85,7 +85,7 @@ export default function Benefits(){
             <div className="sssm:block lgg:hidden w-5/6 mx-auto">
                 <div className="flex justify-between">
                     <div>
-                        <Image src="/Images/Services/previous-arrow.png" width={20} height={20} alt="previous arrow" loading="lazy" onClick={handlePrev} className="cursor-pointer" /> 
+                        <Image src="/Images/Services/previous-arrow.png" width={20} height={20} alt="previous arrow" loading="lazy" onClick={handlePrev} className="cursor-pointer scale-150" /> 
                     </div>
 
                     <Image src={logos[currentIndex].src} width={100} height={100} alt="advancement" loading="lazy" className="absolute -top-1/2 left-1/3"/>
