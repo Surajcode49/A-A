@@ -4,11 +4,11 @@ import { Reorder } from "framer-motion";
 import { Item } from "./Item";
 
 const initialIcons = [
-  { src: "/Images/Hero/Pharma_icon.webp", alt: "medical" },
-  { src: "/Images/Hero/Manufacturing_icon.webp", alt: "manufacturing" },
-  { src: "/Images/Hero/Utilities_icon.webp", alt: "shield" },
-  { src: "/Images/Hero/Logistics_icon.webp", alt: "settings" },
-  { src: "/Images/Hero/Agribusiness_icon.webp", alt: "plants" },
+  { src: "/Images/Hero/Pharma_icon.webp", alt: "medical", link:"/Pharmacy" },
+  { src: "/Images/Hero/Manufacturing_icon.webp", alt: "manufacturing", link:"/Manufacturing"  },
+  { src: "/Images/Hero/Utilities_icon.webp", alt: "shield", link:"/Utilities"  },
+  { src: "/Images/Hero/Logistics_icon.webp", alt: "settings", link:"/Logistics"  },
+  { src: "/Images/Hero/Agribusiness_icon.webp", alt: "plants", link:"/Agribusiness"  },
 ];
 
 export default function HeroSection() {

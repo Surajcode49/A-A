@@ -103,11 +103,11 @@ export default function Footer() {
                     <h3 className="text-black font-bold text-lg mb-4 roboto-light">INDUSTRIES</h3>
                     
                     <ul>
-                        <FooterMenus Menu="Agribusiness" Route="/Industries"/>
-                        <FooterMenus Menu="Pharma" Route="/Industries"/>
-                        <FooterMenus Menu="Logistics" Route="/Industries"/>
-                        <FooterMenus Menu="Utilities" Route="/Industries"/>
-                        <FooterMenus Menu="Manufacturing" Route="/Industries"/>
+                        <FooterMenus Menu="Agribusiness" Route="/Agribusiness"/>
+                        <FooterMenus Menu="Pharma" Route="/Pharmacy"/>
+                        <FooterMenus Menu="Logistics" Route="/Logistics"/>
+                        <FooterMenus Menu="Utilities" Route="/Utilities"/>
+                        <FooterMenus Menu="Manufacturing" Route="/Manufacturing"/>
                     </ul>
 
                 </motion.div>
