@@ -72,7 +72,7 @@ export default function About() {
                             <div className="md:flex sssm:block justify-between mt-5 p-1 mx-6 sssm:px-12">
                                 <ValuePageButton bgImage="/Images/About/Honesty.png" Text="Transparency"/>
                                 <ValuePageButton bgImage="/Images/About/Integrity.png" Text="Honesty"/>
-                                <ValuePageButton bgImage="/Images/About/Transparency-Copy.png" Text="Integrity"/>
+                                <ValuePageButton bgImage="/Images/About/transparent.png" Text="Integrity"/>
                                 <ValuePageButton bgImage="/Images/About/Loyalty.png" Text="Loyalty"/>
                             </div>
                         </div>
