@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { motion, useMotionValue, useTransform } from "framer-motion";
+import { motion, useAnimation, useInView } from "framer-motion";
+import { useEffect, useRef } from "react";
 import SectionHeading from "../SectionHeading";
 import ValueSectionButton from "./ValueSectionButton";
 import Button from "../Button";
@@ -24,10 +25,22 @@ export default function About(){
         },
     ];
 
-    const x = useMotionValue(0);
-    const y = useMotionValue(0);
-    const rotateX = useTransform(y, [-100, 100], [60, -60]);
-    const rotateY = useTransform(x, [-100, 100], [-60, 60]);
+    const controls = useAnimation();
+    const ref = useRef(null);
+
+    const isInView = useInView(ref, { once: true, margin: "-50px" });
+
+    useEffect(() => {
+        if (isInView) {
+          controls.start("visible");
+        }
+      }, [controls, isInView]);
+    
+      const variants = {
+        hidden: { opacity: 0, y: -50, scale: 0.4 },
+        visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 2 } },
+      };
+
 
     return(
         <div className="abthead lg:mt-[50vh] xlllll:mt-[35vh] xl:mt-[40vh] sssm:mt-[2vh] justify-between items-center relative lg:mx-20 sssm:mx-10">
@@ -76,18 +89,12 @@ export default function About(){
             
             <div className="lg:ml-[2vw] lgg:ml-[-3vw] xlx:ml-[0vw] ssm:mt-[-5vh] ssm:ml-[-25vw] xlllll:ml-[9vw] md:ml-[-2vw] mdd:ml-[-4vw] mdm:ml-[-3vw] mdd:mt-[15vh] xllll:ml-[12vw] xllll:mt-[24vh] sssm:ml-[-30vw] xxxxxxl:ml-[11vw] xxxxxxl:scale-250 llg:scale-105 llg:ml-[-5vw] lxl:scale-150 xll:scale-125 xllll:scale-160 sssm:scale-140 md:scale-70 lg:scale-80 xl:scale-115 xxl:scale-140 xxl:ml-[0vw] mmd:scale-80 md:mt-[14vh]">
                 <motion.div className="w-2/3 flex items-center max-w-[210px] mdd:scale-90 mmd:scale-80 lg:scale-125 mdm:scale-90 md:scale-75 sssm:scale-90  justify-center lg:mt-[15vh] md:mt-[12vh] ssm:mt-[58vh] ssmm:mt-[65vh] sssm:mt-[62vh] relative"
-                            style={{
-                                marginLeft: "35vw",
-                                x,
-                                y,
-                                rotateX,
-                                rotateY,
-                                cursor: "grab"
-                            }}
-                            drag
-                            dragConstraints={{ top: 0, right: 0, bottom: 0, left: 0 }}
-                            dragElastic={0.6}
-                            whileTap={{ cursor: "grabbing" }}
+                         ref={ref}
+                         style={{ marginLeft: "35vw" }}
+                         initial="hidden"
+                         animate={controls}
+                         variants={variants}
+                            
                 >
                     <div className="photo_bg bg-main3 w-full xxxxxxl:h-[10vh] xlllll:h-[13vh]  lxl:h-[16vh] lgg:h-[22vh] xlx:h-[24vh] xll:h-[15.5vh] xxl:h-[18vh] xl:h-[24vh] mdm:h-[11.3vh] lg:h-[21vh] md:h-[15vh] smmm:h-[17.5vh] sssm:h-[18vh] mdd:h-[13vh] ssmm:h-[18.5vh] ssm:h-[16vh] p-4 lg:ml-[0.5vw] sssm:ml-[1.5vw] relative overflow-visible rounded-t-xl rounded-bl-xl about"></div>
                     
