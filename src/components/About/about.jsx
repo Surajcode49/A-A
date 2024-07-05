@@ -81,7 +81,7 @@ export default function About(){
                         <ValueSectionButton bgImage="/Images/About/Integrity.png" Text="Honesty"/>
                     </div>
                     <div className="flex p-1  mx-6 mb-4 sssm:px-8">
-                        <ValueSectionButton bgImage="/Images/About/Transparency.png" Text="Integrity"/>
+                        <ValueSectionButton bgImage="/Images/About/Transparency-Copy.png" Text="Integrity"/>
                         <ValueSectionButton bgImage="/Images/About/Loyalty.png" Text="Loyalty"/>
                     </div>
                 </div>
