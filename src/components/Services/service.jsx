@@ -112,7 +112,7 @@ export default function Service(){
             </div>
 
             {/*Service image slider with description*/}
-            <div className="w-2/3 flex items-center min-w-[350px] xl:mt-[20vh lgg:mt-[10vh] xll:mt-[10vh] xxl:mt-[10vh] justify-center lg:mr-[7vw] relative lg:scale-140 sssm:scale-75 lg:my-8 sssm:my-[-3vw] service">
+            <div className="w-2/3 flex items-center min-w-[350px] xl:mt-[20vh] lgg:mt-[10vh] xll:mt-[10vh] xxl:mt-[10vh] justify-center lg:mr-[12vw]  relative lg:scale-140 sssm:scale-75 lg:my-8 xl:scale-170 xlllll:scale-200 lxl:scale-200 lxl:mt-[20vh] sssm:my-[-3vw] service">
 
                 <div className="bg-[#e8faff] w-[350px] h-[350px] p-4 xxxxxxl:p-12 rounded-lg relative xlllll:w-[450px] xlllll:h-[450px] xxxxxxl:w-[600px] xxxxxxl:h-[600px]">
                     <Image src={slides[currentIndex].img} alt="Service image" width={500} height={500}  />
@@ -126,8 +126,8 @@ export default function Service(){
                   
 
                     {/*Next and Previous buttons*/}
-                    <Image src="/Images/Services/next-arrow.png" width={20} height={20} alt="next arrow" className="absolute top-1/2 xl:right-[-1.2vw] xlllll:right-[-0.8vw] md:right-[-1.8vw] sssm:right-[-3vw] sssm:scale-125 cursor-pointer xxxxxxl:scale-200" onClick={handleNextClick}/>
-                    <Image src="/Images/Services/previous-arrow.png" width={20} height={20} alt="previous arrow" className="absolute top-1/2 xl:left-[-4vw] xlllll:left-[-3vw] md:left-[-7vw] sssm:left-[-12vw] sssm:scale-180 cursor-pointer xxxxxxl:scale-300" onClick={handlePrevClick} />
+                    <Image src="/Images/Services/next-arrow.png" width={20} height={20} alt="next arrow" className="absolute top-1/2 xl:right-[-1.2vw] xlllll:right-[-0.8vw] md:right-[-1.8vw] sssm:right-[-3vw] sssm:scale-125 cursor-pointer xxxxxxl:scale-200 xlllll:scale-170" onClick={handleNextClick}/>
+                    <Image src="/Images/Services/previous-arrow.png" width={20} height={20} alt="previous arrow" className="absolute top-1/2 xl:left-[-4vw] xlllll:left-[-4vw] md:left-[-7vw] sssm:left-[-12vw] sssm:scale-180 cursor-pointer xxxxxxl:scale-300 xlllll:scale-250" onClick={handlePrevClick} />
                     
                 </div>
 

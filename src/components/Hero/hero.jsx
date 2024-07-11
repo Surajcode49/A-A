@@ -30,7 +30,7 @@ export default function HeroSection() {
           playsInline
           style={videoStyles}
         >
-          <source src="/Images/Hero/new-aplusa1.mp4" type="video/mp4" />
+          <source src="/Images/Hero/new-aplusa.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="bg-main3 w-1/2 right-0 h-2 absolute sssm:top-[-2vw] ssmm:top-[-2vw] md:top-[-1vw] lgg:top-[-0.5vw] llg:top-[-0.5vw] xl:top-[-0.6vw] xlllll:top-[-0.4vw]"></div>
