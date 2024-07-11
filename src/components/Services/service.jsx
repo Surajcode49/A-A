@@ -103,9 +103,9 @@ export default function Service(){
                         
                         </motion.div>
                             {/*Updating the counter value of services*/}
-                            <h2 className="service absolute roboto-black xlllll:top-[67.5vh]  xlllll:left-[2.3vw] xxl:top-[60vh] xll:top-[55vh] lgg:top-[75vh] lg:top-[75vh] xl:top-[81vh] xl:left-[3.4vw] sssm:left-[63vw] sssm:top-[15vh] md:top-[10vh] font-bold lg:left-10 sssm:right-10 text-main3 lg:text-[10rem] sssm:text-[4rem] md:text-[7rem] xlllll:text-[14rem]">{currentIndex + 1}</h2>
-                            <h2 className="service absolute roboto-black xlllll:top-[67vh]  xlx:left-[3vw] xxl:top-[59vh] xll:top-[54vh] lgg:top-[74vh] lgg:left-[3.5vw] lg:top-[75vh] xl:top-[80vh]  sssm:top-[14.7vh] sssm:left-[62.2vw] md:top-[10vh] font-bold xllll:left-[2vw] lg:left-[3vw] sssm:right-[11.5vw] ssmm:right-[10.4vw] ssm:right-[10vw] md:right-[5.5vw] md:text-[7rem] text-gray-200 lg:text-[10rem] sssm:text-[4rem] xlllll:text-[14rem] -z-1">{currentIndex + 1}</h2>
-                            <hr className="absolute xlllll:top-[82vh]  xxl:top-[73vh] xll:top-[65vh] lxl:left-[3vw] xl:top-[98vh] lgg:top-[90vh] lg:top-[95vh] sssm:top-[18vh] sssm:left-[65vw] ssmm:top-[22vh] smmm:top-[21vh] md:top-[25vh] lgg:left-[5vw] lg:left-[4vw] sssm:right-9 lg:border-2 sssm:border-1 border-gray-300 w-[7vw] xlllll:w-[6vw] xlllll:left-[3vw]"/>
+                            <h2 className="service absolute roboto-black xlllll:top-[70.5vh]  xlllll:left-[2.3vw] xxl:top-[60vh] xll:top-[55vh] lgg:top-[75vh] lg:top-[75vh] xl:top-[81vh] xl:left-[3.4vw] sssm:left-[63vw] sssm:top-[15vh] md:top-[10vh] font-bold lg:left-10 sssm:right-10 text-main3 lg:text-[10rem] sssm:text-[4rem] md:text-[7rem] xlllll:text-[14rem]">{currentIndex + 1}</h2>
+                            <h2 className="service absolute roboto-black xlllll:top-[70vh]  xlx:left-[3vw] xxl:top-[59vh] xll:top-[54vh] lgg:top-[74vh] lgg:left-[3.5vw] lg:top-[75vh] xl:top-[80vh]  sssm:top-[14.7vh] sssm:left-[62.2vw] md:top-[10vh] font-bold xllll:left-[2vw] lg:left-[3vw] sssm:right-[11.5vw] ssmm:right-[10.4vw] ssm:right-[10vw] md:right-[5.5vw] md:text-[7rem] text-gray-200 lg:text-[10rem] sssm:text-[4rem] xlllll:text-[14rem] -z-1">{currentIndex + 1}</h2>
+                            <hr className="absolute xlllll:top-[85vh]  xxl:top-[73vh] xll:top-[65vh] lxl:left-[3vw] xl:top-[98vh] lgg:top-[90vh] lg:top-[95vh] sssm:top-[18vh] sssm:left-[65vw] ssmm:top-[22vh] smmm:top-[21vh] md:top-[25vh] lgg:left-[5vw] lg:left-[4vw] sssm:right-9 lg:border-2 sssm:border-1 border-gray-300 w-[7vw] xlllll:w-[6vw] xlllll:left-[3vw]"/>
                         </div>
                     ))}
                 </ul>
@@ -126,7 +126,7 @@ export default function Service(){
                   
 
                     {/*Next and Previous buttons*/}
-                    <Image src="/Images/Services/next-arrow.png" width={20} height={20} alt="next arrow" className="absolute top-1/2 xl:right-[-1.2vw] xlllll:right-[-0.8vw] md:right-[-1.8vw] sssm:right-[-3vw] sssm:scale-125 cursor-pointer xxxxxxl:scale-200 xlllll:scale-170" onClick={handleNextClick}/>
+                    <Image src="/Images/Services/next-arrow.png" width={20} height={20} alt="next arrow" className="absolute top-1/2 xl:right-[-1.2vw] xlllll:right-[-0.8vw] md:right-[-1.8vw] sssm:right-[-3vw] sssm:scale-125 hover:sssm:scale-140 xl:scale-125 hover:xl:scale-150 cursor-pointer xxxxxxl:scale-200 xlllll:scale-170 hover:xlllll:scale-200" onClick={handleNextClick}/>
                     <Image src="/Images/Services/previous-arrow.png" width={20} height={20} alt="previous arrow" className="absolute top-1/2 xl:left-[-4vw] xlllll:left-[-4vw] md:left-[-7vw] sssm:left-[-12vw] sssm:scale-180 cursor-pointer xxxxxxl:scale-300 xlllll:scale-250" onClick={handlePrevClick} />
                     
                 </div>
