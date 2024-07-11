@@ -10,7 +10,7 @@ const slides = [
     {
         title: "SAP Integration Services",
         description: "Synchronize your business with SAP",
-        img: "/Images/Services/SAP Integration Services.webp",
+        img: "/Images/Services/SAP Integration Services-new.webp",
         bulletText: "SAP Integration Services",
     },
 
@@ -31,7 +31,7 @@ const slides = [
     {
         title: "SAP Analytics Cloud",
         description: "Advanced analytics with SAP",
-        img: "/Images/Services/SAP Analytics Cloud.webp",
+        img: "/Images/Services/SAP Analytics Cloud-new.webp",
         bulletText: "SAP Analytics Cloud",
     },
 
