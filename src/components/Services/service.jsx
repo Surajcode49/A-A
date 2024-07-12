@@ -77,7 +77,7 @@ export default function Service(){
                 <SectionHeading Title="OUR SERVICES" headings={headings} />
 
                 {/*Updating the color of bulletin text based on card displayed*/}
-                <ul className="text-nowrap lg:leading-10 font-sans sssm:leading-[3vh] lg:text-xl xllll:leading-[8vh] xlllll:text-[2rem] xllll:text-2xl md:text-lg sssm:text-xs px-4">
+                <ul className="text-nowrap lg:leading-10 lgg:mt-7 xlllll:mt-10 font-sans sssm:leading-[3vh] lg:text-xl xllll:leading-[8vh] xlllll:leading-[6vh] xlllll:text-[2rem] xllll:text-2xl md:text-lg sssm:text-xs px-4">
                     { slides.map((slide, index) => (
                         <div  key={index}>
                         <motion.div  className="flex flex-nowrap"
@@ -90,7 +90,7 @@ export default function Service(){
                         >
                             <div className={` ${
                                     index === currentIndex ? "bg-accent font-bold" : "bg-main2"
-                                } cursor-pointer xxxxxxl:my-14  xlllll:my-9 xlllll:w-10 xlllll:h-2 sssm:w-5 sssm:h-1.3 sssm:my-2 xl:my-5 w-7 h-1.5 rounded-sm  mr-5`}> 
+                                } cursor-pointer xxxxxxl:my-14  xlllll:my-4 xlllll:w-10 xlllll:h-2 sssm:w-5 sssm:h-1.3 sssm:my-2 xl:my-2 xl:mt-5 xlllll:mt-8 w-7 h-1.5 rounded-sm  mr-5`}> 
                             </div>
 
                             <li
@@ -103,9 +103,9 @@ export default function Service(){
                         
                         </motion.div>
                             {/*Updating the counter value of services*/}
-                            <h2 className="service absolute roboto-black xlllll:top-[67.5vh]  xlllll:left-[2.3vw] xxl:top-[60vh] xll:top-[55vh] lgg:top-[75vh] lg:top-[75vh] xl:top-[81vh] xl:left-[3.4vw] sssm:left-[63vw] sssm:top-[15vh] md:top-[10vh] font-bold lg:left-10 sssm:right-10 text-main3 lg:text-[10rem] sssm:text-[4rem] md:text-[7rem] xlllll:text-[14rem]">{currentIndex + 1}</h2>
-                            <h2 className="service absolute roboto-black xlllll:top-[67vh]  xlx:left-[3vw] xxl:top-[59vh] xll:top-[54vh] lgg:top-[74vh] lgg:left-[3.5vw] lg:top-[75vh] xl:top-[80vh]  sssm:top-[14.7vh] sssm:left-[62.2vw] md:top-[10vh] font-bold xllll:left-[2vw] lg:left-[3vw] sssm:right-[11.5vw] ssmm:right-[10.4vw] ssm:right-[10vw] md:right-[5.5vw] md:text-[7rem] text-gray-200 lg:text-[10rem] sssm:text-[4rem] xlllll:text-[14rem] -z-1">{currentIndex + 1}</h2>
-                            <hr className="absolute xlllll:top-[82vh]  xxl:top-[73vh] xll:top-[65vh] lxl:left-[3vw] xl:top-[98vh] lgg:top-[90vh] lg:top-[95vh] sssm:top-[18vh] sssm:left-[65vw] ssmm:top-[22vh] smmm:top-[21vh] md:top-[25vh] lgg:left-[5vw] lg:left-[4vw] sssm:right-9 lg:border-2 sssm:border-1 border-gray-300 w-[7vw] xlllll:w-[6vw] xlllll:left-[3vw]"/>
+                            <h2 className="service absolute roboto-black xlllll:top-[67.5vh]  xxl:top-[60vh] xll:top-[55vh] lgg:top-[75vh] lg:top-[75vh] xl:top-[81vh] xl:left-[0.8vw] sssm:left-[63vw] sssm:top-[15vh] md:top-[10vh] font-bold lg:left-10 sssm:right-10 text-main3 lg:text-[10rem] sssm:text-[4rem] md:text-[7rem] xlllll:text-[14rem]">{currentIndex + 1}</h2>
+                            <h2 className="service absolute roboto-black xlllll:top-[67vh]  xlx:left-[3vw] xxl:top-[59vh] xll:top-[54vh] lgg:top-[74vh] lgg:left-[3.5vw] lg:top-[75vh] xl:top-[80vh] xl:-ml-8 xlllll:-ml-7 sssm:top-[14.7vh] sssm:left-[62.2vw] md:top-[10vh] font-bold xllll:left-[2vw] lg:left-[3vw] sssm:right-[11.5vw] ssmm:right-[10.4vw] ssm:right-[10vw] md:right-[5.5vw] md:text-[7rem] text-gray-200 lg:text-[10rem] sssm:text-[4rem] xlllll:text-[14rem] -z-1">{currentIndex + 1}</h2>
+                            <hr className="absolute xlllll:top-[82vh]  xxl:top-[73vh] xll:top-[65vh] lxl:left-[3vw] xl:top-[98vh] lgg:top-[90vh] lg:top-[95vh] sssm:top-[18vh] sssm:left-[65vw] xl:left-[2vw] xlllll:left-[1.5vw] ssmm:top-[22vh] smmm:top-[21vh] md:top-[25vh] lgg:left-[5vw] lg:left-[4vw] sssm:right-9 lg:border-2 sssm:border-1 border-gray-300 w-[7vw] xlllll:w-[6vw]"/>
                         </div>
                     ))}
                 </ul>
