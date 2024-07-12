@@ -90,7 +90,7 @@ export default function Industry() {
             {/* Large Screen Slider */}
             <div className="lgg:mt-[-5vh] xl:mt-[20vh] xll:mt-[15vh] xxl:mt-[20vh] flex justify-between mx-5 relative sssm:hidden lgg:flex">
                 <div className="lgg:mt-[25vh] xl:mt-[15vh] xll:mt-[13vh] xxl:mt-[10vh] xlllll:ml-8 xlllll:mt-[13vh] lxl:mt-[17vh]" onClick={handlePreviousLarge}>
-                    <Image src="/Images/Services/previous-arrow.png" width={20} height={20} alt="previous arrow" className="lgg:scale-250 xlllll:scale-500 cursor-pointer"/>
+                    <Image src="/Images/Services/previous-arrow.png" quality={100} width={20} height={20} alt="previous arrow" className="lgg:scale-250 xlllll:scale-500 cursor-pointer"/>
                 </div>
 
                 {displayIndustriesLarge.map((industry, index) => (
@@ -102,9 +102,10 @@ export default function Industry() {
                             {industry.heading}
                         </h1>
 
+                        <Tilt>
                         <div className={`lgg:scale-90 xl:scale-100 xll:scale-110 xxl:scale-105 lxl:scale-125 xlllll:scale-140 xlllll:mt-10 flex xxl:-mt-10 xll:mt-0 lxl:mt-10 lgg:mt-[10vh] xl:-mt-5 ${index === 1 ? 'lxl:ml-[3.5vw]' : ''}`}>
                             <div className={`${index === 1 ? 'xlllll:ml-10' : ''}`}>
-                                <Tilt> <Image src={industry.image} width={350} height={350} alt={industry.heading} className="rounded-[2vw] rounded-br-none relative"/> </Tilt> 
+                                 <Image src={industry.image} width={350} height={350} alt={industry.heading} className="rounded-[2vw] rounded-br-none relative"/> 
                             </div>
 
                             <div className="mt-6 rounded-tr-[2vw] bg-[radial-gradient(circle_at_left,_var(--tw-gradient-stops))] from-[#E1F6FB] via-[#bce3f3] from-1% to-[#E1F6FB] to-100% xl:w-[200px] xl:h-[200px] lgg:w-[200px] lgg:h-[170px]">
@@ -114,11 +115,12 @@ export default function Industry() {
                                 </div>
                             </div>
                         </div>
+                        </Tilt> 
                     </div>
                 ))}
 
                 <div className="lgg:mt-[25vh] xl:mt-[15vh] xll:mt-[13vh] xxl:mt-[10vh] xlllll:mt-[16vh] xlllll:mr-5 lxl:mt-[17vh]" onClick={handleNextLarge}>
-                    <Image src="/Images/Services/next-arrow.png" width={20} height={20} alt="next arrow" className="scale-180 xlllll:scale-300 cursor-pointer"/>
+                    <Image src="/Images/Services/next-arrow.png" width={20} height={20} quality={100} alt="next arrow" className="scale-180 xlllll:scale-300 cursor-pointer"/>
                 </div>
             </div>
 

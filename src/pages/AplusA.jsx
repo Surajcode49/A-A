@@ -4,6 +4,8 @@ import Navbar from "../components/Header/navbar";
 import Footer from "../components/Footer/Footer";
 import Section from "../components/HomeSections";
 import SectionHeading from "../components/SectionHeading";
+import Clients from "../components/Clients/Clients";
+import Connect from "../components/Connect/Connect";
 import PageHeader from "../components/PageHeader";
 import "../app/globals.css";
 
@@ -79,13 +81,21 @@ export default function About() {
                     </div>
                 </Section>
 
+                <Section>
+                    <Clients />
+                </Section>
+
                 {/* Contact form */}
                 <Section> 
-                    <div className="bg-gray-100 w-full lgg:mt-0 sssm:mt-20 xlllll:-mt-[25vh] xlllll:h-[35vh]">
+                    <div className="bg-gray-100 w-full lgg:-mt-40 lgg:mb-40 sssm:mt-20 xlllll:-mt-[25vh] xlllll:h-[35vh]">
                         <GetStarted />
                     </div>
                 </Section>
             </div>
+
+            <Section>
+                <Connect />
+            </Section>
 
             <br />
             <Footer /> {/* Footer */}

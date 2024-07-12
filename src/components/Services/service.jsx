@@ -126,8 +126,8 @@ export default function Service(){
                   
 
                     {/*Next and Previous buttons*/}
-                    <Image src="/Images/Services/next-arrow.png" width={20} height={20} alt="next arrow" className="absolute top-1/2 xl:right-[-1.2vw] xlllll:right-[-0.8vw] md:right-[-1.8vw] sssm:right-[-3vw] sssm:scale-125 hover:sssm:scale-140 xl:scale-125 hover:xl:scale-150 cursor-pointer xxxxxxl:scale-200 xlllll:scale-170 hover:xlllll:scale-200" onClick={handleNextClick}/>
-                    <Image src="/Images/Services/previous-arrow.png" width={20} height={20} alt="previous arrow" className="absolute top-1/2 xl:left-[-4vw] xlllll:left-[-4vw] md:left-[-7vw] sssm:left-[-12vw] sssm:scale-180 cursor-pointer xxxxxxl:scale-300 xlllll:scale-250" onClick={handlePrevClick} />
+                    <Image src="/Images/Services/next-arrow.png" width={20} height={20} quality={100} alt="next arrow" className="absolute top-1/2 xl:right-[-1.2vw] xlllll:right-[-0.8vw] md:right-[-1.8vw] sssm:right-[-3vw] sssm:scale-125 hover:sssm:scale-140 xl:scale-125 hover:xl:scale-150 cursor-pointer xxxxxxl:scale-200 xlllll:scale-170 hover:xlllll:scale-200" onClick={handleNextClick}/>
+                    <Image src="/Images/Services/previous-arrow.png" width={20} height={20} quality={100} alt="previous arrow" className="absolute top-1/2 xl:left-[-4vw] xlllll:left-[-4vw] md:left-[-7vw] sssm:left-[-12vw] sssm:scale-180 cursor-pointer xxxxxxl:scale-300 xlllll:scale-250" onClick={handlePrevClick} />
                     
                 </div>
 
