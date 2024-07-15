@@ -90,7 +90,7 @@ export default function Industry() {
             {/* Large Screen Slider */}
             <div className="lgg:mt-[-5vh] xl:mt-[20vh] xll:mt-[15vh] xxl:mt-[20vh] flex justify-between mx-5 relative sssm:hidden lgg:flex">
                 <div className="lgg:mt-[25vh] xl:mt-[15vh] xll:mt-[13vh] xxl:mt-[10vh] xlllll:ml-8 xlllll:mt-[13vh] lxl:mt-[17vh]" onClick={handlePreviousLarge}>
-                    <Image src="/Images/Services/previous-arrow.png" quality={100} width={20} height={20} alt="previous arrow" className="lgg:scale-250 xlllll:scale-500 cursor-pointer"/>
+                    <Image src="/Images/Services/arrow_grey.svg" quality={100} width={20} height={20} alt="previous arrow" className="lgg:scale-250 xlllll:scale-500 cursor-pointer"/>
                 </div>
 
                 {displayIndustriesLarge.map((industry, index) => (
@@ -120,14 +120,14 @@ export default function Industry() {
                 ))}
 
                 <div className="lgg:mt-[25vh] xl:mt-[15vh] xll:mt-[13vh] xxl:mt-[10vh] xlllll:mt-[16vh] xlllll:mr-5 lxl:mt-[17vh]" onClick={handleNextLarge}>
-                    <Image src="/Images/Services/next-arrow.png" width={20} height={20} quality={100} alt="next arrow" className="scale-180 xlllll:scale-300 cursor-pointer"/>
+                    <Image src="/Images/Services/arrow_blue.svg" width={20} height={20} quality={100} alt="next arrow" className="scale-300 xlllll:scale-500 cursor-pointer"/>
                 </div>
             </div>
 
             {/* Small Screen Slider */}
             <div className="lgg:hidden sssm:flex  items-center mt-[5vh] mx-5">
                 <div className="mt-5" onClick={handlePreviousSmall}>
-                    <Image src="/Images/Services/previous-arrow.png" width={20} height={20} alt="previous arrow" className="scale-150 cursor-pointer"/>
+                    <Image src="/Images/Services/arrow_grey.svg" width={20} height={20} alt="previous arrow" className="scale-150 cursor-pointer"/>
                 </div>
 
                 {displayIndustriesSmall.map((industry, index) => (
@@ -153,7 +153,7 @@ export default function Industry() {
                 ))}
 
                 <div className="mt-5" onClick={handleNextSmall}>
-                    <Image src="/Images/Services/next-arrow.png" width={20} height={20} alt="next arrow" className="scale-150 cursor-pointer"/>
+                    <Image src="/Images/Services/arrow_blue.svg" width={20} height={20} alt="next arrow" className="scale-250 cursor-pointer"/>
                 </div>
             </div>
         </div>
