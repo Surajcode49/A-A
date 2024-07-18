@@ -108,7 +108,7 @@ export default function Industry() {
                                  <Image src={industry.image} width={350} height={350} alt={industry.heading} className="rounded-[2vw] rounded-br-none relative"/> 
                             </div>
 
-                            <div className="mt-6 rounded-tr-[2vw] bg-[radial-gradient(circle_at_left,_var(--tw-gradient-stops))] from-[#E1F6FB] via-[#bce3f3] from-1% to-[#E1F6FB] to-100% xl:w-[200px] xl:h-[200px] lgg:w-[200px] lgg:h-[170px]">
+                            <div className="mt-6 rounded-tr-[2vw] xlllll:-ml-2 bg-[radial-gradient(circle_at_left,_var(--tw-gradient-stops))] from-[#E1F6FB] via-[#bce3f3] from-1% to-[#E1F6FB] to-100% xl:w-[200px] xl:h-[200px] lgg:w-[200px] lgg:h-[170px]">
                                 <p className="text-gray-400 font-medium p-4 xl:py-8 lgg:py-6">{industry.text}</p>
                                 <div className="mx-10 xl:scale-125 xlllll:scale-105 xlllll:mx-7">
                                     <ReadButton />
