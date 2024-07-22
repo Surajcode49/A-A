@@ -15,7 +15,7 @@ const ValuePageButton = memo(function ValuePageButton({ bgImage, Text }) {
                 
             }}
         >
-            <div className="bg-white lg:w-[12vw] md:w-[20vw] sssm:w-[40vw] items-center justify-center p-3 border-2 border-gray-200  relative cursor-pointer">
+            <div className="bg-white lg:w-[15vw] md:w-[20vw] sssm:w-[45vw] items-center justify-center p-5 border-2 border-gray-200  relative cursor-pointer">
             
                 <div
                     className="relative z-10 bg-contain bg-no-repeat bg-center"

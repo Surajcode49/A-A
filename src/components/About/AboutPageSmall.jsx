@@ -1,49 +1,74 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
+import Section from "../HomeSections";
 
-export default function AboutPageSmall(){
-    const Paragraphs = [
-        {
-            Para1: "AplusA Technologies started in 2017 as a partnership firm as a team tech enthusiast with a desire to do something new. Together, we wanted to help global enterprises with software and reinvent how business is done, in 2020 we have converted our partnership firm (AplusA Technologies) to private limited company (AplusA Technologies Pvt. Ltd)."
-        },
+export default function AboutPageSmall({ heading1, heading2, text1, image, text2, listItems = [], boldTexts = [] }) {
+  return (
+    <main>
+      {/* For small screens */}
+      <div className="sssm:block md:hidden mt-[15vh]">
+        <div className="border-2 border-main2 flex flex-col justify-items-center items-center text-center rounded-xl rounded-bl-none rounded-tr-none px-0 py-2 mx-auto my-10 relative w-5/6">
+          <div className="mt-20">
+            <p className="text-gray-400 mx-5 mt-5 max-w-[300px] text-xs text-wrap">
+              {text1}
+            </p>
 
-        {
-            Para2: "Today, the same entrepreneurial spirit continues to drive our culture of creativity, diversity, and collaboration. AplusA Technologies has helped companies across verticals transform their traditional business to evolve to the changing way of how business is done by end-to-end implementations, mergers & acquisition projects, SAP upgrades, SAP enterprise planning & budgeting projects, ECC to SAP S/4HANA migrations and developing simple and elegant solutions for their complex workflows."
-        },
+            <motion.h1
+                className="text-white my-5 roboto-black cursor-pointer lxl:max-w-[900px] xlllll:leading-[4vh] xxl:max-w-[700px] lgg:max-w-[600px] xlllll:max-w-[900px] md:text-xl lgg:text-[1.1rem] xlllll:p-4 xlllll:text-[1.9rem] bg-accent w-full p-2 px-5"
+                whileHover={{
+                  letterSpacing: "0.1em",
+                  transition: { type: "spring", stiffness: 300 },
+                }}
+              >
+                {heading1}
+              </motion.h1>
 
-        {
-            Para3: "As the world moves towards cloud, we were prepared for this transition a long time back. With vast expertise in new generation technology and familiarity with cloud based solutions like SAP BTP, SAC, RISE with SAP and data rich cloud systems you can rest assured, you are in safe hands."
-        },
+              <motion.p
+                className="text-gray-400 mx-5 mt-5 md:max-w-[400px] xxxxxxl:min-w-[1200px] xlllll:max-w-[850px] lgg:max-w-[500px] md:text-sm xlllll:leading-[4vh] lgg:text-[1rem] xlllll:w-[800px] xlllll:text-[1.6rem] text-wrap"
+                whileHover={{ scale: 1.03 }}
+                transition={{ duration: 1 }}
+              >
+                {text2}
+              </motion.p>
 
-        {
-            Para4: "With a industry-updated centre of excellence we have been offering multiple SAP partner qualified solutions helping business owners unlock tremendous potential and scale their traditional setup."
-        },
-    ]
+                <motion.h1
+                    className="text-white my-5 roboto-black cursor-pointer xlllll:leading-[4vh]  md:text-xl lgg:text-[1.1rem] xlllll:p-4 xlllll:text-[1.9rem] bg-accent w-full p-2 px-5"
+                    whileHover={{
+                    letterSpacing: "0.1em",
+                    transition: { type: "spring", stiffness: 300 },
+                    }}
+                >
+                    {heading2}
+                </motion.h1>
 
-    return(
-        <div>
-            {/*Gradinet background and white lines*/}
-            <div className="bg-gradient-to-r from-accent to-main3 h-20 w-full mb-[10vh] mt-10"></div>
-            <div className="bg-white absolute mmd:top-[55vh] mdm:top-[44vh] mdd:top-[50vh] md:top-[55vh] md:left-[13.5vw] ssmm:top-[48vh] sssm:top-[47vh] ssm:top-[41vh] left-3 rounded-r-none rounded-lg w-2/12 h-3"></div>
-            <div className="bg-white absolute mmd:top-[73vh] mdm:top-[57vh] mdm:right-[23vw] mdd:top-[64.5vh] md:top-[71vh] md:right-[21vw] ssmm:top-[64vh] ssmm:mt-5 sssm:top-[64vh] ssmm:right-10 sssm:right-8 ssm:top-[57vh] ssm:right-10 smmm:top-[60vh] smmm:right-[13.5vw] rounded-l-none rounded-lg w-1/12 h-1"></div>
-            
-            <div className="bg-gradient-to-b from-main1 to-accent h-full w-8/9 mx-3 p-6 mdd:p-8  rounded-tl-xl rounded-br-xl rounded-tr-none rounded-bl-none">
-                {/*About image*/}
-                <div className="sssm:scale-80 mdd:scale-125 mdm:mt-[-15vh] ssm:scale-90 md:scale-100 md:mx-[27vw] ssm:mx-4 sssm:mt-[-20vh] mb-4 ">
-                    <div className="bg-main3 rounded-[2.5vw] rounded-br-none w-[300px] h-[185px] relative">
-                        <Image src="/Images/About/business.jpg" width={300} height={250} alt="business" loading="lazy" className="rounded-xl rounded-br-none absolute -top-5 -left-3"/>
-                    </div>
-                </div>
-        
-                {/*Paragraphs*/}
-                <p className="text-white text-justify text-xs mdd:mt-10 "> {Paragraphs[1].Para2} </p> <br />
+                <ul className="text-gray-400  mx-10 my-5 list-outside list-disc xlllll:text-[1.6rem] xlllll:max-w-[1100px] lgg:max-w-[700px]">
+                {listItems.map((item, index) => (
+                  <motion.li key={index} className="cursor-pointer"
+                            initial={{x: 0}}
+                            whileHover={{x: 10}}
+                            transition={{
+                              duration: 0.5,
+                              ease: "easeInOut"
+                            }}
+                  >
+                    <span className="text-gray-400 mx-1"><b>{boldTexts[index]}</b></span>
+                    <span className="text-gray-400 ">{item}</span>
+                  </motion.li>
+                ))}
+              </ul>
 
-                <div className="text-white text-justify text-xs xlllll:text-sm xxxxxxl:text-lg">
-                    <p>{Paragraphs[1].Para2}</p> <br />
-                    <p>{Paragraphs[2].Para3}</p> <br />
-                    <p>{Paragraphs[3].Para4}</p> <br />
-                </div>
-                
-            </div>
+          </div>
+          <div className="bg-main3 rounded-xl rounded-br-none w-[250px] h-[180px] absolute -top-20">
+            <Image
+              src={image}
+              width={200}
+              height={200}
+              alt="service"
+              className="absolute -top-2 -left-2 rounded-xl rounded-br-none w-[250px] h-[180px]"
+            />
+          </div>
         </div>
-    );
+      </div>
+    </main>
+  );
 }

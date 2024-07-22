@@ -1,7 +1,7 @@
 import Section from "./HomeSections";
 import Image from "next/image";
 
-export default function PageHeader({ image, text }) {
+export default function PageHeader({ image, text, heading }) {
     return (
         <div>
             <Image 
@@ -16,7 +16,10 @@ export default function PageHeader({ image, text }) {
             <div className="bg-main3 w-1/2 right-0 h-2 absolute sssm:top-[-2vw] md:top-[-1vw] lgg:top-[-0.5vw] llg:top-[-0.5vw] xl:top-[-0.6vw] xlllll:top-[-0.4vw]"></div>
 
             <Section>
-                <div className="flex justify-center items-center absolute xl:top-[30vh] lgg:top-[20vh] md:top-[13vh] md:mx-20 lgg:mx-30 xlllll:mx-50 xl:mx-40 sssm:top-[7vh] sssm:mx-5">
+                <div className="flex flex-col justify-left items-left absolute xl:top-[30vh] lgg:top-[20vh] md:top-[13vh] md:mx-20 lgg:mx-30 xlllll:mx-50 xl:mx-40 sssm:top-[7vh] sssm:mx-5">
+                    <h1 className="text-white roboto-medium xxxxxxl:text-[4rem] xlllll:text-[3rem] lxl:text-[2.5rem] xxl:text-[2.3rem] xl:text-[2rem] llg:text-[2rem] lgg:text-[1.9rem] mdd:text-[1.6rem] md:text-[1.5rem] sssm:text-[1.5rem] smmm:text-[1rem] ssm:text-[1.1rem]">
+                        {heading}
+                    </h1>
                     <h1 className="text-white roboto-medium xxxxxxl:text-[3.5rem] xlllll:text-[2.5rem] lxl:text-[2rem] xxl:text-[1.7rem] xl:text-[1.5rem] llg:text-[1.5rem] lgg:text-[1.4rem] mdd:text-[1.1rem] md:text-[1rem] sssm:text-[0.5rem] smmm:text-[0.57rem] ssm:text-[0.6rem]">
                         {text}
                     </h1>

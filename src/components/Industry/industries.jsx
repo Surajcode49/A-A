@@ -15,7 +15,7 @@ const industries = [
     {
         heading: "LOGISTICS",
         text: "Transform and Streamline Your Logistics Operations",
-        image: "/Images/Industry/logistics.webp",
+        image: "/Images/Industry/logistics-new.webp",
     },
     {
         heading: "UTILITIES",

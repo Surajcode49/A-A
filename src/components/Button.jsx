@@ -17,7 +17,7 @@ export default function Button({ buttonText, bgColor, className }) {
         >
             <span className="flex items-center">
                 {buttonText}
-                <div className="scale-75 my-0 ml-3 cursor-pointer xlllll:scale-100 xlllll:mt-0.5 xl:scale-90 xl:mt-0.5">
+                <div className="scale-75 my-0 ml-3 cursor-pointer xlllll:scale-100 xlllll:mt-0 xl:scale-90 xl:mt-0">
                     <Image src="/Images/Services/read-arrow.png" width={20} height={20} alt="read arrow" />
                 </div>
             </span>

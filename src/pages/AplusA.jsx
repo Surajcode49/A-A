@@ -34,44 +34,82 @@ export default function About() {
             <div className="relative w-full">
                 {/* Page header with background image and text */}
                 <PageHeader  
-                    image="/Images/About/About-US-01.webp" 
-                    text="As the world moves towards cloud, we were prepared for this transition a long time 
-                        back. With a industry-updated centre of excellence we have been offering multiple 
-                        SAP partner qualified solutions helping business owners unlock tremendous potential 
-                        and scale their traditional setup."
+                    image="/Images/About/About-US-02.jpg" 
+                    heading="ABOUT US"
+                    text="AplusA Technologies: Your Trusted Partner for Digital Transformation"
                 />
+
+                <div className='bg-black p-6 xlllll:p-12 text-white uppercase'>
+                    <p className='lgg:px-40 sssm:px-5 sssm:text-xs xlllll:text-[2.1rem] xlllll:leading-[4vh] text-justify lgg:text-xl'>
+                        <span className='text-accent'>AplusA Technologies</span> was founded in 2017 by a passionate team of tech enthusiasts 
+                        with a bold vision: to empower businesses worldwide through innovative software 
+                        solutions. We started as a partnership firm, evolving in 2020 to <span className='text-accent'>AplusA 
+                        Technologies Pvt. Ltd.</span>, a testament to our commitment to growth and excellence.
+                    </p>
+                </div>
                 
-                {/* Heading for the about page */}
-                <Section>
-                    <div className="flex justify-center items-center text-center mt-10 xlllll:mt-20">
-                        <SectionHeading Title="ABOUT US" headings={headings} />
-                    </div>
-                </Section>
+                
 
                 {/* For larger screens */}
                 <div className="sssm:hidden lgg:block">
                     <Section>
-                        <AboutPageLarge />
+                        <AboutPageLarge 
+                            text1="AplusA Technologies was founded in 2017 by a passionate team of tech enthusiasts with a bold vision: to empower businesses worldwide through innovative software solutions. We started as a partnership firm, evolving in 2020 to AplusA Technologies Pvt. Ltd., a testament to our commitment to growth and excellence."
+                            heading1="WHAT WE DO"
+                            text2="AplusA Technologies was founded in 2017 by a passionate team of tech enthusiasts with a bold vision: to empower businesses worldwide through innovative software solutions. We started as a partnership firm, evolving in 2020 to AplusA Technologies Pvt. Ltd., a testament to our commitment to growth and excellence."
+                            heading2="WHY CHOOSE APLUSA?"
+                            boldTexts={[
+                                "Proven Track Record: ", 
+                                "Unwavering Commitment: ",
+                                "Collaborative Approach: ", 
+                                "Technical Expertise:  "
+                            ]}
+                            listItems={[
+                                "We have a history of helping companies across verticals transform their traditional business models and achieve success.", 
+                                "We are passionate about building long-term partnerships and helping our clients thrive in the digital age.", 
+                                "We believe in open communication and working hand-in-hand with you to achieve your goals.",
+                                "Our team possesses deep technical knowledge and experience with cutting-edge technologies."
+                            ]}
+                            image="/Images/About/aboutus_section.jpg"
+                        />
                     </Section>
                 </div>
 
                 {/* For smaller screens */}
                 <div className="sssm:block lgg:hidden">
                     <Section>
-                        <AboutPageSmall />
+                        <AboutPageSmall
+                            text1="AplusA Technologies was founded in 2017 by a passionate team of tech enthusiasts with a bold vision: to empower businesses worldwide through innovative software solutions. We started as a partnership firm, evolving in 2020 to AplusA Technologies Pvt. Ltd., a testament to our commitment to growth and excellence."
+                            heading1="WHAT WE DO"
+                            text2="AplusA Technologies was founded in 2017 by a passionate team of tech enthusiasts with a bold vision: to empower businesses worldwide through innovative software solutions. We started as a partnership firm, evolving in 2020 to AplusA Technologies Pvt. Ltd., a testament to our commitment to growth and excellence."
+                            heading2="WHY CHOOSE APLUSA?"
+                            boldTexts={[
+                                "Proven Track Record: ", 
+                                "Unwavering Commitment: ",
+                                "Collaborative Approach: ", 
+                                "Technical Expertise:  "
+                            ]}
+                            listItems={[
+                                "We have a history of helping companies across verticals transform their traditional business models and achieve success.", 
+                                "We are passionate about building long-term partnerships and helping our clients thrive in the digital age.", 
+                                "We believe in open communication and working hand-in-hand with you to achieve your goals.",
+                                "Our team possesses deep technical knowledge and experience with cutting-edge technologies."
+                            ]}
+                            image="/Images/About/aboutus_section.jpg"
+                        />
                     </Section>
                 </div>
 
                 {/* Value section of about page */}
                 <Section>
-                    <div className="flex justify-center items-center">
-                        <div className="mx-[11vw]">
-                            <h1 className="text-accent p-3 font-semibold text-center mt-[5vh] xxxxxxl:text-[1.8rem]">DO YOU SHARE OUR VALUES?</h1>
+                    <div className="flex justify-center items-center bg-gray-100">
+                        <div className="mx-[7vw]">
+                            <h1 className="text-accent p-3 font-semibold text-center mt-[5vh] xxxxxxl:text-[1.8rem]">OUR CORE VALUES</h1>
                             <p className="text-gray-500 md:mx-20 lg:text-[0.9rem] xxxxxxl:text-[1.5rem] xxxxxxl:leading-10 p-3 leading-6 text-center">
-                                Our vision is to grow with the right people who live and breathe our values of honesty. We take pride in creating a work environment that is professional and collaborative, where individuals can expect a bottom-up approach to ideas generating and sharing.
+                            At AplusA Technologies, we foster a collaborative and transparent work environment built on a foundation of honesty, integrity, and loyalty. We believe these values are the cornerstone of building strong partnerships and delivering exceptional results for our clients.
                             </p>
                     
-                            <div className="md:flex sssm:block justify-between mt-5 p-1 mx-6 sssm:px-12">
+                            <div className="md:flex sssm:block justify-between mt-5 mb-10 p-1 mx-6 sssm:px-12">
                                 <ValuePageButton bgImage="/Images/About/Honesty.png" Text="Transparency"/>
                                 <ValuePageButton bgImage="/Images/About/Integrity.png" Text="Honesty"/>
                                 <ValuePageButton bgImage="/Images/About/transparent.png" Text="Integrity"/>
