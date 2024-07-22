@@ -7,7 +7,6 @@ const ValuePageButton = memo(function ValuePageButton({ bgImage, Text }) {
             whileHover={{
                 scale: [1, 1.2, 1.2, 1, 1],
                 rotate: [0, 0, 180, 180, 0],
-                borderRadius: ["0%", "0%", "10%", "10%", "0%"]
             }}
             transition={{
                 duration: 1,
