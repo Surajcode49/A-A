@@ -87,7 +87,7 @@ export default function Career() {
             <div className="flex flex-col lg:flex-row md:mx-10 mx-1">
                 <div className="w-full lg:w-1/3 mt-[10vh] xlllll:mt-2">
                     {/*Heading for the career section*/}
-                    <SectionHeading Title="CAREERS" headings={headings} />
+                    <SectionHeading Title="CAREERS" heading="Building expereinces that are happier, engaging, and meaningful"/>
 
                     <div className="mt-5 -ml-5">
                         <Link href="/Career" legacyBehavior>

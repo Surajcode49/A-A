@@ -74,7 +74,7 @@ export default function Service(){
             <div  className="w-full">
 
                 {/*Heading for the service section*/}
-                <SectionHeading Title="OUR SERVICES" headings={headings} />
+                <SectionHeading Title="OUR SERVICES" heading="The Services We Offer" />
 
                 {/*Updating the color of bulletin text based on card displayed*/}
                 <ul className="text-nowrap lg:leading-10 lgg:mt-7 xlllll:mt-10 font-sans sssm:leading-[3vh] lg:text-xl xllll:leading-[8vh] xlllll:leading-[6vh] xlllll:text-[2rem] xllll:text-2xl md:text-lg sssm:text-xs px-4">

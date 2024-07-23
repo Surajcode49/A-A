@@ -106,7 +106,7 @@ export default function Requirements() {
       
         <div className="w-full lg:w-1/3 xl:mt-[0vh] sssm:mx-10">
             {/* Requirements heading for career page */}
-            <SectionHeading Title="WHAT WE LOOK FOR" headings={headings} />
+            <SectionHeading Title="WHAT WE LOOK FOR" heading="We map competencies and also check for compatibility to be sure you match the values we inherit" />
         </div>
 
         {/* Vertical lines */}

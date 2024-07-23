@@ -96,7 +96,7 @@ export default function Contact() {
                 <Section>
                     {/*Heading for the contact page*/}
                     <div className="flex justify-center items-center text-center mt-10 xlllll:mt-20">
-                        <MemoizedSectionHeading Title="CONTACT US" headings={headings} />
+                        <MemoizedSectionHeading Title="CONTACT US" heading="We are happy to hear from you!" />
                     </div>
                 
                     {/*Contact form input*/}

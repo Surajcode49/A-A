@@ -93,7 +93,7 @@ export default function Career(){
                 {/*Heading for the career page*/}
                 <Section>
                     <div className="flex justify-center items-center text-center mt-10 xlllll:mt-20">
-                        <SectionHeading Title="CAREERS" headings={headings} />
+                        <SectionHeading Title="CAREERS" heading="Building expereinces that are happier, engaging, and meaningful" />
                     </div>
                 </Section>
 

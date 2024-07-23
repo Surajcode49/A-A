@@ -45,7 +45,7 @@ export default function About(){
     return(
         <div className="abthead lg:mt-[50vh] xlllll:mt-[35vh] xl:mt-[40vh] sssm:mt-[2vh] justify-between items-center relative lg:mx-20 sssm:mx-10">
             <div className="w-1/3">
-                <SectionHeading Title="ABOUT US" headings={headings} />
+                <SectionHeading Title="ABOUT US" heading="Learn More About Us" />
             </div>
             <div className="flex lg:scale-100 xlll:scale-110 xllll:scale-125 sssm:scale-75 md:scale-90 lg:mt-[-15vh md:mt-[-10vh] sssm:mt-[-13vh]">
                 <div className="bg-accent/80 md:scale-80 lg:scale-100 sssm:min-w-[550px] lg:max-w-[600px] xxxxxxl:max-w-[1100px] xlx:max-w-[600px] lgg:max-w-[500px] sssm:max-w-full xlllll:max-w-[850px] xllll:max-w-[800px] xll:max-w-[650px] mmd:max-w-[520px] md:min-w-[400px] md:max-w-[500px] lg:px-[8vw] md:px-[6vw] sssm:px-[20vw] ssm:min-w-[620px] py-2 absolute top-[20vh] xl:ml-[-6.5vw] lg:ml-[-9vw] xlll:ml-[-2vw] xllll:ml-[2vw] mmd:ml-[-16vw] md:ml-[-18vw] sssm:ml-[-30vw]">

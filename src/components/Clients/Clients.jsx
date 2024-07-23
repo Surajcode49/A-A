@@ -71,9 +71,9 @@ export default function Clients(){
             <div className="md:flex sssm:block xl:mx-20 mx-10 sssm:mx-0">
                 <div className="sssm:mx-5">
                     
-                    <div className="w-1/3 lg:mt-[20vh] md:mt-[10vh] xxl:mt-[15vh] xlllll:mt-[0vh]">
+                    <div className="w-full lg:mt-[20vh] md:mt-[10vh] xxl:mt-[15vh] xlllll:mt-[0vh]">
                         {/*Heading for the about section*/}
-                        <SectionHeading Title="OUR HAPPY CLIENTS" headings={headings} />
+                        <SectionHeading Title="OUR HAPPY CLIENTS" heading="They Trust Us And We Keep Giving Them Reasons Too" />
                     </div>
 
                     <div className="lgg:mt-20 sssm:mt-5 sssm:ml-[-20vw] lgg:-ml-3 xlllll:ml-10 xlllll:scale-140">
