@@ -89,7 +89,7 @@ export default function Career() {
                     {/*Heading for the career section*/}
                     <SectionHeading Title="CAREERS" heading="Building expereinces that are happier, engaging, and meaningful"/>
 
-                    <div className="mt-5 -ml-5">
+                    <div className="mt-5 lgg:-ml-5 sssm:-ml-[23vw]">
                         <Link href="/Career" legacyBehavior>
                             <a>  
                                 <Button
@@ -142,7 +142,7 @@ export default function Career() {
                         </div>
                     </div>
 
-                    <div className="mt-5 -ml-3">
+                    <div className="mt-5 lgg:-ml-3 sssm:-ml-10">
                         <Button
                             buttonText="Submit"
                             bgColor="bg-main3"

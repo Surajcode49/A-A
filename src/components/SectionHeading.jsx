@@ -33,6 +33,3 @@ export default function SectionHeading({ Title, heading }) {
     );
 }
 
-
-
-//text-[2rem] font-bold text-transparent bg-clip-text bg-gradient-to-r from-color1 to-color2

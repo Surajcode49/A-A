@@ -44,7 +44,7 @@ export default function About(){
 
     return(
         <div className="abthead lg:mt-[50vh] xlllll:mt-[35vh] xl:mt-[40vh] sssm:mt-[2vh] justify-between items-center relative lg:mx-20 sssm:mx-10">
-            <div className="w-1/3">
+            <div className="w-2/3">
                 <SectionHeading Title="ABOUT US" heading="Learn More About Us" />
             </div>
             <div className="flex lg:scale-100 xlll:scale-110 xllll:scale-125 sssm:scale-75 md:scale-90 lg:mt-[-15vh md:mt-[-10vh] sssm:mt-[-13vh]">

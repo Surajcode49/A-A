@@ -9,7 +9,7 @@ export default function Partners(){
             <div className="w-full mt-20">
                 <Image src="/Images/Partners/new-partners.jpg" width={500} height={500} alt="bg" className="w-full h-full mdm:py-7 mmd:py-0 mdd:py-0 sssm:py-6 lg:py-5 xl:py-0"/>
                 
-                <motion.div className="partners-logo bg-white xlllll:h-[10vh] xll:h-[8vh] xlx:h-[10vh] lgg:h-[8vh] lg:w-[20vw] lg:h-[10vh] md:p-4 sssm:w-[20vw] sssm:h-[3vh] md:h-[4vh] p-2 rounded-md absolute top-20 left-10 flex items-center justify-center hover:scale-115 cursor-pointer"
+                <motion.div className="partners-logo bg-white xlllll:h-[10vh] xll:h-[8vh] xlx:h-[10vh] lgg:h-[8vh] lg:w-[20vw] lg:h-[10vh] md:p-4 sssm:w-[20vw] sssm:h-[3vh] sssm:-mt-10 md:mt-0 md:h-[4vh] p-2 rounded-md absolute top-20 left-10 flex items-center justify-center hover:scale-115 cursor-pointer"
                             drag
                             dragConstraints={{
                                 top: -50,
@@ -21,7 +21,7 @@ export default function Partners(){
                     <Image src="/Images/Partners/microsoft-azure.jpg" width={200} height={200} alt="microsoft" className="xlllll:scale-180"/>
                 </motion.div>
 
-                <motion.div className="partners-logo bg-white xlllll:h-[10vh] xll:h-[8vh]  lgg:h-[8vh] xlx:h-[10vh]  lg:w-[20vw] lg:h-[10vh] md:p-4 sssm:w-[20vw] sssm:h-[3vh] md:h-[4vh] p-2 rounded-md absolute top-20 md:left-[35vw] sssm:left-[40vw] flex items-center justify-center hover:scale-115 cursor-pointer"
+                <motion.div className="partners-logo bg-white xlllll:h-[10vh] xll:h-[8vh]  lgg:h-[8vh] xlx:h-[10vh]  lg:w-[20vw] lg:h-[10vh] md:p-4 sssm:w-[20vw] sssm:h-[3vh] sssm:-mt-10 md:mt-0 md:h-[4vh] p-2 rounded-md absolute top-20 md:left-[35vw] sssm:left-[40vw] flex items-center justify-center hover:scale-115 cursor-pointer"
                             drag
                             dragConstraints={{
                                 top: 10,
@@ -33,7 +33,7 @@ export default function Partners(){
                     <Image src="/Images/Partners/Google.png" width={200} height={200} alt="google" className="xlllll:scale-180"/>
                 </motion.div>
 
-                <motion.div id="amazon" className="partners-logo bg-white xlllll:h-[10vh] xlll:top-[29vh] xlx:h-[10vh] xlx:top-[40vh] lgg:h-[8vh] xll:h-[8vh] lg:w-[20vw] lg:h-[10vh] md:p-4 sssm:w-[20vw] sssm:h-[3vh] md:h-[4vh] p-2 rounded-md absolute xlllll:top-[33vh] xll:top-[25vh] lg:top-[30vh] md:top-[12vh] sssm:top-[10vh] md:left-[20vw] sssm:left-[25vw] flex items-center justify-center hover:scale-115 cursor-pointer"
+                <motion.div id="amazon" className="partners-logo bg-white xlllll:h-[10vh] xlll:top-[29vh] xlx:h-[10vh] xlx:top-[40vh] lgg:h-[8vh] xll:h-[8vh] lg:w-[20vw] lg:h-[10vh] sssm:mt-2 md:mt-0 md:p-4 sssm:w-[20vw] sssm:h-[3vh] md:h-[4vh] p-2 rounded-md absolute xlllll:top-[33vh] xll:top-[25vh] lg:top-[30vh] md:top-[12vh] sssm:top-[10vh] md:left-[20vw] sssm:left-[25vw] flex items-center justify-center hover:scale-115 cursor-pointer"
                             drag
                             dragConstraints={{
                                 top: -20,
@@ -45,7 +45,7 @@ export default function Partners(){
                     <Image src="/Images/Partners/Amazon.png" width={100} height={200} alt="amazon" className="sssm:scale-75 lg:scale-100 md:scale-50 xlllll:scale-180"/>
                 </motion.div>
 
-                <motion.div id="sap" className="partners-logo bg-white xlll:top-[50vh] xlllll:h-[10vh] xlllll:top-[57vh] xlx:h-[10vh] xlx:top-[67vh] xll:h-[8vh] lgg:h-[8vh] lg:w-[20vw] lg:h-[10vh] md:p-4 sssm:w-[20vw] sssm:h-[3vh] md:h-[4vh] p-2 rounded-md absolute xll:top-[43vh]  lg:top-[50vh] md:top-[20vh] sssm:top-[15vh] left-10 flex items-center justify-center hover:scale-115 cursor-pointer"
+                <motion.div id="sap" className="partners-logo bg-white xlll:top-[50vh] xlllll:h-[10vh] xlllll:top-[57vh] xlx:h-[10vh] xlx:top-[67vh] xll:h-[8vh] lgg:h-[8vh] sssm:mt-5 md:mt-0 lg:w-[20vw] lg:h-[10vh] md:p-4 sssm:w-[20vw] sssm:h-[3vh] md:h-[4vh] p-2 rounded-md absolute xll:top-[43vh]  lg:top-[50vh] md:top-[20vh] sssm:top-[15vh] left-10 flex items-center justify-center hover:scale-115 cursor-pointer"
                             drag
                             dragConstraints={{
                                 top: -20,
@@ -57,7 +57,7 @@ export default function Partners(){
                     <Image src="/Images/Partners/SAP.jpg" width={100} height={200} alt="sap" className="sssm:scale-75 lg:scale-100 md:scale-60 xlllll:scale-180"/>
                 </motion.div>
 
-                <motion.div id="nasscom" className="partners-logo bg-white xlll:top-[50vh] xlllll:h-[10vh] xlllll:top-[57vh] xlx:h-[10vh] xlx:top-[67vh] lgg:h-[8vh] xll:h-[8vh] lg:w-[20vw] lg:h-[10vh] md:p-4 sssm:w-[20vw] sssm:h-[3vh] md:h-[4vh] p-2 rounded-md absolute xll:top-[43vh]  lg:top-[50vh] md:top-[20vh] sssm:top-[15vh] md:left-[35vw] sssm:left-[40vw] flex items-center justify-center hover:scale-115 cursor-pointer"
+                <motion.div id="nasscom" className="partners-logo bg-white xlll:top-[50vh] xlllll:h-[10vh] xlllll:top-[57vh] xlx:h-[10vh] xlx:top-[67vh] lgg:h-[8vh] xll:h-[8vh] lg:w-[20vw] lg:h-[10vh] sssm:mt-5 md:mt-0 md:p-4 sssm:w-[20vw] sssm:h-[3vh] md:h-[4vh] p-2 rounded-md absolute xll:top-[43vh]  lg:top-[50vh] md:top-[20vh] sssm:top-[15vh] md:left-[35vw] sssm:left-[40vw] flex items-center justify-center hover:scale-115 cursor-pointer"
                             drag
                             dragConstraints={{
                                 top: -20,
