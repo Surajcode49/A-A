@@ -1,7 +1,7 @@
 /*Importing requried libraries and media*/
 import Image from "next/image";
 import { useState } from "react";
-import SectionHeading from "../SectionHeading";
+import SectionHeadingNew from "../SectionHeadingNew";
 import ReadButton from "../ReadButton";
 import { Tilt } from 'react-next-tilt';
 
@@ -84,7 +84,7 @@ export default function Industry() {
         <div>
             <div className="w-2/3 lgg:mx-20 mx-10 sssm:mt-[45vh] lgg:mt-[50vh] xl:mt-[50vh] xll:mt-[30vh] xxl:mt-[40vh] xlllll:mt-[40vh] xlll:mt-[40vh]">
                  {/*Heading for the industry section*/}
-                 <SectionHeading Title="OUR INDUSTRY" heading="The Industries We Serve" />
+                 <SectionHeadingNew Title="OUR INDUSTRY" heading="The Industries We Serve" />
             </div>
 
             {/* Large Screen Slider */}
