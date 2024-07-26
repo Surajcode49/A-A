@@ -20,7 +20,7 @@ const ValuePageButton = memo(function ValuePageButton({ bgImage, Text }) {
                     className="relative z-10 bg-contain bg-no-repeat bg-center"
                     style={{ backgroundImage: `url(${bgImage})` }}
                 >
-                    <h1 className="font-bold text-md text-center">{Text}</h1>
+                    <h1 className="font-bold text-md text-center xlllll:text-[1.5rem]">{Text}</h1>
                 </div>
                 
             </div>

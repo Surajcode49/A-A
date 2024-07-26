@@ -3,7 +3,6 @@ import dynamic from 'next/dynamic';
 import Navbar from "../components/Header/navbar";
 import Footer from "../components/Footer/Footer";
 import Section from "../components/HomeSections";
-import SectionHeading from "../components/SectionHeading";
 import Clients from "../components/Clients/Clients";
 import Connect from "../components/Connect/Connect";
 import PageHeader from "../components/PageHeader";
@@ -94,8 +93,8 @@ export default function About() {
                 <Section>
                     <div className="flex justify-center items-center bg-gray-100">
                         <div className="mx-[7vw]">
-                            <h1 className="text-accent p-3 font-semibold text-center mt-[5vh] xxxxxxl:text-[1.8rem]">OUR CORE VALUES</h1>
-                            <p className="text-gray-500 md:mx-20 lg:text-[0.9rem] xxxxxxl:text-[1.5rem] xxxxxxl:leading-10 p-3 leading-6 text-center">
+                            <h1 className="text-accent p-3 font-semibold text-center mt-[5vh] xlllll:text-[1.8rem]">OUR CORE VALUES</h1>
+                            <p className="text-gray-500 md:mx-20 lg:text-[0.9rem] xlllll:text-[1.5rem] xlllll:leading-10 p-3 leading-6 text-center">
                             At AplusA Technologies, we foster a collaborative and transparent work environment built on a foundation of honesty, integrity, and loyalty. We believe these values are the cornerstone of building strong partnerships and delivering exceptional results for our clients.
                             </p>
                     
