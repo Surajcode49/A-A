@@ -35,19 +35,6 @@ const industries = [
 ];
 
 export default function Industry() {
-    const headings = [
-        {
-            spans: [
-                { text: 'The', color: 'main3', pr: 1 },
-                { text: 'In', color: 'main3', pl: 1 },
-                { text: 'dustries', color: 'main2', px: 0 },
-                { text: 'we', color: 'main1', px: 1 },
-                { text: 'se', color: 'main1', px: 0 },
-                { text: 'rve', color: 'accent', px: 0 },
-            ],
-        },
-       
-    ];
      
     //----------------------------------------------------------------------------------------------------
     //Handles indexing for larger screens where 2 industry cards are displayed at a time
@@ -98,7 +85,7 @@ export default function Industry() {
                         <h1 className={`lgg:text-[2.5rem] xl:text-[3rem] lxl:text-[5rem] xlllll:text-[5rem] text-[#3dbce2] z-30 absolute ${index === 0 ? 'lgg:left-[6vw] lxl:left-[4vw] xlllll:left-[-5vw] xxl:left-20 xll:-top-[15vh] xl:-top-[20vh] xl:left-[1vw]' : 'lgg:right-[26vw] lxl:right-[21vw] xlllll:right-[13vw] xxl:right-[24vw] xll:-top-[15vh] xl:-top-[20vh] xl:right-[23vw] xll:right-[24vw]' } roboto-black`}>
                             {industry.heading}
                         </h1>
-                        <h1 className={`lgg:text-[2.5rem] xl:text-[3rem] lxl:text-[5rem] xlllll:text-[5rem] text-[#DBDBDB] z-10 absolute ${index === 0 ? 'lgg:left-[6.2vw] lxl:left-[4.3vw] xlllll:left-[-4.7vw] xxl:left-[6.1vw] xll:-top-[14.7vh] xll:left-[6vw] xl:-top-[19.7vh] xl:left-[1.2vw]' : 'lgg:right-[25.8vw] lxl:right-[20.8vw] xlllll:right-[12.7vw] xxl:right-[23.8vw] xll:-top-[14.5vh] xll:right-[23.8vw] xl:-top-[19.5vh] xl:right-[22.8vw]'} roboto-black`}>
+                        <h1 className={`lgg:text-[2.5rem] xl:text-[3rem] lxl:text-[5rem] xlllll:text-[5rem] text-[#DBDBDB] z-10 absolute ${index === 0 ? 'lgg:left-[6.2vw] lxl:left-[4.3vw] xlllll:left-[-4.75vw] xlllll:-top-[14.5vh] xxl:left-[6.1vw] xll:-top-[14.7vh] xll:left-[6vw] xl:-top-[19.7vh] xl:left-[1.2vw]' : 'lgg:right-[25.8vw] lxl:right-[20.8vw] xlllll:right-[12.7vw] xxl:right-[23.8vw] xll:-top-[14.5vh] xll:right-[23.8vw] xl:-top-[19.5vh] xl:right-[22.8vw]'} roboto-black`}>
                             {industry.heading}
                         </h1>
 

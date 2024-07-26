@@ -6,40 +6,6 @@ import Button from "../Button";
 import Link from "next/link";
 
 export default function Career() {
-    const headings = [
-        {
-            spans: [
-                { text: 'Build', color: 'main3', px: 0 },
-                { text: 'ing', color: 'main2', pr: 1 },
-                { text: 'exper', color: 'main1', pl: 1 },
-                { text: 'iences', color: 'accent', px: 0 },
-            ],
-        },
-        {
-            spans: [
-                { text: 'that', color: 'main3', px: 0 },
-                { text: 'are', color: 'main2', px: 1 },
-                { text: 'happ', color: 'main1', px: 0 },
-                { text: 'ier', color: 'accent', px: 0 },
-            ],
-        },
-        {
-            spans: [
-                { text: 'engag', color: 'main3', px: 0 },
-                { text: 'ing,', color: 'main2', pr: 1 },
-                { text: 'an', color: 'main1', pl: 1},
-                { text: 'd', color: 'accent', px: 0 },
-            ],
-        },
-        {
-            spans: [
-                { text: 'mean', color: 'main3', px: 0 },
-                { text: 'ing', color: 'main2', pr: 1},
-                { text: 'fu', color: 'main1', px: 0 },
-                { text: 'l', color: 'accent', px: 0 },
-            ],
-        },
-    ];
 
     /*For selecting different job positions in career input form */
     const [selectedPosition, setSelectedPosition] = useState(null);

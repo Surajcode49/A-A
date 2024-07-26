@@ -122,15 +122,17 @@ export default function Footer() {
                 >
                     <h3 className="text-black roboto-light text-lg mb-4">CONTACT US</h3>
 
-                    <Image src={Location} width={20} height={20} alt="Location" className="mx-40"/>
-                    <motion.p className="text-accent mb-4 text-sm roboto-medium hover:text-[#8D8B87] cursor-pointer" whileHover={{ scale: 1.1 }}>
-                        11th Floor, Dallas Center, Knowledge City, Survey No 83/1, Plot No A1, Hitech City Main Road, Hyderabad - 500032, Telangana, India.
-                    </motion.p>
+                    <div className="flex flex-col">
+                        <Image src={Location} width={20} height={20} alt="Location" className="mx-auto"/>
+                        <motion.p className="text-accent mb-4 text-sm xlllll:max-w-[240px] roboto-medium hover:text-[#8D8B87] cursor-pointer mx-auto" whileHover={{ scale: 1.1 }}>
+                            11th Floor, Dallas Center, Knowledge City, Survey No 83/1, Plot No A1, Hitech City Main Road, Hyderabad - 500032, Telangana, India.
+                        </motion.p>
 
-                    <Image src={Email} width={20} height={20} alt="Email" className="mx-40"/>
-                    <motion.p className="text-accent mb-4 text-sm roboto-medium hover:text-[#8D8B87]" whileHover={{ scale: 1.1 }}>
-                        <a href="mailto:getintouch@aplusatech.com">getintouch@aplusatech.com</a>
-                    </motion.p>
+                        <Image src={Email} width={20} height={20} alt="Email" className="mx-auto"/>
+                        <motion.p className="text-accent mb-4 text-sm roboto-medium hover:text-[#8D8B87]" whileHover={{ scale: 1.1 }}>
+                            <a href="mailto:getintouch@aplusatech.com">getintouch@aplusatech.com</a>
+                        </motion.p>
+                    </div>
 
                 </motion.div>
 

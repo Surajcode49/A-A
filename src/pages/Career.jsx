@@ -13,17 +13,7 @@ import "../app/globals.css";
 
 
 export default function Career(){
-    const headings = [
-        {
-            spans: [
-                { text: 'Building experiences', color: 'main3', px: 0 },
-                { text: 'that are', color: 'main2', px: 1 },
-                { text: 'happier, engaging,', color: 'accent', px: 1 },
-                { text: 'and meaningful', color: 'main1', px: 1 },
-            ],
-        },
-    ];
-
+   
     //Hiring process round details
     const content = [
         {

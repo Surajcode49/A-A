@@ -16,16 +16,6 @@ const GetStarted = dynamic(() => import("../components/About/form"), { ssr: fals
 const ValuePageButton = dynamic(() => import("../components/About/ValuePageButton"), { ssr: false });
 
 export default function About() {
-    const headings = [
-        {
-            spans: [
-                { text: 'Welcome', color: 'main3', px: 0 },
-                { text: 'to', color: 'main2', px: 1 },
-                { text: 'AplusA', color: 'main1', px: 1 },
-                { text: 'Technologies', color: 'accent', px: 0 },
-            ],
-        },
-    ];
 
     return (
         <div>

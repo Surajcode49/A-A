@@ -10,54 +10,6 @@ const Separator = () => (
 );
 
 export default function Requirements() {
-    //Linear gradient heading
-    const headings = [
-    {
-        spans: [
-            { text: 'We', color: 'main3', px: 0 },
-            { text: 'map', color: 'main2', px: 1 },
-            { text: 'compete', color: 'accent', px: 0 },
-            { text: 'ncies', color: 'main1', px: 0 },
-        ],
-    },
-
-    {
-        spans: [
-            { text: 'and', color: 'main3', px: 0 },
-            { text: 'also', color: 'main2', px: 1 },
-            { text: 'check', color: 'accent', px: 0 },
-            { text: 'for', color: 'main1', px: 1 },
-        ],
-    },
-
-    {
-        spans: [
-            { text: 'compatib', color: 'main3', px: 0 },
-            { text: 'ility', color: 'main2', px: 0 },
-            { text: 'to', color: 'accent', px: 1 },
-            { text: 'be', color: 'main1', px: 0 },
-        ],
-    },
-
-    {
-        spans: [
-            { text: 'sure', color: 'main3', px: 0 },
-            { text: 'you,', color: 'main2', px: 1 },
-            { text: 'match', color: 'accent', px: 0 },
-            { text: 'the', color: 'main1', px: 1 },
-        ],
-    },
-
-    {
-        spans: [
-            { text: 'values', color: 'main3', px: 0 },
-            { text: 'we,', color: 'main2', px: 1 },
-            { text: 'inhe', color: 'accent', px: 0 },
-            { text: 'rit', color: 'main1', px: 0 },
-        ],
-    },
-    ];
-
     //Requirement card details
     const content = [
     {

@@ -17,19 +17,6 @@ const MemoizedSectionHeading = memo(SectionHeading);
 const MemoizedPageHeader = memo(PageHeader);
 
 export default function Contact() {
-    const headings = [
-        {
-            spans: [
-                { text: 'We', color: 'main3', px: 0 },
-                { text: 'are', color: 'main3', px: 1 },
-                { text: 'happy', color: 'main2', px: 1 },
-                { text: 'to', color: 'main2', px: 1 },
-                { text: 'hear', color: 'accent', px: 1 },
-                { text: 'from', color: 'accent', px: 1 },
-                { text: 'you!', color: 'accent', px: 0 },
-            ],
-        },
-    ];
 
     const [countries, setCountries] = useState([]);
     const [selectedCountry, setSelectedCountry] = useState(null);

@@ -44,17 +44,6 @@ const slides = [
 ]
 
 export default function Service(){
-    const headings = [
-        {
-            spans: [
-                { text: 'The', color: 'main3', px: 0 },
-                { text: 'Services', color: 'main2', px: 1 },
-                { text: 'We', color: 'main1', px: 0 },
-                { text: 'Offer', color: 'accent', px: 1 },
-            ],
-        },
-        
-    ];
 
      /*Initializing index for the career cards*/
     const [currentIndex, setCurrentIndex] = useState(0);

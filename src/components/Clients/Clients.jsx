@@ -5,34 +5,6 @@ import { delay, motion } from "framer-motion";
 import Button from "../Button";
 
 export default function Clients(){
-    const headings = [
-        {
-            spans: [
-                { text: 'They', color: 'main3', px: 0 },
-                { text: 'Trust', color: 'main2', px: 1 },
-                { text: 'Us', color: 'main1', px: 0 },
-                { text: 'And', color: 'accent', px: 1 },
-            ],
-        },
-        {
-            spans: [
-                { text: 'We', color: 'main3', px: 0 },
-                { text: 'Keep', color: 'main2', px: 1 },
-                { text: 'Giving', color: 'main1', px: 0 },
-                { text: 'Them', color: 'accent', px: 1 },
-            ],
-        },
-        {
-            spans: [
-                { text: 'Rea', color: 'main3', px: 0 },
-                { text: 'so', color: 'main2', px: 0 },
-                { text: 'ns', color: 'main1', px: 0 },
-                { text: 'Too', color: 'accent', px: 1 },
-            ],
-        },
-    ];
-
-
     /*Creating pop-up animation for each logo container*/
     const logoVariants = {
         hidden: { opacity: 0, y: 20 },
