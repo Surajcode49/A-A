@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Connect() {
     return (
-        <div className="mx-[7vw] xl:-mt-20 xlllll:mt-20 mmd:my-[2vh] sssm:my-[5vh]  relative">
+        <div className="mx-[7vw] xl:-mt-20 xlllll:mt-20 mmd:my-[2vh] md:mt-[-15vh] sssm:my-[5vh]  relative">
 
             <div className="relative">
                 <Image src="/Images/Connect/connect.jpg" width={800} height={500} alt="Connect" loading="lazy" className="rounded-br-none rounded-tl-[2vw] rounded-bl-[5vw] rounded-tr-[5vw] w-[90vw] relative z-0" />
@@ -22,7 +22,7 @@ export default function Connect() {
                     READY TO CONNECT WITH OUR EXPERTS AND UNDERSTAND THE BENEFITS SAP WILL BRING TO YOUR BUSINESS?
                 </h1>
 
-                <div className="xl:mt-[45vh] xl:ml-10 xlllll:mt-[35vh] xlllll:scale-160 lgg:scale-100 sssm:scale-50 sssm:mt-[10vh]">
+                <div className="xl:mt-[45vh] xl:ml-10 xlllll:mt-[35vh] md:mt-[17vh] xlllll:scale-160 lgg:scale-100 sssm:scale-50 sssm:mt-[10vh]">
                     <Link href="/contact" legacyBehavior>
                         <a>  
                             <Button

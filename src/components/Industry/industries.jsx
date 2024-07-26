@@ -69,7 +69,7 @@ export default function Industry() {
 
     return (
         <div>
-            <div className="w-2/3 lgg:mx-20 mx-10 sssm:mt-[45vh] lgg:mt-[50vh] xl:mt-[50vh] xll:mt-[30vh] xxl:mt-[40vh] xlllll:mt-[40vh] xlll:mt-[40vh]">
+            <div className="w-2/3 lgg:mx-20 mx-10 sssm:mt-[45vh] md:mt-[20vh] lgg:mt-[50vh] xl:mt-[50vh] xll:mt-[30vh] xxl:mt-[40vh] xlllll:mt-[40vh] xlll:mt-[40vh]">
                  {/*Heading for the industry section*/}
                  <SectionHeadingNew Title="OUR INDUSTRY" heading="The Industries We Serve" />
             </div>
@@ -95,7 +95,7 @@ export default function Industry() {
                                  <Image src={industry.image} width={350} height={350} alt={industry.heading} className="rounded-[2vw] rounded-br-none relative"/> 
                             </div>
 
-                            <div className="mt-6 rounded-tr-[2vw] xlllll:-ml-2 bg-[radial-gradient(circle_at_left,_var(--tw-gradient-stops))] from-[#E1F6FB] via-[#bce3f3] from-1% to-[#E1F6FB] to-100% xl:w-[200px] xl:h-[200px] lgg:w-[200px] lgg:h-[170px]">
+                            <div className="mt-6 rounded-tr-[2vw] xlllll:-ml-2 bg-[radial-gradient(circle_at_left,_var(--tw-gradient-stops))] from-[#E1F6FB] via-[#bce3f3] from-1% to-[#E1F6FB] to-100% xl:w-[200px] xl:h-[200px] lgg:w-[200px] lgg:h-[170px] ">
                                 <p className="text-gray-400 font-medium p-4 xl:py-8 lgg:py-6">{industry.text}</p>
                                 <div className="mx-10 xl:scale-125 xlllll:scale-105 xlllll:mx-7">
                                     <ReadButton />
@@ -123,12 +123,12 @@ export default function Industry() {
                             {industry.heading}
                         </h1>
 
-                        <div className="flex">
+                        <div className="flex md:ml-[5vw]">
                             <div className="scale-100 mb-4 ml-4">
                                 <Image src={industry.image} width={250} height={250} alt={industry.heading} className="rounded-lg"/>
                             </div>
 
-                            <div className="-mt-5 sssm:-ml-8  ssmm:-ml-9 scale-60 rounded-tr-lg bg-[radial-gradient(circle_at_left,_var(--tw-gradient-stops))] from-[#E1F6FB] via-[#bce3f3] from-1% to-[#E1F6FB] to-100% w-[250px] h-[150px]">
+                            <div className="-mt-5 sssm:-ml-8  ssmm:-ml-9 scale-60 rounded-tr-lg bg-[radial-gradient(circle_at_left,_var(--tw-gradient-stops))] from-[#E1F6FB] via-[#bce3f3] from-1% to-[#E1F6FB] to-100% w-[250px] h-[150px] md:h-[200px] md:ml-[-6.5vw]">
                                 <p className="text-gray-400 font-medium p-4">{industry.text}</p>
                                 <div className="scale-125 -mt-4 ml-10">
                                     <ReadButton />

@@ -55,7 +55,7 @@ export default function Career() {
                     {/*Heading for the career section*/}
                     <SectionHeading Title="CAREERS" heading="Building expereinces that are happier, engaging, and meaningful"/>
 
-                    <div className="mt-5 lgg:-ml-5 sssm:-ml-[23vw]">
+                    <div className="mt-5 md:-ml-5 sssm:-ml-[23vw]">
                         <Link href="/Career" legacyBehavior>
                             <a>  
                                 <Button

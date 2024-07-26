@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { motion, useAnimation, useInView } from "framer-motion";
-import { useEffect, useRef } from "react";
+//import { useEffect, useRef } from "react";
 import SectionHeadingNew from "../SectionHeadingNew";
 import ValueSectionButton from "./ValueSectionButton";
 import Button from "../Button";
@@ -31,7 +31,7 @@ export default function About(){
                 <SectionHeadingNew Title="ABOUT US" heading="Welcome to" />
                 <SectionHeadingNew  heading="AplusA Technologies" />
             </div>
-            <div className="flex lg:scale-100 xlll:scale-110 xllll:scale-125 sssm:scale-75 md:scale-90 xlllll:mt-[-21vh] lg:mt-[-16vh] md:mt-[-10vh] sssm:mt-[-13vh]">
+            <div className="flex lg:scale-100 xlll:scale-110 xllll:scale-125 sssm:scale-75 md:scale-90 xlllll:mt-[-21vh] lg:mt-[-16vh] md:mt-[-20vh] sssm:mt-[-13vh]">
                 <div className="bg-accent/80 md:scale-80 lg:scale-100 sssm:min-w-[550px] lg:max-w-[600px] xxxxxxl:max-w-[1100px] xlx:max-w-[600px] lgg:max-w-[500px] sssm:max-w-full xlllll:max-w-[850px] xllll:max-w-[800px] xll:max-w-[650px] mmd:max-w-[520px] md:min-w-[400px] md:max-w-[500px] lg:px-[8vw] md:px-[6vw] sssm:px-[20vw] ssm:min-w-[620px] py-2 absolute top-[20vh] xl:ml-[-6.5vw] lg:ml-[-9vw] xlll:ml-[-2vw] xllll:ml-[2vw] mmd:ml-[-16vw] md:ml-[-18vw] sssm:ml-[-30vw]">
                     <p className="text-white md:text-sm xllll:text-lg xxxxxxl:text-[1.5rem] xxxxxxl:leading-10 sssm:xs p-3 sssm:my-2 leading-6 text-justify">
                         AplusA Technologies started in 2017 as a partnership firm of a team
@@ -72,7 +72,7 @@ export default function About(){
             </div>
             
             <div className="lg:ml-[2vw] lgg:ml-[-3vw] xlx:ml-[0vw] ssm:mt-[-5vh] ssm:ml-[-25vw] xlllll:ml-[9vw] md:ml-[-2vw] mdd:ml-[-4vw] mdm:ml-[-3vw] mdd:mt-[15vh] xllll:ml-[12vw] xllll:mt-[24vh] sssm:ml-[-30vw] xxxxxxl:ml-[11vw] xxxxxxl:scale-250 llg:scale-105 llg:ml-[-5vw] lxl:scale-150 xll:scale-125 xllll:scale-160 sssm:scale-140 md:scale-70 lg:scale-80 xl:scale-115 xxl:scale-140 xxl:ml-[0vw] mmd:scale-80 md:mt-[14vh]">
-                <motion.div className="w-2/3 flex items-center max-w-[210px] mdd:scale-90 mmd:scale-80 lg:scale-125 xl:scale-110 mdm:scale-90 md:scale-75 sssm:scale-90  justify-center lg:mt-[15vh] md:mt-[12vh] ssm:mt-[58vh] ssmm:mt-[65vh] sssm:mt-[62vh] relative"
+                <motion.div className="w-2/3 flex items-center max-w-[210px] mdd:scale-90 mmd:scale-80 lg:scale-125 xl:scale-110 mdm:scale-90 md:scale-90 sssm:scale-90  justify-center lg:mt-[15vh] md:mt-[12vh] ssm:mt-[58vh] ssmm:mt-[65vh] sssm:mt-[62vh] relative"
                          /*ref={ref}
                          initial="hidden"
                          animate={controls}

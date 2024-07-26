@@ -40,7 +40,7 @@ export default function Clients(){
     return (
         <div className="lg:mt-[5vh] xlllll:mt-[35vh] xl:mt-[10vh] sssm:mt-[2vh] justify-between items-center relative xl:mx-5 lg:mx-20 sssm:mx-0">
 
-            <div className="md:flex sssm:block xl:mx-20 mx-10 sssm:mx-0">
+            <div className="lgg:flex sssm:block xl:mx-20 mx-10 sssm:mx-0">
                 <div className="sssm:mx-5">
                     
                     <div className="sssm:w-2/3 lgg:w-full lg:mt-[20vh] md:mt-[10vh] xxl:mt-[15vh] xlllll:mt-[0vh]">
@@ -48,7 +48,7 @@ export default function Clients(){
                         <SectionHeading Title="OUR HAPPY CLIENTS" heading="They Trust Us And We Keep Giving Them Reasons Too" />
                     </div>
 
-                    <div className="lgg:mt-20 sssm:mt-5 sssm:ml-[-23vw] lgg:-ml-3 xlllll:ml-10 xlllll:scale-140">
+                    <div className="lgg:mt-20 sssm:mt-5 sssm:ml-[-23vw] md:-ml-3 xlllll:ml-10 xlllll:scale-140">
                         <Button
                             buttonText="View All"
                             bgColor="bg-main1"
