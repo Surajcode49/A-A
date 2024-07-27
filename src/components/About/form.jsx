@@ -6,7 +6,7 @@ export default function Form() {
         <div className="lg:mt-[5vh] xlllll:mt-[35vh]  xl:mt-[10vh] md:mt-[-7vh] sssm:mt-[-7vh] justify-between items-center relative lg:mx-20 sssm:mx-10">
             <div className="flex flex-col md:flex-row md:mx-10 mx-1 xlllll:mx-20">
                 {/* Heading for the contacting section in about page */}
-                <div className="w-full lg:w-1/5 xlllll:w-1/4 mt-[10vh] xlllll:mt-5 xlllll:py-8">
+                <div className="w-full lg:w-1/5 xlllll:w-1/4 sssm:mt-10 lgg:mt-[10vh] xlllll:mt-5 xlllll:py-8">
                     <SectionHeading Title="LET'S GET STARTED" heading="Leave a message here and we shall connect with you to discuss your digital needs" />
                 </div>
 
@@ -30,12 +30,14 @@ export default function Form() {
 
                     <input className="border-b border-gray-600 hover:border-main3 w-full mt-1 outline-none placeholder-gray-400 bg-gray-100" type="text" placeholder="How can we help you? *" id="help" name="help"/>
                     
-                    <div className="mt-5 -ml-3">
+                    <div className="flex justify-items-center items-center">
+                    <div className="mt-5 sssm:mx-auto lgg:-ml-3">
                         <Button
                             buttonText="Submit"
                             bgColor="bg-main3"
-                            className="hover:border-main3 border-2 border-gray-100"
+                            className="hover:border-main3 border-2 mx-auto border-gray-100"
                         />
+                    </div>
                     </div>
 
                 </form>

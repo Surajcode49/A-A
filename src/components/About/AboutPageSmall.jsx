@@ -9,12 +9,12 @@ export default function AboutPageSmall({ heading1, heading2, text1, image, text2
       <div className="sssm:block md:hidden mt-[15vh]">
         <div className="border-2 border-main2 flex flex-col justify-items-center items-center text-center rounded-xl rounded-bl-none rounded-tr-none px-0 py-2 mx-auto my-10 relative w-5/6">
           <div className="mt-20">
-            <p className="text-gray-400 mx-5 mt-5 max-w-[300px] text-xs text-wrap">
+            <p className="text-gray-400 mx-5 mt-5 max-w-[300px] text-sm text-left text-wrap">
               {text1}
             </p>
 
             <motion.h1
-                className="text-white my-5 roboto-black cursor-pointer lxl:max-w-[900px] xlllll:leading-[4vh] xxl:max-w-[700px] lgg:max-w-[600px] xlllll:max-w-[900px] md:text-xl lgg:text-[1.1rem] xlllll:p-4 xlllll:text-[1.9rem] bg-accent w-full p-2 px-5"
+                className="text-white my-5 roboto-black cursor-pointer  md:text-xl  bg-accent w-full p-2 px-5"
                 whileHover={{
                   letterSpacing: "0.1em",
                   transition: { type: "spring", stiffness: 300 },
@@ -24,7 +24,7 @@ export default function AboutPageSmall({ heading1, heading2, text1, image, text2
               </motion.h1>
 
               <motion.p
-                className="text-gray-400 mx-5 mt-5 md:max-w-[400px] xxxxxxl:min-w-[1200px] xlllll:max-w-[850px] lgg:max-w-[500px] md:text-sm xlllll:leading-[4vh] lgg:text-[1rem] xlllll:w-[800px] xlllll:text-[1.6rem] text-wrap"
+                className="text-gray-400 mx-5 mt-5 md:max-w-[400px] text-sm text-left text-wrap"
                 whileHover={{ scale: 1.03 }}
                 transition={{ duration: 1 }}
               >
@@ -32,7 +32,7 @@ export default function AboutPageSmall({ heading1, heading2, text1, image, text2
               </motion.p>
 
                 <motion.h1
-                    className="text-white my-5 roboto-black cursor-pointer xlllll:leading-[4vh]  md:text-xl lgg:text-[1.1rem] xlllll:p-4 xlllll:text-[1.9rem] bg-accent w-full p-2 px-5"
+                    className="text-white my-5 roboto-black cursor-pointer  md:text-xl  bg-accent w-full p-2 px-5"
                     whileHover={{
                     letterSpacing: "0.1em",
                     transition: { type: "spring", stiffness: 300 },
@@ -41,7 +41,7 @@ export default function AboutPageSmall({ heading1, heading2, text1, image, text2
                     {heading2}
                 </motion.h1>
 
-                <ul className="text-gray-400  mx-10 my-5 list-outside list-disc xlllll:text-[1.6rem] xlllll:max-w-[1100px] lgg:max-w-[700px]">
+                <ul className="text-gray-400  mx-10 my-5 list-outside list-disc text-sm text-left">
                 {listItems.map((item, index) => (
                   <motion.li key={index} className="cursor-pointer"
                             initial={{x: 0}}

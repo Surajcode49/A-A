@@ -39,12 +39,12 @@ export default function Footer() {
                     {/*Clickable logo to navigate to home page*/}
                     <motion.div whileHover={{ scale: 1.2 }} className="cursor-pointer">
                         <Link href="/" legacyBehavior>
-                            <a> <Image src={logo} width={250} height={150} loading="lazy" className="mx-2 xlllll:scale-125 xlllll:ml-10" alt="Logo" /> </a>
+                            <a> <Image src={logo} width={250} height={150} loading="lazy" className="mx-auto smmm:ml-10 xlllll:scale-125 xlllll:ml-10" alt="Logo" /> </a>
                         </Link>
                     </motion.div>
                     
                      {/*Social media icons*/}
-                    <div className="flex justify-center space-x-3 mx-15 ml-10 mt-0">
+                    <div className="flex justify-center space-x-3 mx-auto mt-0 ">
                         <MediaIcons icon="/Images/Footer/Linkedin-Icon.webp" href="https://www.linkedin.com"/>
                         <MediaIcons icon="/Images/Footer/Facebook-Icon.webp" href="https://www.facebook.com"/>
                         <MediaIcons icon="/Images/Footer/Instagram-Icon.webp" href="https://www.instagram.com"/>

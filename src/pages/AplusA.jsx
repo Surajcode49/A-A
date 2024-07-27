@@ -91,14 +91,14 @@ export default function About() {
 
                 {/* Value section of about page */}
                 <Section>
-                    <div className="flex justify-center items-center bg-gray-100">
+                    <div className="flex justify-center items-center bg-gray-100 sssm:mb-10 lgg:mb-0">
                         <div className="mx-[7vw]">
                             <h1 className="text-accent p-3 font-semibold text-center mt-[5vh] xlllll:text-[1.8rem]">OUR CORE VALUES</h1>
                             <p className="text-gray-500 md:mx-20 lg:text-[0.9rem] xlllll:text-[1.5rem] xlllll:leading-10 p-3 leading-6 text-center">
                             At AplusA Technologies, we foster a collaborative and transparent work environment built on a foundation of honesty, integrity, and loyalty. We believe these values are the cornerstone of building strong partnerships and delivering exceptional results for our clients.
                             </p>
                     
-                            <div className="md:flex sssm:block justify-between mt-5 mb-10 p-1 mx-6 sssm:px-12">
+                            <div className="md:flex sssm:block justify-between mt-5 mb-10 p-1 mx-6 sssm:px-12 smmm:px-20">
                                 <ValuePageButton bgImage="/Images/About/Honesty.png" Text="Transparency"/>
                                 <ValuePageButton bgImage="/Images/About/Integrity.png" Text="Honesty"/>
                                 <ValuePageButton bgImage="/Images/About/transparent.png" Text="Integrity"/>

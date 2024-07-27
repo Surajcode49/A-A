@@ -17,10 +17,10 @@ export default function PageHeader({ image, text, heading }) {
 
             <Section>
                 <div className="flex flex-col justify-left items-left absolute xl:top-[30vh] lgg:top-[20vh] md:top-[13vh] md:mx-20 lgg:mx-30 xlllll:mx-50 xl:mx-40 sssm:top-[7vh] sssm:mx-5">
-                    <h1 className="text-white roboto-medium xxxxxxl:text-[4rem] xlllll:text-[3rem] lxl:text-[2.5rem] xxl:text-[2.3rem] xl:text-[2rem] llg:text-[2rem] lgg:text-[1.9rem] mdd:text-[1.6rem] md:text-[1.5rem] sssm:text-[1.5rem] smmm:text-[1rem] ssm:text-[1.1rem]">
+                    <h1 className="text-white roboto-medium xxxxxxl:text-[4rem] xlllll:text-[3rem] lxl:text-[2.5rem] xxl:text-[2.3rem] xl:text-[2rem] llg:text-[2rem] lgg:text-[1.9rem] mdd:text-[1.6rem] md:text-[1.5rem] sssm:text-[1rem] smmm:text-[1rem] ssm:text-[1.1rem]">
                         {heading}
                     </h1>
-                    <h1 className="text-white roboto-medium xxxxxxl:text-[3.5rem] xlllll:text-[2.5rem] lxl:text-[2rem] xxl:text-[1.7rem] xl:text-[1.5rem] llg:text-[1.5rem] lgg:text-[1.4rem] mdd:text-[1.1rem] md:text-[1rem] sssm:text-[0.5rem] smmm:text-[0.57rem] ssm:text-[0.6rem]">
+                    <h1 className="text-white roboto-medium xxxxxxl:text-[3.5rem] xlllll:text-[2.5rem] lxl:text-[2rem] xxl:text-[1.7rem] xl:text-[1.5rem] llg:text-[1.5rem] lgg:text-[1.4rem] mdd:text-[1.1rem] md:text-[1rem] sssm:text-[0.8rem]">
                         {text}
                     </h1>
                 </div>
