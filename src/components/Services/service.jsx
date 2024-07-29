@@ -72,9 +72,8 @@ export default function Service() {
                 {/*Updating the color of bulletin text based on card displayed*/}
                 <ul className="text-nowrap lg:leading-10 lgg:mt-7 xlllll:mt-10 font-sans sssm:leading-[3vh] lg:text-xl xllll:leading-[8vh] xlllll:leading-[6vh] xlllll:text-[2rem] xllll:text-2xl md:text-lg sssm:text-xs px-4">
                     {slides.map((slide, index) => (
-                        <div>
+                        <div key={index}>
                         <motion.div
-                            key={index}
                             className="flex flex-nowrap cursor-pointer"
                             initial={{ x: 0 }}
                             whileHover={{ x: 20 }}
