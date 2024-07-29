@@ -50,7 +50,7 @@ export default function Career() {
 
     return (
         <div className="lg:mt-[5vh] xlllll:mt-[10vh] xl:mt-[10vh] md:mt-[-7vh] sssm:mt-[-7vh] justify-between items-center relative lg:mx-20 sssm:mx-10">
-            <div className="flex flex-col lg:flex-row md:mx-10 mx-1">
+            <div className="flex flex-col lg:flex-row md:mx-10 mx-1 space-x-20">
                 <div className="w-full lg:w-1/3 mt-[10vh] xlllll:mt-2">
                     {/*Heading for the career section*/}
                     <SectionHeading Title="CAREERS" heading="Building expereinces that are happier, engaging, and meaningful"/>
@@ -100,8 +100,8 @@ export default function Career() {
                         />
                         <div className="border-b border-gray-600 hover:border-main3 w-full md:mt-1 mt-5 outline-none placeholder-gray-400">
                             <div className="flex justify-between">
-                                <label htmlFor="resume" className="text-gray-400">CV/Resume *</label>
-                                <div className="bg-gray-100 hover:bg-main3 -mt-2 text-gray-500 hover:text-white flex justify-center items-center text-sm text-center min-w-[7vw] max-h-[5vh] px-4 py-2 rounded-bl-xl rounded-tr-xl cursor-pointer">Browse</div>
+                                <label htmlFor="resume" className="text-gray-400 mt-3">CV/Resume *</label>
+                                <div className="bg-gray-100 hover:bg-main3 mt-2 text-gray-500 hover:text-white flex justify-center items-center text-sm text-center min-w-[7vw] max-h-[5vh] px-4 py-2 rounded-bl-xl rounded-tr-xl cursor-pointer">Browse</div>
                             </div>
 
                             <input className="hidden " type="file" placeholder="CV/Resume *" id="resume" name="resume"/>

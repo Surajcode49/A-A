@@ -67,13 +67,14 @@ const Navbar = () => {
         </div>
 
        
-        <ul className="text-black text-lg flex flex-col lg:flex-row list-none space-y-4 lg:space-y-0 lg:space-x-8 p-6 lg:p-0 lg:ml-[-35vw]">
+        <ul className="text-gray-500 text-lg flex flex-col lg:flex-row list-none space-y-4 lg:space-y-0 lg:space-x-8 p-6 lg:p-0 lg:ml-[-35vw]">
           <NavMenu Menu="Services" Route="/Services" />
           <NavMenu Menu="Industries" Route="/industries" />
           <NavMenu Menu="Partners" Route="/partners" />
           <NavMenu Menu="AplusA" Route="/AplusA" />
           <NavMenu Menu="Career" Route="/Career" />
           <NavMenu Menu="Contact" Route="/contact" />
+          <Image src="/Images/Header/Search_Icon.svg" width={20} height={20} alt="search"/>
         </ul>
       </nav>
 
